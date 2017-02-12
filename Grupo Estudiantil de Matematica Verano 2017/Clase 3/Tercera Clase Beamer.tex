@@ -1,0 +1,77 @@
+\documentclass[handout]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amssymb,enumerate}
+\author{Grupo Estudiantil de Matemática}
+\title{Primera presentación en Beamer}
+\institute{\LARGE{Universidad Nacional de Ingeniería\\Facultad de Ciencias}}
+\date{8 de febrero del 2017} % Si deseas mostrar la fecha actual, entonces escribe \date{\today}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\re}{\mathbb{R}}
+\usetheme{Antibes}
+\begin{document}
+
+	\begin{frame}
+		\maketitle
+	\end{frame}
+
+	\begin{frame}{Esto es un título}{Esto es un subtitulo}
+	Esto es un frame, aquí podemos escribir fórmulas como \(\ds\int_S f(x,y)dA \).\\
+	También podemos crear tablas o ecuaciones centradas.
+	\[1+2+3+4+5+6+\cdots+n = {\color{blue}\frac{n(n+1)}{2}}\]
+	{\color{red} Texto a ser coloreado de rojo} 
+	\begin{center}
+		
+		\begin{tabular}{||c||c||}
+			\hline 1 & 2 \\ \hline
+			\hline 3 & 4 \\ \hline
+			\hline 
+		\end{tabular}
+		
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}{Tipos de Cajas}
+	
+	\begin{exampleblock}{Exampleblock}
+	Texto o fórmulas en \LaTeX o imágenes o cuadros.
+	\[f(x)\subset \re\]
+\end{exampleblock}
+	
+\begin{alertblock}{Alertblock}
+	Esta caja es de color rojo.
+	
+	\begin{center}
+		\begin{tabular}{||c||c||}
+			\hline 1 & 2 \\ \hline						
+		\end{tabular} 
+	\end{center}
+	
+\end{alertblock}
+
+\begin{block}{Block}
+	Caja pequeña de color azul.
+\end{block}	
+\end{frame}
+	\begin{frame}{El poder de \LaTeX}
+	A continuación aparecerá una caja. \pause 
+	\begin{alertblock}{¡Apareció la caja!}
+		Matemáticas
+		\begin{itemize}
+			\item Primera ítem \pause
+			\item Segunda ítem  \pause
+			\item Una ecuación \pause \[x^0+y^0=2,~\forall x,y\in\re\setminus\{0\}\]
+		\end{itemize}
+		
+	\end{alertblock}
+	
+\end{frame}
+
+\begin{frame}
+	\[1+2+3+4+5+6= \pause(1+2+3)+\pause(4+5+6) = \pause6 + \pause 15= \pause 21\]
+	
+	\pause Para eliminar los velos cambiar\\
+	 $\backslash\!\!$ documentclass[handout] por  $\backslash\!\!$ documentclass[beamer]\\\Large{¡Gracias por tu atención!}
+\end{frame}
+\end{document}
