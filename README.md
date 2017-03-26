@@ -1,2 +1,1 @@
-# Curso de LaTeX
-->$$ [ \frac{-b\pm\sqrt{b^2-4ac}}{2a} ] $$<-
+# [<img src="https://khan.github.io/KaTeX/katex-logo.svg" width="130" alt="KaTeX">](https://khan.github.io/KaTeX/)
