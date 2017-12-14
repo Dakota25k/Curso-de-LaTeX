@@ -1,10 +1,13 @@
-# Primera clase
-Vamos a comenzar este ejercicio con el tipo de documento 
+# Primera clase del Curso Vacacional de Tikz
+Antes de comenzar, el ejercicio *n* va a ser el ejercicio exercise1_n.tex.
+
+El día de hoy vamos a iniciar el curso con el tipo de documento 
 ```sh
-standalone
+\documentclass{standalone}
 ```
 que nos permite ajustar el tamaño del documento.
 
+## Ejercicio 1
 Veamos el archivo exercise1_1.tex
 
 ```sh
@@ -24,7 +27,11 @@ Este es un ejercicio sencillo donde imprimimos el texto ¡Bienvenidos amigos! co
 
 Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 
-En nuestro segundo ejercicio, utilizamos el comando \draw[opcional] (x0,y0) -- (xf, yf);
-
+## Ejercicio 2
+En nuestro segundo ejercicio, utilizamos el comando
+```sh
+\draw[opcional] (x0,y0) -- (xf, yf);
+```
 Es importante recordar que debe finalizar con ; (así como en la sintaxis de C).
 
+## Ejercicio 3
