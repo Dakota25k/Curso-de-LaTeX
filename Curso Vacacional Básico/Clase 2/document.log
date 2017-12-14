@@ -1,0 +1,671 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2017.12.5)  13 DEC 2017 21:17
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**document.tex
+(./document.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count87
+\uc@combtoks=\toks16
+\uc@combtoksb=\toks17
+\uc@temptokena=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2017/11/03 3.15 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2017/11/03 3.15 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2017/11/03 3.15 Babel common definitions
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2017/11/03 3.15 Babel switching mechanism
+)
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\es@quottoks=\toks19
+\es@quotdepth=\count89
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen104
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks21
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks22
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks23
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count103
+\mult@box=\box28
+\multicol@leftmargin=\dimen113
+\c@unbalance=\count104
+\c@collectmore=\count105
+\doublecol@number=\count106
+\multicoltolerance=\count107
+\multicolpretolerance=\count108
+\full@width=\dimen114
+\page@free=\dimen115
+\premulticols=\dimen116
+\postmulticols=\dimen117
+\multicolsep=\skip46
+\multicolbaselineskip=\skip47
+\partial@page=\box29
+\last@line=\box30
+\maxbalancingoverflow=\dimen118
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count109
+\c@finalcolumnbadness=\count110
+\last@try=\dimen119
+\multicolovershoot=\dimen120
+\multicolundershoot=\dimen121
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\mc@col@check@num=\count111
+)
+(/usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty
+Package: paracol 2015/10/10 v1.32 
+\pcol@currcol=\count112
+\pcol@nextcol=\count113
+\pcol@ncol=\count114
+\pcol@ncolleft=\count115
+\pcol@page=\count116
+\pcol@basepage=\count117
+\pcol@toppage=\count118
+\pcol@footnotebase=\count119
+\pcol@nfootnotes=\count120
+\pcol@mcid=\count121
+\pcol@prevdepth=\dimen122
+\pcol@colht=\dimen123
+\pcol@textfloatsep=\dimen124
+\pcol@lrmargin=\dimen125
+\pagerim=\dimen126
+\pcol@topskip=\skip48
+\pcol@topfnotes=\box54
+\pcol@prespan=\box55
+\pcol@rightpage=\box56
+\pcol@tempbox=\box57
+\pcol@everyvbox=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(./document.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+)
+\openout1 = `document.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count122
+\scratchdimen=\dimen127
+\scratchbox=\box58
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen128
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+Overfull \hbox (4.42583pt too wide) in paragraph at lines 28--28
+\OT1/cmr/m/n/10 so-da-les, so-lli-ci-tu-din vel, wi-si. Mor-bi auc-
+ []
+
+
+Overfull \hbox (4.14587pt too wide) in paragraph at lines 32--32
+[]\OT1/cmr/m/n/10 Nulla ma-le-sua-da port-ti-tor diam. Do-
+ []
+
+
+Overfull \hbox (0.84029pt too wide) in paragraph at lines 32--32
+\OT1/cmr/m/n/10 ve-rra fer-men-tum fe-lis. Do-nec no-nummy
+ []
+
+
+Overfull \hbox (1.59027pt too wide) in paragraph at lines 32--32
+\OT1/cmr/m/n/10 nu-lla vi-tae enim. Pe-llen-tes-que tin-ci-dunt
+ []
+
+
+Overfull \hbox (8.34691pt too wide) in paragraph at lines 32--32
+\OT1/cmr/m/n/10 pu-rus vel mag-na. In-te-ger non enim. Prae-
+ []
+
+
+Overfull \hbox (4.42583pt too wide) in paragraph at lines 34--34
+\OT1/cmr/m/n/10 so-da-les, so-lli-ci-tu-din vel, wi-si. Mor-bi auc-
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (3.97253pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 ter-dum eu, tin-ci-dunt sit
+ []
+
+
+Overfull \hbox (3.95026pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 cu. Ae-nean fau-ci-bus pe-
+ []
+
+
+Overfull \hbox (11.6169pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 de eu an-te. Prae-sent enim
+ []
+
+
+Overfull \hbox (2.42355pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 nisl. Ut lec-tus eros, ma-
+ []
+
+
+Overfull \hbox (5.9725pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 men-tum eu, so-da-les cur-
+ []
+
+
+Overfull \hbox (0.70026pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 pu-rus. Quis-que vehi-cu-
+ []
+
+
+Overfull \hbox (8.77805pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 la, ur-na sed ul-tri-cies auc-
+ []
+
+
+Overfull \hbox (13.45029pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 luc-tus. Cu-ra-bi-tur et nunc.
+ []
+
+
+Overfull \hbox (11.13925pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 Ali-quam do-lor odio, com-
+ []
+
+
+Overfull \hbox (2.88922pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 mo-do pre-tium, ul-tri-cies
+ []
+
+
+Overfull \hbox (16.77809pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 In-te-ger ar-cu est, no-nummy
+ []
+
+
+Overfull \hbox (3.97256pt too wide) in paragraph at lines 41--41
+\OT1/cmr/m/n/10 in, fer-men-tum fau-ci-bus,
+ []
+
+
+Overfull \hbox (21.39192pt too wide) in paragraph at lines 43--43
+[]\OT1/cmr/m/n/10 Sed com-
+ []
+
+
+Overfull \hbox (8.05864pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 mo-do po-
+ []
+
+
+Overfull \hbox (5.64189pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 sue-re pe-
+ []
+
+
+Overfull \hbox (5.56523pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 de. Mau-
+ []
+
+
+Overfull \hbox (7.08635pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 ris ut est.
+ []
+
+
+Overfull \hbox (12.59303pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 pu-rus. Sed
+ []
+
+
+Overfull \hbox (0.55861pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 ac odio.
+ []
+
+
+Overfull \hbox (6.39192pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 Sed vehi-
+ []
+
+
+Overfull \hbox (6.39192pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 cu-la hen-
+ []
+
+
+Overfull \hbox (13.72527pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 dre-rit sem.
+ []
+
+
+Overfull \hbox (5.75305pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 Duis non
+ []
+
+
+Overfull \hbox (12.53749pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 odio. Mor-
+ []
+
+
+Overfull \hbox (6.39195pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 bi ut dui.
+ []
+
+
+Overfull \hbox (0.33638pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 cum-san
+ []
+
+
+Overfull \hbox (7.6419pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 ri-sus eget
+ []
+
+
+Overfull \hbox (0.28748pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 odio. In
+ []
+
+
+Overfull \hbox (15.9475pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 bi-tas-se pla-
+ []
+
+
+Overfull \hbox (12.42635pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 tumst. Pe-
+ []
+
+
+Overfull \hbox (10.33636pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 llen-tes-que
+ []
+
+
+Overfull \hbox (2.50305pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 non elit.
+ []
+
+
+Overfull \hbox (7.753pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 Fus-ce sed
+ []
+
+
+Overfull \hbox (1.16971pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 jus-to eu
+ []
+
+
+Overfull \hbox (7.8364pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 ur-na por-
+ []
+
+
+Overfull \hbox (1.39192pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 ta tin-ci-
+ []
+
+
+Overfull \hbox (15.84305pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 dunt. Mau-
+ []
+
+
+Overfull \hbox (3.39305pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 odio, so-
+ []
+
+
+Overfull \hbox (6.39197pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 lli-ci-tu-din
+ []
+
+
+Overfull \hbox (4.16974pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 lut-pat a,
+ []
+
+
+Overfull \hbox (9.78082pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 or-na-re ac,
+ []
+
+
+Overfull \hbox (11.17635pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 erat. Mor-
+ []
+
+
+Overfull \hbox (11.72527pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 bi quis do-
+ []
+
+
+Overfull \hbox (0.17633pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 lor. Do-
+ []
+
+
+Overfull \hbox (13.11415pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 llen-tes-que,
+ []
+
+
+Overfull \hbox (10.91968pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 erat ac sa-
+ []
+
+
+Overfull \hbox (12.0586pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 git-tis sem-
+ []
+
+
+Overfull \hbox (7.53194pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 per, nunc
+ []
+
+
+Overfull \hbox (9.4753pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 dui lo-bor-
+ []
+
+
+Overfull \hbox (7.64194pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 tis pu-rus,
+ []
+
+
+Overfull \hbox (5.61414pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 quis con-
+ []
+
+
+Overfull \hbox (5.36415pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 tus ul-tri-
+ []
+
+
+Overfull \hbox (11.62082pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 llus. Proin
+ []
+
+
+Overfull \hbox (5.00305pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 et quam.
+ []
+
+
+Overfull \hbox (6.50302pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 Class ap-
+ []
+
+
+Overfull \hbox (12.33636pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 ci-ti so-cios-
+ []
+
+
+Overfull \hbox (2.22525pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 qu ad li-
+ []
+
+
+Overfull \hbox (3.66971pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 to-ra tor-
+ []
+
+
+Overfull \hbox (8.36415pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 quent per
+ []
+
+
+Overfull \hbox (1.11417pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 co-nu-bia
+ []
+
+
+Overfull \hbox (14.00418pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 nos-tra, per
+ []
+
+
+Overfull \hbox (3.11415pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 in-cep-tos
+ []
+
+
+Overfull \hbox (17.55864pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 hy-me-naeos.
+ []
+
+
+Overfull \hbox (5.22525pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 Prae-sent
+ []
+
+
+Overfull \hbox (13.6975pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 sa-pien tur-
+ []
+
+
+Overfull \hbox (3.3364pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 men-tum
+ []
+
+
+Overfull \hbox (2.50412pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 vel, elei-
+ []
+
+
+Overfull \hbox (5.28084pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 fend fau-
+ []
+
+
+Overfull \hbox (15.89305pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 ci-bus, vehi-
+ []
+
+
+Overfull \hbox (0.2808pt too wide) in paragraph at lines 43--43
+\OT1/cmr/m/n/10 cu-la eu,
+ []
+
+[2] [3] (./document.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+) ) 
+Here is how much of TeX's memory you used:
+ 4418 strings out of 492985
+ 58171 string characters out of 6134947
+ 243651 words of memory out of 5000000
+ 7974 multiletter control sequences out of 15000+600000
+ 8868 words of font info for 32 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,6n,35p,335b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on document.pdf (3 pages, 75063 bytes).
+PDF statistics:
+ 38 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
