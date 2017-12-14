@@ -10,7 +10,7 @@ que nos permite ajustar el tamaño del documento.
 ## Ejercicio 1
 Veamos el archivo exercise1_1.tex
 
-```sh
+```tex
 \documentclass{standalone}
 \usepackage[utf8x]{inputenc}
 \usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
@@ -29,7 +29,7 @@ Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 
 ## Ejercicio 2
 En nuestro segundo ejercicio, utilizamos el comando
-```sh
+```tex
 \draw[opcional] (x0,y0) -- (xf, yf);
 ```
 Es importante recordar que debe finalizar con ; (así como en la sintaxis de C).
