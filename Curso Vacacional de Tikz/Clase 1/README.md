@@ -1,14 +1,10 @@
 # Primera clase del Curso Vacacional de Tikz
-Antes de comenzar, el ejercicio *n* va a ser el ejercicio exercise1_n.tex.
+Antes de comenzar, el ejercicio *n* va a ser el ejercicio `exercise1_n.tex`.
 
-El día de hoy vamos a iniciar el curso con el tipo de documento 
-```sh
-\documentclass{standalone}
-```
-que nos permite ajustar el tamaño del documento.
+El día de hoy (12/12/17) vamos a iniciar el curso con el tipo de documento `standalone` que nos permite ajustar el tamaño del documento.
 
 ## Ejercicio 1
-Veamos el archivo exercise1_1.tex
+Veamos el archivo [`exercise1_1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_1.tex)
 
 ```tex
 \documentclass{standalone}
@@ -35,3 +31,7 @@ En nuestro segundo ejercicio, utilizamos el comando
 Es importante recordar que debe finalizar con ; (así como en la sintaxis de C).
 
 ## Ejercicio 3
+
+## Ejercicio 4
+
+## Ejercicio 5
