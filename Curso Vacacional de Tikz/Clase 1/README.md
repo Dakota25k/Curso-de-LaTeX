@@ -24,3 +24,7 @@ Este es un ejercicio sencillo donde imprimimos el texto ¡Bienvenidos amigos! co
 
 Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 
+En nuestro segundo ejercicio, utilizamos el comando \draw[opcional] (x0,y0) -- (xf, yf);
+
+Es importante recordar que debe finalizar con ; (así como en la sintaxis de C).
+
