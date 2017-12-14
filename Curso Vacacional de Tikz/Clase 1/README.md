@@ -24,7 +24,7 @@ Este es un ejercicio sencillo donde imprimimos el texto ¡Bienvenidos amigos! co
 Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 
 ## Ejercicio 2
-En nuestro segundo ejercicio, utilizamos el comando
+En nuestro segundo ejercicio [`exercise1_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_2.tex), utilizamos el comando
 ```tex
 \draw[opcional] (x0,y0) -- (xf, yf);
 ```
