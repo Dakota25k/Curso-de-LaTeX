@@ -43,9 +43,37 @@ Muy bien, podemos identificar que un documento está formado por tres partes: el
 - Se definió en el preámbulo el comando `\newcommand*\diff{\mathop{}\!\mathrm{d}}` que representará el diferencial en la ecuación dada por la funcion Gamma de Euler.
 - Y se usó el comando `\hypersetup` para cambiar las propiedades del documento de salida, a saber, PDF.
 
-![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example1.png)
-
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example1.png">
 </p>
 ## Ejercicio 2
+
+```tex
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[shortlabels]{enumitem}
+\usepackage{mathtools,amssymb,amsfonts,amsmath,amsthm,mathrsfs,bm,times,bbold}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
+\hypersetup{pdfinfo={
+		Title={Clase 2 -- ejemplo 2},
+		Author={Orommion},
+		Keywords={TeX, TeXlive, lenguaje de marcado, Lamport, Knuth},
+		Subject={Curso Vacacional Básico},
+		Producer={TeXstudio 2.12.6},
+		Creator={pdfTeX Version 3.14159265 TeX Live 2018 Debian}
+}}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\begin{document}
+Veamos la siguiente numeración de algunas ramas de la matemática:
+\begin{enumerate}[a)]
+\item Análisis complejo
+\item Teoría de colas
+\item Geometría hiperbólica
+\item Álgebra no conmutativa.
+\end{enumerate}
+\end{document}
+```
