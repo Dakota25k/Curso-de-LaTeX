@@ -43,4 +43,6 @@ Muy bien, podemos identificar que un documento está formado por tres partes: el
 - Se definió en el preámbulo el comando `\newcommand*\diff{\mathop{}\!\mathrm{d}}` que representará el diferencial en la ecuación dada por la funcion Gamma de Euler.
 - Y se usó el comando `\hypersetup` para cambiar las propiedades del documento de salida, a saber, PDF.
 
+![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example1.png)
+
 ## Ejercicio 2

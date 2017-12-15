@@ -11,7 +11,7 @@ Este archivo [README.md](https://github.com/carlosal1015/Curso-de-LaTeX/blob/mas
 $ tex
 ```
 En mi caso el termninal me muestra:
-![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/tex.png)
+![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/images/tex.png)
 
 ## Segunda Clase (13/12/2017)
 
