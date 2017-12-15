@@ -3,7 +3,7 @@ Antes de comenzar, el ejercicio *n* va a ser el ejercicio `exercise1_n.tex`.
 
 El día de hoy (11/12/17) vamos a iniciar con algunos ejemplos básicos en LaTeX y se explicará paso a paso.
 
-## Ejercicio 1
+## Ejercicio 1 ##
 Veamos el archivo [`example1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/example1.tex)
 
 ```tex
@@ -46,8 +46,9 @@ Muy bien, podemos identificar que un documento está formado por tres partes: el
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example1.png">
 </p>
-## Ejercicio 2
 
+## Ejercicio 2 ##
+Veamos el segundo archivo de hoy [`example2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/example2.tex)
 ```tex
 \documentclass{article}
 \usepackage[utf8x]{inputenc}
