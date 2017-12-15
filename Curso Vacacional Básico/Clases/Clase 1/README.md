@@ -45,4 +45,7 @@ Muy bien, podemos identificar que un documento está formado por tres partes: el
 
 ![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example1.png)
 
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example1.png">
+</p>
 ## Ejercicio 2
