@@ -38,6 +38,9 @@ La función $\Gamma(x)$ se define como
 ```
 Muy bien, podemos identificar que un documento está formado por tres partes: el comando `\documentclass[optional]{obligatory}` en el cual los parámetros opcionales pueden ser a4, 12pt, entre otros y dentro de las llaves tenemos la siguiente palestra de "sabores" (¡pero solo una por documento!) book, beamer, report, letters, memoir y muchos más. Las otras dos partes que tienen extensión variable son la lista de paquetes \usepackage[optional]{obligatory} (en el ejemplo se ha mostrado los más populares) y el cuerpo que siempre va entre `\begin{document}foo\end{document}`.
 
-En el ejemplo 1 hemos usado el comando `\textcolor[color favorito]{texto a colorear}`
+> **Observaciones:**
+- Hemos usado el comando `\textcolor[color favorito]{texto a colorear}`.
+- Se definió en el preámbulo el comando `\newcommand*\diff{\mathop{}\!\mathrm{d}}` que representará el diferencial en la ecuación dada por la funcion Gamma de Euler.
+- Y se usó el comando `\hypersetup` para cambiar las propiedades del documento de salida, a saber, PDF.
 
 ## Ejercicio 2
