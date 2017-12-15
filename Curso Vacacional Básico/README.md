@@ -7,6 +7,6 @@ Este son mis apuntes del curso organizado por [Ubuntu Colombia](http://ubuntu-co
 $ tex
 ```
 En mi caso el termninal me muestra:
-![My image](carlosal1015.github.com/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clase%201/tex.png)
+![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clase%201/tex.png)
 
-![ScreenShot](https://raw.github.com/carlosal1015Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clase%201/tex.png)
+![ScreenShot](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clase%201/tex.png)
