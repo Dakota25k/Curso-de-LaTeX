@@ -78,3 +78,7 @@ Veamos la siguiente numeración de algunas ramas de la matemática:
 \end{enumerate}
 \end{document}
 ```
+
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example2.png">
+</p>
