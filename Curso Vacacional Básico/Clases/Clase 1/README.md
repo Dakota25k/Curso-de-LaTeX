@@ -67,7 +67,6 @@ Veamos el segundo archivo de hoy [`example2.tex`](https://github.com/carlosal101
 		Producer={TeXstudio 2.12.6},
 		Creator={pdfTeX Version 3.14159265 TeX Live 2018 Debian}
 }}
-\newcommand*\diff{\mathop{}\!\mathrm{d}}
 \begin{document}
 Veamos la siguiente numeración de algunas ramas de la matemática:
 \begin{enumerate}[a)]
@@ -78,7 +77,12 @@ Veamos la siguiente numeración de algunas ramas de la matemática:
 \end{enumerate}
 \end{document}
 ```
+> **Observaciones**
+-	Hemos creado una lista numeradoa gracias al paquete `\usepackage[shortlabels]{enumitem}` y con el comando `\begin{enumerate}[x]\end{enumerate}` donde x puede ser un número, una letra u otro símbolo.
+-	Es importante siempre utilizar `\item`, su omisión es causa muy frecuente de errores.
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example2.png">
 </p>
+
+¡Vamos a la [segunda clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202)!
