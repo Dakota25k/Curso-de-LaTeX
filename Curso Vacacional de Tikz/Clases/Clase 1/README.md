@@ -59,9 +59,29 @@ Veamos el código del ejercicio:
 </p>
 Muy bien, las lineas -- en el comando `\draw` indican que se dibujará un segemento de recta desde los puntos límites. Sencillo, ¿no?
 
+> **Observación** También son válidos:
+- \draw[blue] (0, .5) -- (1.5pt, .5);      
+- \draw[red] (0, .5) -- (1.5mm, .5);      
+- \draw[->,Red] (0, .5) -- (9.5pt, .5);   Esto es, un segmento de recta en forma de flecha
+- Las coordenadas cartesianas van separadas por comas (x,y), en cambio en coordenadas polares van separados por : (r:t).
+
 ## Ejercicio 3 ##
 
-
+```tex
+\documentclass{standalone}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\begin{document}
+Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
+\end{document}
+```
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_3.png">
+</p>
 ## Ejercicio 4 ##
 
 ## Ejercicio 5 ##
