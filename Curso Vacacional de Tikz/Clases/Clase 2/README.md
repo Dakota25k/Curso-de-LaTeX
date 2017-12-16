@@ -75,7 +75,7 @@ Que nos muestra:
 Este es un ejercicio sencillo donde vemos dos circunferencias y dos triángulos equiláteros. ¡Sigamos jugando con nuestros nuevos compases digitales!
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/images/exercise2_1.png">
 </p>
 
 
@@ -101,8 +101,8 @@ Veamos el código del ejercicio:
 ```
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/images/exercise2_2.png">
 </p>
 
 > **Observaciones** También son válidos:
-- \draw[blue] (0, .5) -- (1.5pt, .5);
+- ;
