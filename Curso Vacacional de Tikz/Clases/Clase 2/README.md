@@ -72,7 +72,7 @@ Sea \textcolor{blue}{AB} un segmento de recta, contruyendo...
 
 Que nos muestra:
 
-Este es un ejercicio sencillo donde imprimimos el texto ¡Bienvenidos amigos! con signos de exclamación y de color azul.
+Este es un ejercicio sencillo donde vemos dos circunferencias y dos triángulos equiláteros. ¡Sigamos jugando con nuestros nuevos compases digitales!
 
 <p align="center">
   <img src="">
