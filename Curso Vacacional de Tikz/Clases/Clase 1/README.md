@@ -201,7 +201,7 @@ int productomedio (int numb1, int numb2){   //Función productomedio, debe ser l
 - Así, \def sería una variable global tal como numb1 o numb2, pero también podría ser una variable local como s o p dentro de las funciones sumadoble o productomedio respectivamente.
 - `\draw (x,y) grid` dibuja la malla cuadriculada
 - En los argumentos de los nodos pueden ir right, left, above, below
-- El ++(x,y) redefine tu vector de posición. 
+- El ++(x,y) redefine tu vector de posición.
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_6.png">
