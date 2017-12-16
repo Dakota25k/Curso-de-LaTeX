@@ -125,11 +125,15 @@ void main (void){
 }
 ```
 Salida:	1166072965
+
 				38321763
 
 Para generar un aleatorio *entero* en [0,n>, utilice:		rand()%n
+
 Para generar un aleatorio *entero* en [0,n], utilice:		rand()%(n+1)
+
 Para generar un aleatorio *entero* en [m,n], utilice:		rand()%(n-m+1) + m
+
 Para generar un aleatorio *float* en [0,1], utilice:		(float)(rand()%1001)/1000		//con 3 decimales
 
 Veamos un ejemplo de lo mencionado anteriormente:
