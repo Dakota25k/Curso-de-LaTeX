@@ -120,11 +120,17 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 \draw[DarkRed] (0,0) ellipse[x radius =2, y radius =1];
 \draw[DarkBlue] (0,0) rectangle (2,2);
 \draw[DarkGreen](0,0) parabola (2,2);
+\draw (0,0) -- (-3,0) -- (-1.5, 1.5) -- cycle;
 \end{tikzpicture}
 \end{document}
 ```
 > **Observaciones**
-- \draw[blue] (0, .5) -- (1.5pt, .5);
+- Primero dibujamos un circulo trigonométrico.
+- Segundo una elipse centrada en el origen
+- Un rectángulo con un vértice en (0,0) y el otro en (2,2)
+- Una curva parabólica que pasa por (0,0)  y (2,2)
+- Finalmente se dibuja un polígono de tres lados (se usa cycle para figuras cerradas en dos dimensiones)
+- Se usó el ambiente `\begin{tikzpicture}foo\end{tikzpicture}` para poder graficar varias figuras en el mismo espacio disponible.
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_5.png">
