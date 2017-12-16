@@ -88,10 +88,27 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 ## Ejercicio 4 ##
 
 [`exercise1_4.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_4.tex)
+
+```tex
+%Cuarto ejercicio.
+\documentclass{standalone}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{babel}
+\begin{document}
+\tikz\clip[draw](-.1, -.1) rectangle (.5, .3); %Mapa y marco
+\end{document}
+```
+
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_4.png">
 </p>
 
 ## Ejercicio 5 ##
+
+
 
 ## Ejercicio 6 ##
