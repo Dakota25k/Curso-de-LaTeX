@@ -33,13 +33,36 @@ En nuestro segundo ejercicio [`exercise1_2.tex`](https://github.com/carlosal1015
 ```
 Es importante recordar que debe finalizar con ; (así como en la sintaxis de C).
 
+```c
+#include <stdio.h>
+void main (void){
+    printf("¡Hola mundo Tikz!");
+}
+```
+Veamos el código del ejercicio:
+
+```tex
+\documentclass{standalone}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{tikz}
+\begin{document}
+\textcolor{DarkBlue}{¡Bienvenidos!}
+\tikz \draw[Red] (0, .5) -- (1.5, .5); \textcolor{DarkBlue}{al mundo tikz.}
+\end{document}
+```
+
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_2.png">
 </p>
 
 
-## Ejercicio 3
+## Ejercicio 3 ##
 
-## Ejercicio 4
+## Ejercicio 4 ##
 
-## Ejercicio 5
+## Ejercicio 5 ##
+
+## Ejercicio 6 ##
