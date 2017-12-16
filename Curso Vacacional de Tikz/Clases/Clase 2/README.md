@@ -120,7 +120,7 @@ Al usar `rand()` por primera vez, parte de una *semilla* y genera siempre la *mi
 void main (void){
 	srand(time(NULL));	//Genera una semilla
 											//time(NULL)= número de segundos que han pasado desde el 1 de enero de 1970
-	printf("$d\n", rand());
+	printf("%d\n", rand());
 	printf("%d\n", rand());
 }
 ```
