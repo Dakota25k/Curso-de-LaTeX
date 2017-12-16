@@ -17,7 +17,7 @@ Este archivo [README.md](https://github.com/carlosal1015/Curso-de-LaTeX/blob/mas
 \pgfversion
 \end{document}
 ```
-En mi caso el termninal me muestra:
+En mi caso la versión de Tikz es:
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/images/tikzversion.png">
