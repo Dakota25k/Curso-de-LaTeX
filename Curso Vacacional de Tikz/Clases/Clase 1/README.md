@@ -57,9 +57,10 @@ Veamos el código del ejercicio:
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_2.png">
 </p>
-
+Muy bien, las lineas -- en el comando `\draw` indican que se dibujará un segemento de recta desde los puntos límites. Sencillo, ¿no?
 
 ## Ejercicio 3 ##
+
 
 ## Ejercicio 4 ##
 
