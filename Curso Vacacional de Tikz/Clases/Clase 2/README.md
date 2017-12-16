@@ -100,15 +100,52 @@ Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 \end{tikzpicture}
 \end{document}
 ```
-Veamos el concepto de número _pseudoaleatorio_ en C:
+Veamos el concepto de número _pseudoaleatorio_ en C. Ingresar valores desde el teclado es engorroso, podemos asignar números aleatorios (random) como datos de entrada usando la función rand(), la cual genera valores _pseudoaleatorio_ entre 0 y RAND_MAX, un número entero enorme como dos mil millones, ejemplo:
 
 ```c
 #include <stdio.h>
+#include <stdlib.h>		//Librería requerida por rand()
 #include <time.h>
 void main (void){
-    ;
+    printf("%d\n", rand());
 }
 ```
+Salida: 1804289383
+
+Al usar `rand()` por primera vez, parte de una *semilla* y genera siempre la *misma secuencia* de números, por eso es _pseudoaleatoria_ (no aleatoria); para mejorar -no eliminar- esta debilidad, podemos elegir una *semilla* diferente cada vez que iniciamos la generación:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>			//Librería requerida por time
+void main (void){
+	srand(time(NULL));	//Genera una semilla
+											//time(NULL)= número de segundos que han pasado desde el 1 de enero de 1970
+	printf("$d\n", rand());
+	printf("%d\n", rand());
+}
+```
+Salida:	1166072965
+				38321763
+
+Para generar un aleatorio *entero* en [0,n>, utilice:		rand()%n
+Para generar un aleatorio *entero* en [0,n], utilice:		rand()%(n+1)
+Para generar un aleatorio *entero* en [m,n], utilice:		rand()%(n-m+1) + m
+Para generar un aleatorio *float* en [0,1], utilice:		(float)(rand()%1001)/1000		//con 3 decimales
+
+Veamos un ejemplo de lo mencionado anteriormente:
+```c
+//Genere 4 números aleatorios entre 20 y 32.
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>		//Librería requerida por time
+void main (void){
+			int a = 20, b = 32, ab, i;
+			ab = b - a + 1;
+			srand(time(NULL));		//semilla
+			for (i=0; i < 4; i++) printf("%d\n", rand()%ab+20);
+}
+```
+Ahora veamos en Tikz :panda_face:
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/images/exercise2_2.png">
