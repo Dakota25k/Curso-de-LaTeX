@@ -139,8 +139,56 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 ## Ejercicio 6 ##
 [`exercise1_6.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_6.tex)
 ```tex
+\documentclass{standalone}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{babel,calc}
+\begin{document}
+\begin{tikzpicture}
+\def\t{37} %t\in[0,360]
+\def\r{2}	%r>0.
+\def\tangle{5mm}
+\draw[gray!50, very thin, xstep = .5, ystep = .5] (-\r-1, -\r-1) grid (\r+1,\r+1);
+%\clip (.15, 0);
+%\clip (0, .5cm) circle ;
+%\clip(.15, 0) circle (.5cm); %Investigar el uso de clip.
+\draw (\tangle, 0) arc[start angle = 0, end angle = \t, radius =\tangle];
+\draw[>=latex, <->] (-\r-0.5,0) -- (\r+0.5, 0) node[right] {$x$};
+\draw[>=latex, <->] (0, -\r-0.5) -- (0, \r+0.5) node[above] {$f(x)$};
+\draw[line width =1pt,DarkCyan](0,0) circle[radius = \r];
+\draw[line width =.05pt, thin, densely dotted, gray] (0, 0) -- (\t:\r);
+\draw[DarkGreen] (0,0) +(\t:\r) -- ++({\r},{\r*tan(\t)});
+\draw[DarkOrange] (0,0) +(\t:\r) -- ++(0, -{\r}); %Este trazo ayuda a resolver en exámenes de admisión
+\draw[line width =.7pt, red!50!blue](0,0) ++(\t:\r) -- ++(0, -{\r*sin(\t)});
+\draw[line width =.7pt, blue] (0,0) -- (+{\r*cos(\t)}, 0);
+\fill[magenta] (0,0) -- (\tangle, 0) arc[start angle = 0, end angle = \t, radius =\tangle] -- cycle;
+\shade[top color = green, bottom color = cyan] (0,0) -- (\tangle, 0) arc[start angle = 0, end angle = \t, radius =\tangle] -- cycle;
+\draw[>=latex, <->] (\r, -\r-0.5) -- (\r, \r+0.5); %Trazo auxiliar
+\end{tikzpicture}
+\end{document}
 
+```c
+#include <stdio.h>
+int sumadoble (int, int);     //Prototipo de la función
+int productomedio (int, int); //Prototipo de la función
+int numb1, numb2;
+void main (void){             //Función principal
+    printf("Ingrese dos números");
+    scanf("%d %d", &num1, numb2);
+    printf("Definimos la suma doble como la suma clásica por 2");
+    printf("Definimos el productomedio como el producto clásico entre 2");
+}
 ```
+
+> **Observaciones**
+- Esta vez utilizaremos `\usetikzlibrary{calc}` para utilizar las funciones trigonométricas.
+- El camando `\def\[nombre de la constante]{valor de la constante}`, nótese que puede ser Xpt, Ymm, Zcm o 20 como número real.
+- Véase como una función, es decir
+
+
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_6.png">
