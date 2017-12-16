@@ -172,8 +172,8 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 ```
 > **Observaciones**
 - Esta vez utilizaremos `\usetikzlibrary{calc}` para utilizar las funciones trigonométricas.
-- El comando `\def\[nombre de la constante]{valor de la constante}`, nótese que puede ser Xpt, Ymm, Zcm o 20 como número real.
-- Véase como una función, es decir
+- El comando `\def\[nombre de la constante]{valor de la constante}`, nótese que puede ser Xpt, Ymm, Zcm o 20 como valor flotante.
+- Véase como un identificador , es decir
 ```c
 #include <stdio.h>
 int sumadoble (int, int);     //Prototipo de la función
@@ -192,7 +192,7 @@ int sumadoble (int numb1, int numb2){       //Función sumadoble, debe ser llama
   return s;
 }
 
-int productomedio (int numb1, int numb2){   //Función sumadoble, debe ser llamada desde la función principal.
+int productomedio (int numb1, int numb2){   //Función productomedio, debe ser llamada desde la función principal.
   int p;
   p = 0.5 * numb1 * numb2;
   return p;
