@@ -66,6 +66,8 @@ Muy bien, las lineas -- en el comando `\draw` indican que se dibujará un segeme
 - Las coordenadas cartesianas van separadas por comas (x,y), en cambio en coordenadas polares van separados por : (r:t).
 
 ## Ejercicio 3 ##
+En este ejercicio
+[`exercise1_3.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_3.tex) veremos como dibujar una circunferencia en medio de un texto.
 
 ```tex
 \documentclass{standalone}
@@ -82,7 +84,13 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_3.png">
 </p>
+
 ## Ejercicio 4 ##
+
+[`exercise1_4.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_4.tex)
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_4.png">
+</p>
 
 ## Ejercicio 5 ##
 
