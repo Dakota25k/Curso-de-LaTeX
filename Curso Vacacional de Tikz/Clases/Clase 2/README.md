@@ -113,6 +113,7 @@ void main (void){
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/images/exercise2_2.png">
 </p>
+
 ## Ejercicio 3 ##
 [`exercise2_3.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/exercise2_3.tex)
 Veamos el código del ejercicio:
