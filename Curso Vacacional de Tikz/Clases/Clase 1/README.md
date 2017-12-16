@@ -59,7 +59,7 @@ Veamos el código del ejercicio:
 </p>
 Muy bien, las lineas -- en el comando `\draw` indican que se dibujará un segemento de recta desde los puntos límites. Sencillo, ¿no?
 
-> **Observación** También son válidos:
+> **Observaciones** También son válidos:
 - \draw[blue] (0, .5) -- (1.5pt, .5);      
 - \draw[red] (0, .5) -- (1.5mm, .5);      
 - \draw[->,Red] (0, .5) -- (9.5pt, .5);   Esto es, un segmento de recta en forma de flecha
@@ -107,8 +107,24 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 ## Ejercicio 5 ##
 [`exercise1_5.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_5.tex)
 ```tex
-
+\documentclass{standalone}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{babel,calc}
+\begin{document}
+\begin{tikzpicture}
+\draw[DarkCyan](0,0) circle[radius =1];
+\draw[DarkRed] (0,0) ellipse[x radius =2, y radius =1];
+\draw[DarkBlue] (0,0) rectangle (2,2);
+\draw[DarkGreen](0,0) parabola (2,2);
+\end{tikzpicture}
+\end{document}
 ```
+> **Observaciones**
+- \draw[blue] (0, .5) -- (1.5pt, .5);
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_5.png">
