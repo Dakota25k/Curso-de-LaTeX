@@ -19,7 +19,10 @@ Que nos muestra:
 
 Este es un ejercicio sencillo donde imprimimos el texto ¡Bienvenidos amigos! con signos de exclamación y de color azul.
 
-%Insertar imagen
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_1.png">
+</p>
+
 
 Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 
@@ -29,6 +32,11 @@ En nuestro segundo ejercicio [`exercise1_2.tex`](https://github.com/carlosal1015
 \draw[opcional] (x0,y0) -- (xf, yf);
 ```
 Es importante recordar que debe finalizar con ; (así como en la sintaxis de C).
+
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_2.png">
+</p>
+
 
 ## Ejercicio 3
 
