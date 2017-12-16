@@ -84,24 +84,59 @@ Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 ## Ejercicio 2 ##
 [`exercise2_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/exercise2_2.tex), utilizamos el comando
 ```tex
-
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc,babel,through,intersections,backgrounds}
+\begin{document}
+\begin{tikzpicture}
+\coordinate [label = left:{\textcolor{DarkBlue}{$A$}}] (A) at (0+0.1*rand,0+0.1*rand);
+\coordinate [label = right:{\textcolor{DarkBlue}{$B$}}] (B) at (1.25+0.1*rand,0.25+0.1*rand);
+\draw[blue] (A) -- (B);
+\end{tikzpicture}
+\end{document}
 ```
-E.
+Veamos el concepto de número _pseudoaleatorio_ en C:
 
 ```c
 #include <stdio.h>
+#include <time.h>
 void main (void){
     ;
 }
 ```
-Veamos el código del ejercicio:
-
-```tex
-
-```
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/images/exercise2_2.png">
+</p>
+## Ejercicio 3 ##
+[`exercise2_3.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/exercise2_3.tex)
+Veamos el código del ejercicio:
+
+```tex
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc,babel,through,intersections,backgrounds}
+\begin{document}
+\begin{tikzpicture}
+\coordinate [label = left:{\textcolor{DarkBlue}{$A$}}] (A) at ($ (0,0) + .1*(rand,rand) $);
+\coordinate [label = right:{\textcolor{DarkBlue}{$B$}}] (B) at ($ (1.25,0.25) + .1*(rand,rand) $);
+\draw[blue] (A) -- (B);
+\end{tikzpicture}
+\end{document}
+```
+
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%202/images/exercise2_3.png">
 </p>
 
 > **Observaciones** También son válidos:
