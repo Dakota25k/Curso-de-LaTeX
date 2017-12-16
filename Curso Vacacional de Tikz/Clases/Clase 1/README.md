@@ -169,7 +169,11 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 \draw[>=latex, <->] (\r, -\r-0.5) -- (\r, \r+0.5); %Trazo auxiliar
 \end{tikzpicture}
 \end{document}
-
+```
+> **Observaciones**
+- Esta vez utilizaremos `\usetikzlibrary{calc}` para utilizar las funciones trigonométricas.
+- El camando `\def\[nombre de la constante]{valor de la constante}`, nótese que puede ser Xpt, Ymm, Zcm o 20 como número real.
+- Véase como una función, es decir
 ```c
 #include <stdio.h>
 int sumadoble (int, int);     //Prototipo de la función
@@ -182,13 +186,6 @@ void main (void){             //Función principal
     printf("Definimos el productomedio como el producto clásico entre 2");
 }
 ```
-
-> **Observaciones**
-- Esta vez utilizaremos `\usetikzlibrary{calc}` para utilizar las funciones trigonométricas.
-- El camando `\def\[nombre de la constante]{valor de la constante}`, nótese que puede ser Xpt, Ymm, Zcm o 20 como número real.
-- Véase como una función, es decir
-
-
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_6.png">
