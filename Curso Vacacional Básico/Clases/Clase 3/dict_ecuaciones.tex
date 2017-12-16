@@ -1,0 +1,26 @@
+\newcommand{\cuadratica}{
+\[
+x_{1,2} = \frac{1}{2a}\Bigl(-b\pm \sqrt{b^{2}-4ac}\Bigr) \tag{A}
+\]
+}
+%No suma al conteo de ecuaciones
+%IfeqCase es como el Swithcase
+\usepackage{xstring}
+
+\newcommand{\Fourier}[1][eq]{
+	\IfEqCase {#1}{
+		{eq}{
+			\begin{equation}
+				\hat{f}{\xi} = \int_{-\infty}^{\infty}
+			\end{equation}
+			}
+		{disp}{
+			\[
+			\hat{f}{\xi} = \int_{-\infty}^{\infty}
+			\]
+		}
+		{inLine}{
+			$\hat{f}{\xi} = \int_{-\infty}^{\infty}$
+		}
+	}
+}
