@@ -173,7 +173,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 > **Observaciones**
 - Esta vez utilizaremos `\usetikzlibrary{calc}` para utilizar las funciones trigonométricas.
 - El comando `\def\[nombre de la constante]{valor de la constante}`, nótese que puede ser Xpt, Ymm, Zcm o 20 como valor flotante.
-- Véase como un identificador , es decir
+- Véase como un identificador, en particular un objeto, algunas veces llamada variable (localidad en el espacio de almacenamiento  y su interpretación depende de dos atributos fundamentales: su categoría (tiempo de vida de almacenamiento) y su tipo (significado de los valores encontrados en el objeto identicado) ). Veamos este ejemplo en C:
 ```c
 #include <stdio.h>
 int sumadoble (int, int);     //Prototipo de la función
