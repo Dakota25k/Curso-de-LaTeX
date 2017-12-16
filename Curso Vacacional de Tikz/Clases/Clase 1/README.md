@@ -172,7 +172,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 ```
 > **Observaciones**
 - Esta vez utilizaremos `\usetikzlibrary{calc}` para utilizar las funciones trigonométricas.
-- El camando `\def\[nombre de la constante]{valor de la constante}`, nótese que puede ser Xpt, Ymm, Zcm o 20 como número real.
+- El comando `\def\[nombre de la constante]{valor de la constante}`, nótese que puede ser Xpt, Ymm, Zcm o 20 como número real.
 - Véase como una función, es decir
 ```c
 #include <stdio.h>
@@ -180,11 +180,24 @@ int sumadoble (int, int);     //Prototipo de la función
 int productomedio (int, int); //Prototipo de la función
 int numb1, numb2;
 void main (void){             //Función principal
-    printf("Ingrese dos números");
-    scanf("%d %d", &num1, numb2);
-    printf("Definimos la suma doble como la suma clásica por 2");
-    printf("Definimos el productomedio como el producto clásico entre 2");
+    printf("¡Hola!, por favor ingrese dos números enteros:\n"
+    "[Ingrese ENTER después de ingresar el primer número]\n");
+    scanf("%d %d", &numb1, &numb2);
+    printf("\vDefinimos la suma doble como la suma clásica por 2 y su valor es: %d.\n", sumadoble(numb1, numb2));
+    printf("\vDefinimos el productomedio como el producto clásico entre 2 y su valor es: %d.\n", productomedio(numb1, numb2));
 }
+int sumadoble (int numb1, int numb2){       //Función sumadoble, debe ser llamada desde la función principal.
+  int s;
+  s = 2 * (numb1 + numb2);
+  return s;
+}
+
+int productomedio (int numb1, int numb2){   //Función sumadoble, debe ser llamada desde la función principal.
+  int p;
+  p = 0.5 * numb1 * numb2;
+  return p;
+}
+
 ```
 
 <p align="center">
