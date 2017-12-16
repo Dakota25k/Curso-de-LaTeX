@@ -20,7 +20,7 @@ Este archivo [README.md](https://github.com/carlosal1015/Curso-de-LaTeX/blob/mas
 En mi caso el termninal me muestra:
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/images/tikzversion.png">
 </p>
 
 ## Segunda Clase (13/12/2017)
