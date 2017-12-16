@@ -4,7 +4,7 @@ Antes de comenzar, el ejercicio *n* va a ser el ejercicio `exercise1_n.tex`.
 El día de hoy (12/12/17) vamos a iniciar el curso con el tipo de documento `standalone` que nos permite ajustar el tamaño del documento.
 
 ## Ejercicio 1 ##
-[`exercise1_1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_1.tex)
+[`exercise1_1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_1.tex)
 
 ```tex
 \documentclass{standalone}
@@ -27,7 +27,7 @@ Este es un ejercicio sencillo donde imprimimos el texto ¡Bienvenidos amigos! co
 Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 
 ## Ejercicio 2 ##
-[`exercise1_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_2.tex), utilizamos el comando
+[`exercise1_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_2.tex), utilizamos el comando
 ```tex
 \draw[opcional] (x0,y0) -- (xf, yf);
 ```
@@ -66,7 +66,7 @@ Muy bien, las lineas -- en el comando `\draw` indican que se dibujará un segeme
 - Las coordenadas cartesianas van separadas por comas (x,y), en cambio en coordenadas polares van separados por : (r:t).
 
 ## Ejercicio 3 ##
-[`exercise1_3.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_3.tex) veremos como dibujar una circunferencia en medio de un texto.
+[`exercise1_3.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_3.tex) veremos como dibujar una circunferencia en medio de un texto.
 
 ```tex
 \documentclass{standalone}
@@ -85,7 +85,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 </p>
 
 ## Ejercicio 4 ##
-[`exercise1_4.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_4.tex)
+[`exercise1_4.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_4.tex)
 
 ```tex
 \documentclass{standalone}
@@ -105,7 +105,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 </p>
 
 ## Ejercicio 5 ##
-[`exercise1_5.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_5.tex)
+[`exercise1_5.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_5.tex)
 ```tex
 \documentclass{standalone}
 \usepackage[utf8x]{inputenc}
@@ -137,7 +137,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 </p>
 
 ## Ejercicio 6 ##
-[`exercise1_6.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_6.tex)
+[`exercise1_6.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_6.tex)
 ```tex
 
 ```
@@ -147,7 +147,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 </p>
 
 ## Ejercicio 7 ##
-[`exercise1_7.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_7.tex)
+[`exercise1_7.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_7.tex)
 ```tex
 
 ```
@@ -157,7 +157,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 </p>
 
 ## Ejercicio 8 ##
-[`exercise1_8.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_8.tex)
+[`exercise1_8.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_8.tex)
 ```tex
 
 ```
@@ -167,7 +167,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 </p>
 
 ## Ejercicio 9 ##
-[`exercise1_9.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_9.tex)
+[`exercise1_9.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/exercise1_9.tex)
 ```tex
 
 ```
