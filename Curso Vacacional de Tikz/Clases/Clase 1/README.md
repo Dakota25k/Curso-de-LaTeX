@@ -3,8 +3,8 @@ Antes de comenzar, el ejercicio *n* va a ser el ejercicio `exercise1_n.tex`.
 
 El día de hoy (12/12/17) vamos a iniciar el curso con el tipo de documento `standalone` que nos permite ajustar el tamaño del documento.
 
-## Ejercicio 1
-Veamos el archivo [`exercise1_1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_1.tex)
+## Ejercicio 1 ##
+[`exercise1_1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_1.tex)
 
 ```tex
 \documentclass{standalone}
@@ -26,8 +26,8 @@ Este es un ejercicio sencillo donde imprimimos el texto ¡Bienvenidos amigos! co
 
 Como vemos en el código, hemos usado los paquetes inputenc y xcolor.
 
-## Ejercicio 2
-En nuestro segundo ejercicio [`exercise1_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_2.tex), utilizamos el comando
+## Ejercicio 2 ##
+[`exercise1_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_2.tex), utilizamos el comando
 ```tex
 \draw[opcional] (x0,y0) -- (xf, yf);
 ```
@@ -66,7 +66,6 @@ Muy bien, las lineas -- en el comando `\draw` indican que se dibujará un segeme
 - Las coordenadas cartesianas van separadas por comas (x,y), en cambio en coordenadas polares van separados por : (r:t).
 
 ## Ejercicio 3 ##
-En este ejercicio
 [`exercise1_3.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_3.tex) veremos como dibujar una circunferencia en medio de un texto.
 
 ```tex
@@ -86,11 +85,9 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 </p>
 
 ## Ejercicio 4 ##
-
 [`exercise1_4.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_4.tex)
 
 ```tex
-%Cuarto ejercicio.
 \documentclass{standalone}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
@@ -99,7 +96,7 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 \usepackage{tikz}
 \usetikzlibrary{babel}
 \begin{document}
-\tikz\clip[draw](-.1, -.1) rectangle (.5, .3); %Mapa y marco
+\tikz\clip[draw](-.1, -.1) rectangle (.5, .3);
 \end{document}
 ```
 
@@ -108,7 +105,51 @@ Hola \tikz \draw (0,0) circle[radius =5pt]; mundo tikz
 </p>
 
 ## Ejercicio 5 ##
+[`exercise1_5.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_5.tex)
+```tex
 
+```
 
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_5.png">
+</p>
 
 ## Ejercicio 6 ##
+[`exercise1_6.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_6.tex)
+```tex
+
+```
+
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_6.png">
+</p>
+
+## Ejercicio 7 ##
+[`exercise1_7.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_7.tex)
+```tex
+
+```
+
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_7.png">
+</p>
+
+## Ejercicio 8 ##
+[`exercise1_8.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_8.tex)
+```tex
+
+```
+
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_8.png">
+</p>
+
+## Ejercicio 9 ##
+[`exercise1_9.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clase%201/exercise1_9.tex)
+```tex
+
+```
+
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/Clases/Clase%201/images/exercise1_9.png">
+</p>
