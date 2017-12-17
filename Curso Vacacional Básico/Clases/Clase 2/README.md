@@ -26,7 +26,7 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 }}
 \usepackage{layout}
 \begin{document}
-\layout
+\layout{}
 \end{document}
 ```
 
@@ -37,6 +37,8 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/images/exercise2_1.png">
 </p>
+
+Ahora coloque como parámetro opcional `\documentclass[a4paper]{article}` y compile el mismo archivo, notará que se modifica las dimesiones de los márgenes del documento.
 
 **Repasemos algunos comandos importantes de longtudes:**
 
@@ -85,5 +87,11 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 ## Ejercicio 2 ##
 
 [`exercise2_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_2.tex)
+
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/images/exercise2_2.png">
+</p>
+
+## Ejercicio 3 ##
 
 ¡Vamos a la [tercera clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%203)!
