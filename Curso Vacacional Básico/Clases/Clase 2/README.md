@@ -3,7 +3,7 @@
 El día de hoy (13/12/17) vamos a iniciar con algunos ejemplos básicos en LaTeX y se explicará paso a paso.
 
 ## Ejercicio 1 ##
-Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/exercise2_1.tex)
+Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_1.tex)
 
 ```tex
 \documentclass{article}
@@ -35,7 +35,11 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 - El paquete más importante es `\usepackage{layout}`. Con el comando `\layout` nos mostrará lo siguiente:
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exexercise2_1.png">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/images/exercise2_1.png">
 </p>
+
+## Ejercicio 2 ##
+
+[`exercise2_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_2.tex)
 
 ¡Vamos a la [tercera clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%203)!
