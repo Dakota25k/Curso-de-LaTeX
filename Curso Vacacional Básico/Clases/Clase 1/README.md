@@ -44,7 +44,7 @@ Muy bien, podemos identificar que un documento está formado por tres partes: el
 - Y se usó el comando `\hypersetup` para cambiar las propiedades del documento de salida, a saber, PDF.
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exexercise1_1.png">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exercise1_1.png">
 </p>
 
 ## Ejercicio 2 ##
@@ -82,7 +82,7 @@ Veamos la siguiente numeración de algunas ramas de la matemática:
 -	Es importante siempre utilizar `\item`, su omisión es causa muy frecuente de errores.
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exexercise1_2.png">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exercise1_2.png">
 </p>
 
 ¡Vamos a la [segunda clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202)!
