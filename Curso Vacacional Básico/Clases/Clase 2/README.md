@@ -43,3 +43,12 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 [`exercise2_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_2.tex)
 
 ¡Vamos a la [tercera clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%203)!
+
+|	Abreviatura	|	Definición													|	Valor en puntos (pt)|
+|	:---:				|	:---:																|	:---:								|
+|	pt					|	un punto es 1/72.27 pulgadas				|						1					|
+|	mm					|	un milímetro												|									2.84|
+|	cm					|	un centímetro												|			28.4						|
+|in						|	pulgada															|		72.27							|
+|ex						|	aproximadamente la altura de una 'x'|	indefinido|
+|em						|	aproximadamente la altura de una 'M'|	indefinido|
