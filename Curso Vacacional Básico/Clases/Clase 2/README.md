@@ -52,3 +52,36 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 |in						|	pulgada															|		72.27							|
 |ex						|	aproximadamente la altura de una 'x'|	indefinido|
 |em						|	aproximadamente la altura de una 'M'|	indefinido|
+>	Algunas longtudes predeterminadas de las macros de LaTeX:
+
+`\baselineskip` Distancia vertical normal entre líneas en un párrafo.
+
+`\baselinestretch` Multiplica `\baselineskip`.
+
+`\columnsep` Distancia entre columnas.
+
+`\columnwidth` Ancho de la columna.
+
+`\evensidemargin` Margen para páginas pares.
+
+`\linewidth` Ancho de una línea en el entorno local
+
+`\oddsidemargin` Margen para páginas impares.
+
+`\paperwidth` Ancho de la página.
+
+`\paperheight` Alto de la página.
+
+`\parindent` Sangrado del párrafo normal.
+
+`\parskip` Espacio vertical extra entre los párrafos.
+
+`\tabcolsep` Separación predeterminada entre columnas en un entorno tabular.
+
+`\textheight` Alto del texto en la página.
+
+`\textwidth` Ancho del texto en la página.
+
+`\topmargin` Tamaño del margen superior.
+
+`\unitlength` Unidades de longitud en el entorno `picture`.
