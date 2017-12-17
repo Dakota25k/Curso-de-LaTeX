@@ -16,7 +16,7 @@ En mi caso el termninal me muestra:
 
 ### Segunda Clase (13/12/2017) ###
 
-####Tema: Diseño de página ####
+#### Tema: Diseño de página ####
 
 ## Tercera clase (15/12/2017)
 
