@@ -1,6 +1,8 @@
 # Curso Vacacional de Tikz
 
-## Primera Clase (12/12/2017) ##
+### Primera Clase (12/12/2017) ###
+
+#### Tema: Modelo de trabajo con nodos ####
 
 Este son mis apuntes del curso organizado por [Ubuntu Colombia](http://ubuntu-co.com/2017/12/01/cursos-vacacionales-de-latex/). ¡Empecemos!
 
@@ -23,7 +25,22 @@ En mi caso la versión de Tikz es:
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20de%20Tikz/images/tikzversion.png">
 </p>
 
-## Segunda Clase (13/12/2017)
+### Segunda Clase (14/12/2017) ###
 
+##### Tema: Sistema de coordenadas absolutas y relativas ####
 
-## Tercera clase (15/12/2017)
+### Tercera clase (16/12/2017) ###
+
+#### Tema: Mapas mentales ####
+
+### Cuarta clase (19/12/2017) ###
+
+#### Tema: Diagrama de árbol ####
+
+### Quinta clase (21/12/2017) ###
+
+#### Tema: Grafos ####
+
+### Sexta clase (23/12/2017) ###
+
+#### Tema: Visualización de datos ####
