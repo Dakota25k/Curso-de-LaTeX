@@ -4,7 +4,7 @@ Antes de comenzar, el ejercicio *n* va a ser el ejercicio `exercise1_n.tex`.
 El día de hoy (11/12/17) vamos a iniciar con algunos ejemplos básicos en LaTeX y se explicará paso a paso.
 
 ## Ejercicio 1 ##
-Veamos el archivo [`example1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/example1.tex)
+Veamos el archivo [`exercise1_1.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/exercise1_1.tex)
 
 ```tex
 \documentclass{article}
@@ -44,11 +44,11 @@ Muy bien, podemos identificar que un documento está formado por tres partes: el
 - Y se usó el comando `\hypersetup` para cambiar las propiedades del documento de salida, a saber, PDF.
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example1.png">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exexercise1_1.png">
 </p>
 
 ## Ejercicio 2 ##
-Veamos el segundo archivo de hoy [`example2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/example2.tex)
+Veamos el segundo archivo de hoy [`exercise1_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/exercise1_2.tex)
 ```tex
 \documentclass{article}
 \usepackage[utf8x]{inputenc}
@@ -82,7 +82,7 @@ Veamos la siguiente numeración de algunas ramas de la matemática:
 -	Es importante siempre utilizar `\item`, su omisión es causa muy frecuente de errores.
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/example2.png">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exexercise1_2.png">
 </p>
 
 ¡Vamos a la [segunda clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202)!
