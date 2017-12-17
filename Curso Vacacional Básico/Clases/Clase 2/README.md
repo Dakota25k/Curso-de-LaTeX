@@ -32,17 +32,13 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 
 
 > **Observaciones:**
-- El paquete más importante es `\usepackage{layout}`. Con el comando `\layout` nos mostrará lo siguiente:
+- El paquete más importante del ejercicio es `\usepackage{layout}`. Con el comando `\layout` nos mostrará lo siguiente:
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/images/exercise2_1.png">
 </p>
 
-## Ejercicio 2 ##
-
-[`exercise2_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_2.tex)
-
-¡Vamos a la [tercera clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%203)!
+**Repasemos algunos comandos importantes de longtudes:**
 
 |	Abreviatura	|	Definición													|	Valor en puntos (pt)|
 |	:---:				|	:---:																|	:---:								|
@@ -70,7 +66,7 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 
 `\paperwidth` Ancho de la página.
 
-`\paperheight` Alto de la página.
+`\paperheight` Altura de la página.
 
 `\parindent` Sangrado del párrafo normal.
 
@@ -78,10 +74,16 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 
 `\tabcolsep` Separación predeterminada entre columnas en un entorno tabular.
 
-`\textheight` Alto del texto en la página.
+`\textheight` Altura del texto en la página.
 
 `\textwidth` Ancho del texto en la página.
 
 `\topmargin` Tamaño del margen superior.
 
 `\unitlength` Unidades de longitud en el entorno `picture`.
+
+## Ejercicio 2 ##
+
+[`exercise2_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_2.tex)
+
+¡Vamos a la [tercera clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%203)!
