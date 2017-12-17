@@ -1,0 +1,64 @@
+\documentclass{standalone}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{amsthm,mathtools,amsfonts}
+\usepackage{tikz}
+\usetikzlibrary{calc,babel,through,intersections,backgrounds}
+\newtheorem{prop}{Proposición}
+\setcounter{prop}{2}
+\begin{document}
+\begin{tikzpicture}[remark/.style = {line width = 1.125pt, opacity = .5}, scale=2]
+%Paso 1: Dibujar los puntos A, B, C y D. Además, los segmentos AB y CD.
+\coordinate[label = above:\textcolor{DarkBlue}{$\mathbf{A}$}, line width =1pt] (A) at (-4.5, 3.8);
+\coordinate[label = above:\textcolor{DarkBlue}{$\mathbf{B}$}, line width =1pt,] (B) at (3.5, 3.6);
+\coordinate[label = below:\textcolor{DarkRed}{$\mathbf{C}$}] (C) at (-1, 2.15);
+\coordinate[label = below:{\textcolor{DarkRed}{$\mathbf{D}$}}] (D) at (2.5,1.4);
+\draw (A) -- (B);%$(A)!.5!(B)!{2*sin(60)}!90:(B)$
+\draw (C) -- (D);
+
+%Paso 2: Dibujar las circunferencias C1 y C2.
+\node[name path = C1, label = 135:\textcolor{DarkMagenta}{$\mathcal{C}_1$}, draw, line width = 1pt, DarkMagenta, opacity= 0.5, circle through = (C)] at (A) {};
+\node[name path = C2, label = 45:\textcolor{DarkCyan}{$\mathcal{C}_2$}, draw, line width = 1pt, DarkCyan, opacity= 0.5, circle through = (A)] at (C) {};
+
+%Paso 3: Dibujar el triángulo equilátero.
+\path[name intersections = {of = C1 and C2, by = {[label = left:$\mathbf{I}$]I}}];
+
+%Paso 2: Dibujar la circunferencia H.
+%\node[name path = H, label = 135:$\mathcal{C}\colon\mathbf{H}$, draw, line width =1pt, circle through = (C)] at (B) {};
+
+%Paso 3: Trazar los segmentos DF y DE. 
+%\draw[name path = D-F] (D) -- ($(D)!4!(B)$) coordinate[label = below:$\mathbf{F}$] (F);
+%\draw[name path = D-E] (D) -- ($(D)!3.5!(A)$) coordinate[label = below:$\mathbf{E}$] (E);
+
+%Paso 4: Encontrar el punto de intersección G.
+%\path[name intersections = {of = H and D-F, by = {[label = left:$\mathbf{G}$]G}}];
+
+%Paso 5: Dibujar la circunferencia K.
+%\node[name path = K, label = left:$\mathcal{C}\colon\mathbf{K}$, draw, line width =1pt, circle through = (G)] at (D) {};
+
+%Paso 6: Encontrar el punto de intersección L.
+%\path[name intersections = {of = K and D-E, by = {[label = below:\textcolor{DarkBlue}{$\mathbf{L}$}]L}}];
+
+%Paso 7: Resaltar los segmentos congruentes BC y AL.
+%\draw[remark, line width =1pt, DarkCyan] (B) -- (C);
+%\draw[remark, line width =1pt, DarkMagenta] (A) -- (L);
+
+%Paso 8: Marcar los puntos A, B, C, D, L y G.
+%\foreach \point in {A, B, C, D, L, G}{
+%\fill[black, opacity =.5] (\point) circle[radius = 1.15pt];
+%}
+%Paso 9: Enunciar el teorema. 
+\node[below, text width = 13cm, align = justify] at (-0.5,-3.5){
+	\begin{prop}[Euclides 300 A.C.]
+	Para cortar de la mayor de dos líneas rectas desiguales, una línea recta igual a la menos
+	\end{prop}
+	\begin{proof}[Prueba]
+	Sean dos segmentos de recta desiguales \textcolor{DarkBlue}{$\overline{AB}$} y \textcolor{DarkBlue}{$\overline{CD}$} un segmento de recta, donde $AB>CD$.
+	De la proposición I.
+	\end{proof}
+};
+\end{tikzpicture}
+\end{document}
