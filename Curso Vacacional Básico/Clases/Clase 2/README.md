@@ -152,7 +152,15 @@ Ahora coloque como parámetro opcional `\documentclass[a4paper]{article}` y comp
 >	**Observaciones:**
 -	En la primera página se usado el entorno `rotate` gracias al paquete `\usepackage{rotating}`, notamos que el texto ha rotado cinco grados en sentido antihorario.
 -	En las opciones del `geometry` hemos utilizado `landscape`. En la página dos hemos empleado el entorno `landscape` y se nos muestra el párrafo en vertical.
--	En las páginas 3 y 4 vemos las dimesiones de los espacos y márgenes, son dos, puesto que hemos usado la opción `twoside`, esto también ocurre por defecto en la clase `book`.
+-	En las páginas 3 y 4 vemos las dimesiones de los espacios y márgenes, son dos, puesto que hemos usado la opción `twoside`, esto también ocurre por defecto en la clase `book`.
+
+
+|Comando	de formato de página|	Acción		|
+|:---:													|	:---:			|
+|	`\newpage`						| Finaliza la página actual e inicia otra.|
+|	`\pagebreak[number]`	|	Rompe la página actual en el punto del comando. El argumento numérico opcional establece la prioridad en una escala de 0 a 4.|
+|`\nopagebreak[number]`	| Detiene la página que se rompe en el punto del comando. El argumento numérico opcional establece la prioridad en una escala de 0 a 4.|
+|	`\clearpage`		|Finaliza la página actual y hace que los imágenes flotantes encontrados en la entrada, pero aún aparezcan, se impriman.|
 
 ## Ejercicio 3 ##
 
