@@ -16,7 +16,7 @@ $ xetex
 $ lualatex
 ```
 En mi caso el termninal me muestra:
-![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/images/tex.png)
+![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/images/tex.png)
 
 ### Segunda Clase (13/12/2017) ###
 
