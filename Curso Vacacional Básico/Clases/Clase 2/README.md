@@ -25,6 +25,7 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 		Creator={pdfTeX Version 3.14159265 TeX Live 2018 Debian}
 }}
 \usepackage{layout}
+\usepackage{showframe}
 \begin{document}
 \layout{}
 \end{document}
