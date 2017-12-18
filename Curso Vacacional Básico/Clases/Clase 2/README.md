@@ -89,6 +89,40 @@ Ahora coloque como parámetro opcional `\documentclass[a4paper]{article}` y comp
 
 [`exercise2_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_2.tex)
 
+```tex
+\documentclass[twoside, landscape]{report}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{PTSansNarrow}
+\usepackage[spanish]{babel}
+\spanishdatedel
+\usepackage{mathtools,amssymb,amsfonts,amsmath,amsthm,mathrsfs,bm,times,bbold}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage[pdftex,demo]{graphicx}
+\usepackage{float}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
+\hypersetup{pdfinfo={
+		Title={Clase 2 - Ejercicio 1},
+		Author={Oromion},
+		Keywords={layout},
+		Subject={Curso Vacacional Básico},
+		Producer={TeXstudio 2.12.6},
+		Creator={pdfTeX Version 3.14159265 TeX Live 2018 Debian}
+}}
+\usepackage[a6paper, paperwidth = 14cm, paperheight = 18cm]{geometry}
+\usepackage{rotating}
+\usepackage{lipsum}
+\begin{document}
+\pdfpageheight = 15cm
+\pdfpagewidth = 20cm
+\begin{figure}
+\begin{rotate}{15}
+\textcolor{DarkBlue}{\large\lipsum[1]}
+\end{rotate}
+\end{figure}
+\end{document}
+```
+
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/images/exercise2_2.png">
 </p>
