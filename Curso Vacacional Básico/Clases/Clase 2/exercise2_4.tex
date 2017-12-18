@@ -9,7 +9,7 @@
 \usepackage[pdftex,demo]{graphicx}
 \usepackage{siunitx}
 \usepackage{float}
-\usepackage[paperwidth = {12cm}, paperheight ={19cm}, showframe, landscape]{geometry}
+\usepackage{geometry}
 \usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
 \hypersetup{pdfinfo={
 		Title={Clase 2 - Ejercicio 1},
@@ -19,9 +19,23 @@
 		Producer={TeXstudio 2.12.6},
 		Creator={pdfTeX Version 3.14159265 TeX Live 2018 Debian}
 }}
-\title{\textit{Configurando el tamaño de la página principal}}
-\author{Oromion}
+%\geometry{
+%paperwidth = {7cm},
+%paperheight ={12cm},
+%width = {6cm},
+%height = {11cm},
+%textwidth = {5cm}, %tiene mayor prevalencia que width, similarme con height.
+%includemp,%cambiar al lado izquierdo.
+%includehead,
+%includefoot,
+%portrait
+%}
+\geometry{
+letterpaper,
+includeall
+}
+%También es válido ignorehead, ignorefoot
+\usepackage{lipsum}
 \begin{document}
-\maketitle
-Esta es la \emph{transpuesta} de alguna página de \SI{12}{\centi\meter} de largo y \SI{19}{\centi\meter} de alto.
+\lipsum[1-4]
 \end{document}
