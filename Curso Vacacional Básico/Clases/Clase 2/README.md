@@ -41,7 +41,7 @@ Veamos el archivo [`exercise2_1.tex`](https://github.com/carlosal1015/Curso-de-L
 
 Ahora coloque como parámetro opcional `\documentclass[a4paper]{article}` y compile el mismo archivo, notará que se modifica las dimesiones de los márgenes del documento.
 
-**Repasemos algunos comandos importantes de longtudes:**
+**Repasemos la siguiente tabla de unidades y algunos comandos importantes de longtudes:**
 
 |	Abreviatura	|	Definición													|	Valor en puntos (pt)|
 |	:---:				|	:---:																|	:---:								|
@@ -90,7 +90,7 @@ Ahora coloque como parámetro opcional `\documentclass[a4paper]{article}` y comp
 [`exercise2_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_2.tex)
 
 ```tex
-\documentclass[twoside, landscape]{report}
+\documentclass[twoside]{report}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{PTSansNarrow}
@@ -109,23 +109,38 @@ Ahora coloque como parámetro opcional `\documentclass[a4paper]{article}` y comp
 		Producer={TeXstudio 2.12.6},
 		Creator={pdfTeX Version 3.14159265 TeX Live 2018 Debian}
 }}
-\usepackage[a6paper, paperwidth = 14cm, paperheight = 18cm]{geometry}
+\usepackage[landscape, a6paper, paperwidth = 8cm, paperheight = 18cm]{geometry}
 \usepackage{rotating}
 \usepackage{lipsum}
+\usepackage{lscape}
+\usepackage{layout}
 \begin{document}
-\pdfpageheight = 15cm
+\pdfpageheight = 10cm
 \pdfpagewidth = 20cm
+
 \begin{figure}
-\begin{rotate}{15}
-\textcolor{DarkBlue}{\large\lipsum[1]}
-\end{rotate}
+	\begin{rotate}{5}
+		\textcolor{DarkBlue}{\large\lipsum[1]}
+	\end{rotate}
 \end{figure}
+
+\newpage
+\begin{landscape}
+\lipsum[5]
+\end{landscape}
+\newpage
+\layout{}
 \end{document}
 ```
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/images/exercise2_2.png">
+  <img src="">
 </p>
+
+>	**Observaciones:**
+-	En la primera página se usado el entorno `rotate` gracias al paquete `\usepackage{rotating}`, notamos que el texto ha rotado cinco grados en sentido antihorario.
+-	En las opciones del `geometry` hemos utilizado `landscape`. En la página dos hemos empleado el entorno `landscape` y se nos muestra el párrafo en vertical.
+-	En las páginas 3 y 4 vemos las dimesiones de los espacos y márgenes, son dos, puesto que hemos usado la opción `twoside`, esto también ocurre por defecto en la clase `book`.
 
 ## Ejercicio 3 ##
 
