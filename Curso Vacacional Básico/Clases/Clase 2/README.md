@@ -129,4 +129,13 @@ Ahora coloque como parámetro opcional `\documentclass[a4paper]{article}` y comp
 
 ## Ejercicio 3 ##
 
+[`exercise2_3.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise2_3.tex)
+
+```tex
+
+```
+<p align="center">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/images/exercise2_3.png">
+</p>
+
 ¡Vamos a la [tercera clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%203)!
