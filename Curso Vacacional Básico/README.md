@@ -15,7 +15,7 @@ $ pdflatex
 $ xetex
 $ lualatex
 ```
-En mi caso el termninal me muestra:
+En mi caso el terminal me muestra:
 ![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/images/tex.png)
 
 ### Segunda Clase (13/12/2017) ###
