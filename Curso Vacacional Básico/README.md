@@ -7,9 +7,13 @@ Este son mis apuntes del curso organizado por [Ubuntu Colombia](http://ubuntu-co
 
 Este archivo [README.md](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/README.md) va a mostrar lo más relevante del curso, pero para ver todos los ejercicios de cada clase ver los README.md de cada clase.
 
-> Para ver si tiene instalado escriba en el terminal
+> Para ver si tiene instalado tex, latex, pdflatex, xelatex y lualatex escriba en el terminal
 ```sh
 $ tex
+$ latex
+$ pdflatex
+$ xetex
+$ lualatex
 ```
 En mi caso el termninal me muestra:
 ![My image](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/images/tex.png)
