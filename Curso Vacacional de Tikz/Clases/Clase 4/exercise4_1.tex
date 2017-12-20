@@ -1,0 +1,44 @@
+\documentclass{standalone}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\spanishdatedel
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage{mathtools,amssymb,amsfonts,amsmath,amsthm,mathrsfs,bm,times,bbold}
+\usepackage[usenames,dvipsnames,x11names,table,svgnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,trees,backgrounds}
+\begin{document}
+\begin{tikzpicture}[
+mindmap,
+%concept color = black,
+text = white, % Es automático
+%root concept/.append style = {concept color = black},
+%level 1 concept/.append style = {concept color = blue},
+%level 2 concept/.append style = {concept color = green!75!black}
+]
+
+\node[concept] {concepto principal} % Concepto Raíz
+	child[grow = -45] { %, concept color = blue
+		node[concept] (PC) {Primer concepto} [clockwise from = -60]
+			child{node[concept] (C221) {Concepto 2.2.1}}
+			child{node[concept] (C222) {Concepto 2.2.2}}
+	} %Nivel 1
+	child[grow = 225, concept color = blue] { %concept color = green!75!black
+		node[concept] (CH) {Concepto hermano} [clockwise from = -60]		child[concept color = orange]{node[concept] (C121) {Concepto 1.2.1}}
+		%,concept color = orange
+		child[concept color = green!]{node[concept] (C122) {Concepto 1.2.2}}
+	};%Nivel 1 child ``hace cercer''
+
+\node[annotation] at (CH.east) (Esto es un comentario);
+
+\begin{pgfonlayer}{background}
+\draw[concept connection] (PC) edge (CH);%de mindmap
+%¿Qué significa edge?
+\draw[concept connection] (C121) edge (C221);
+\draw[concept connection] (PC) edge (C122);
+\end{pgfonlayer}
+\end{tikzpicture}
+\end{document}
+En el mapa mental se puede enlazar a un archivo.
+Mediante el paquete ipref. Documentos dinámicos y referencias cruzadas.
