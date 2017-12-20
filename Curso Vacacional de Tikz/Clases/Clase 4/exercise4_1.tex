@@ -23,8 +23,11 @@ level 3/.style = {level distance = .2cm, sibling angle = 25}
 \node at (0,0){}
 	%\coordinate [rotate = 90; %]at (0,0);
 	child foreach \i in {1, 2, 3}{
-		child foreach \j in {1, 2, 3}{
-			child foreach \k in {1, 2, 3, 4, 5, 6}
+		node[fill = white, inner sep = 2pt]{\tiny{\i}}
+		child  foreach \j in {1, 2, 3}{ % child {node {\i}}
+			child foreach \k in {1, 2, 3, 4, 5, 6}{
+		node[inner sep = 0pt] {\tiny{\k}}
+		}
 	}
 };
 %\node 
@@ -33,3 +36,5 @@ level 3/.style = {level distance = .2cm, sibling angle = 25}
 En el mapa mental se puede enlazar a un archivo.
 Mediante el paquete ipref. Documentos dinámicos y referencias cruzadas.
 Se gira en sentido horario, pero se puede definir en sentido antihorario.
+
+Explicar cómo funciona foreach y los sistemas de coordenadas, ubicar un nodo respecto a otro.
