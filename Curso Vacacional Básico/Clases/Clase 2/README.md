@@ -175,6 +175,5 @@ Ahora coloque como parámetro opcional `\documentclass[a4paper]{article}` y comp
 
 >**Observaciones:**
 -	Dentro de los parámetros opcionales de `\usepackage[]{geometry}` podemos definir `paper = a4paper` o simplemente `a4paper`. También son válidos a0paper, a1paper, a2paper, a3paper, a4paper, a5paper, a6paper, b0paper, b1paper, b2paper, b3paper, b4paper, b5paper, b6paper, letterpaper, legalpaper, executivepaper.
--	. 
 
 ¡Vamos a la [tercera clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%203)!
