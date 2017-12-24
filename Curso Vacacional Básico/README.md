@@ -1,5 +1,9 @@
 # Curso Vacacional Básico de LaTeX
 
+Profesor: Mg, Fausto Lago Suárez.
+
+Coordinadora : Lina Porras Santana.
+
 ### Primera Clase (11/12/2017) ###
 
 #### Tema: ####
