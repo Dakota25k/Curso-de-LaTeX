@@ -1,5 +1,5 @@
 # Primera clase del Curso Vacacional de LaTeX
-Antes de comenzar, el ejercicio *n* va a ser el ejercicio `exercise1_n.tex`.
+Antes de comenzar, el ejercicio _n_ va a ser el ejercicio `exercise1_n.tex`.
 
 El día de hoy (11/12/17) vamos a iniciar con algunos ejemplos básicos en LaTeX y se explicará paso a paso.
 
@@ -36,7 +36,7 @@ La función $\Gamma(x)$ se define como
 \[\boxed{\Gamma(x)=\int_{0}^{\infty}t^{x-1}e^{-t}\diff t}\]
 \end{document}
 ```
-Muy bien, podemos identificar que un documento está formado por tres partes: el comando `\documentclass[optional]{obligatory}` en el cual los parámetros opcionales pueden ser a4, 12pt, entre otros y dentro de las llaves tenemos la siguiente palestra de "sabores" (¡pero solo una por documento!) book, beamer, report, letters, memoir y muchos más. Las otras dos partes que tienen extensión variable son la lista de paquetes \usepackage[optional]{obligatory} (en el ejemplo se ha mostrado los más populares) y el cuerpo que siempre va entre `\begin{document}foo\end{document}`.
+Muy bien, podemos identificar que un documento está formado por tres partes: el comando `\documentclass[optional]{obligatory}` en el cual los parámetros opcionales pueden ser a4, 12pt, entre otros y dentro de las llaves tenemos la siguiente palestra de "sabores" (¡pero solo una por documento!) book, beamer, report, letters, memoir y muchos más. Las otras dos partes que tienen extensión variable son la lista de paquetes ``\usepackage[optional]{obligatory}`` (en el ejemplo se ha mostrado los más populares) y el cuerpo que siempre va entre `\begin{document}foo\end{document}`.
 
 > **Observaciones:**
 - Hemos usado el comando `\textcolor[color favorito]{texto a colorear}`.
@@ -44,7 +44,8 @@ Muy bien, podemos identificar que un documento está formado por tres partes: el
 - Y se usó el comando `\hypersetup` para cambiar las propiedades del documento de salida, a saber, PDF.
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exercise1_1.png">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exercise1_1.png"
+	width="250">
 </p>
 
 ## Ejercicio 2 ##
@@ -82,7 +83,8 @@ Veamos la siguiente numeración de algunas ramas de la matemática:
 -	Es importante siempre utilizar `\item`, su omisión es causa muy frecuente de errores.
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exercise1_2.png">
+  <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%201/images/exercise1_2.png"
+	width="250">
 </p>
 
 ¡Vamos a la [segunda clase](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202)!
