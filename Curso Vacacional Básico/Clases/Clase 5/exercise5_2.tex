@@ -1,14 +1,34 @@
-\documentclass{article}%myclass
-\usepackage{xcolor}
-\usepackage{lipsum}
-\usepackage{tcolorbox}
-\usepackage{titlesec}
-\begin{document}
-\section{Definición de títulos con titlesec}
-\lipsum[3]
-\subsection{El título de subsección}
-\begin{tcolorbox}[colback = red!50!black, colframe = blue!75!red, title= mi caja]
-Esta es una caja bonita.
-\end{tcolorbox}
-\end{document}
-%nodo rectangular, con bordes redondeados y relleno.
+% Título de secciones
+%------------------------------------------------
+% \titleformat{#1}[#1]{#2}{#3}{#4}{#5}[#2]
+% {#1} \part, \chapter, \section, \subsection, \subsubsection, \paragraph, \subparagraph
+% [#1] shape (determine la forma en que está dado el título)
+% Si se usa nodo Tikz, no es necesario usar el parámetro opcional shape.
+% {#2} format
+%se define el formato. Se puede dejar vacío.
+% {#3} label
+% puede entrar en conflicto si se usa palabras confusas, i.e, parte o part.
+% {#4} sep
+% {#5} before-code
+% lo que va antes del título, se puede usar tikz
+% [#2] after code
+% lo que va desués del título
+
+%\titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
+\RequirePackage{xcolor}
+\definecolor{color2}{HTML}{ACB8F1}
+\definecolor{color1}{HTML}{089880}
+%\newcommand{\titleSec}[1]{
+%	\tikz \node[rectangle, text width = \textwidth, align = right, draw] (tS) at (0,0) {\thesection. #1};
+%}
+%comentó lo de tikz.
+
+\titleformat{\section}{\Huge\bfseries\flushright}{}{0pt}{\textcolor{color2}}{\thesection. #1}}
+\titleformat{\subsection}{\Large\bfseries}{}{0pt}{\textcolor{color1}{\thesubsection. #1}}[\vspace{1cm}]
+
+\pagestyle{fancy}
+
+\ProcessOptions \relax
+%\titleformat{\section}[box]{\Huge\bfseries}{}{0pt}{#1}{}
+
+Tarea es modificar el \titleformat.

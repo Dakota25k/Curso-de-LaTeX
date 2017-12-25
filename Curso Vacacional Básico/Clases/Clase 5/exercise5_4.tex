@@ -1,22 +1,76 @@
-\documentclass{article} %myclass
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\spanishdatedel
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{lipsum}
-\usepackage{natbib}%Formato numérico y autor-año.
-\title{Caracterización Cualitativa de las ODE que Modelan la Interacción Sináptica}
+\usepackage{vmargin}
+\setpapersize{A4}
+\setmargins{2.5cm}
+{1.5cm}
+{16.5cm}
+{23.42cm}
+{10pt}
+{1cm}
+{0pt}
+{1cm}
 
-%\subtitle
+%\input{colores.tex}
+
+\title{Ejemplo lección 5}
+\author{Oromion}
+\date{\today}
+
+%\renewcommand{\thesection}{\roman{section}}
+\renewcommand{\thesection}{\alph{section}}
+\newcounter{obs} % Aumenta de uno en uno.
+\newcommand{\obs}{\stepcounter{obs}{\bf Observación \theobs:}} % Primero aumenta en uno y después imprime.
 \begin{document}
 \maketitle
-\section{Definición de títulos con titlesec}
-\lipsum[3]
+\renewcommand{\contentsname}{Tabla de contenidos}
+\tableofcontents
 
-\subsection{Referencias bibliográficas con Natbib}
+\section{Grafo ponderado} \label{ponderado}
 
-Uso del comando \texttt{citet}
+\lipsum[1-2]
+
+\obs{} Esta es una primera observación.
+
+\section{Grafo nulo} \label{nulo}
+
+\lipsum[1-3]
+
+
+Aquí nos vamos a referir a la sección \ref{ponderado} %\thesection \;que
+que aparece  en la página \pageref{ponderado}%\thepage
+
+\begin{equation} \label{media}
+	\bar{x} = \frac{1}{n}\sum_{i=1}^{n}a_i
+\end{equation}
+
+\obs{} Esta es una observación importante.
+
+\subsection{Generación de contadores}
+
+\lipsum[1]
+
+\subsection{Referencias cruzadas}
+
+\lipsum[1]
+
+La ecuación de la media \eqref{media} que aparece en la página \pageref*{media}.
+
+
+Un enlace dinámico al canal de Youtube del profesor Juan Espejo utilizando \texttt{href} \href{https://www.youtube.com/channel/UCmQYbAWGwSTMJAk5Q_orLbg}{Espejo}
+
+%Enlace a documento externo \href{}{}
+\begin{align*}
+	x = a \tag{A1} \label{A1} \\
+	y = b \tag{A2} \label{A2} \\
+\end{align*}
 \end{document}
+Un contador es un ambiente o un comando.
 
-\bibliographystyle{agsmy}
-\bibliography{biblio}
-%Mendeley no es software libre.
-¿Qué es AGSMY?
-
-\citealp quita los paréntesis
+%Los parágrafos no se enumeran como 1.1.1.1.1.1.1.1
