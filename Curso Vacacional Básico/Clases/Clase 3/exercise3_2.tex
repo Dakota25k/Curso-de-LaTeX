@@ -3,11 +3,27 @@
 \usepackage[spanish]{babel}
 \spanishdatedel
 \usepackage{lipsum}
+\usepackage{amsmath}
+
 \input{colores.tex} % Apunta al archivo.
+\input{dict_ecuaciones.tex}
 \title{Tomando el control de \LaTeX{}}
 \author{Oromion}
 \date{\today}
 \begin{document}
 \maketitle
+
 \textcolor{myGreen}{Un texto en color verde.}
+
+La ecuación de Fourier en línea \Fourier[inLine] tiene que aparecer en línea con este texto o sino del modo display \Fourier[disp]
+
+Modo ecuación numerada \Fourier[eq]
+
+\cuadratica{}
+
+\Fourier[eq]
+
+Ahoras las ecuaciones de Maxwell
+
+\textcolor{myBlue}{\Maxwell{}}
 \end{document}

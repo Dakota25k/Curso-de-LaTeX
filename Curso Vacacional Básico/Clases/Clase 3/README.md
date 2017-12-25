@@ -55,3 +55,11 @@ y [`color.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/images/exercise3_1.png">
 </p>
+
+**Definir un comando**
+
+Para definir un comando utilizaremos `\newcommand{\name}[parametre]{definition}` en el preámbulo, "name" noo puede contener números naturales, para redefinir un comando usaremos `\renewcommand{\name}[#P][predefinited]{definition}` en caso de fallo use `\DeclarateRobustcommand{\name}[parametre]{definition}`.
+
+## Ejercicio 2 ##
+
+Veamos el archivo [`exercise3_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise3_2.tex)
