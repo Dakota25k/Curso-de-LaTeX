@@ -63,3 +63,13 @@ Para definir un comando utilizaremos `\newcommand{\name}[parametre]{definition}`
 ## Ejercicio 2 ##
 
 Veamos el archivo [`exercise3_2.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise3_2.tex)
+
+
+## Ejercicio 3 ##
+
+Veamos el archivo [`exercise3_3.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/exercise3_3.tex)
+
+
+El comando `\newtheorem` permite definir ambientes nuevos que pueden estar numerados de forma continua en todo el documento o por secciones.
+
+`\newtheorem{name}{title}{numeration}`

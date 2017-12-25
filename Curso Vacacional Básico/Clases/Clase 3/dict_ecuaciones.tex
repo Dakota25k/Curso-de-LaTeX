@@ -1,3 +1,4 @@
+\usepackage{amsmath}
 \newcommand{\cuadratica}{
 \[
 	x_{1,2} = \frac{1}{2a}\Bigl(-b\pm \sqrt{b^{2}-4ac}\Bigr)
@@ -8,7 +9,7 @@
 %IfeqCase es como el Swithcase
 \usepackage{xstring} % Paquete necesario para cargar condicionales en \newcommand. 
 
-\newcommand{\Fourier}[1][eq]{
+\newcommand{\Fourier}[2][eq]{ % Si no recibe parámetro de entrada, entonces se numerará. Se define dos parámetros de entrada. Parámetro opcional es inLine y el parámetro obligatorio es el color.
 	\IfEqCase {#1}{
 		{eq}{
 			\begin{equation}
@@ -21,7 +22,7 @@
 			\]
 		}
 		{inLine}{
-			$\hat{f}(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}dx$
+			\textcolor{#2}{$\hat{f}(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi ix\xi}dx$}
 		}
 	}
 }
