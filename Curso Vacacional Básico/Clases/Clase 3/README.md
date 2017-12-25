@@ -2,12 +2,13 @@
 El día de hoy (15/12/17) vamos a iniciar con algunos ejemplos básicos en LaTeX y se explicará paso a paso.
 
 **Aprendiendo a definir nuevos comandos**
+
 En el primer ejercicio utilizaremos el paquete  `\usepackage[model_names]{xcolor}`
 > Parámetros opcionales:
-- `usenames` (16 colores)
-- `divpsnames` (68 colores)
-- `svgnames` (150 colores)
-- `x11names` (300 colores)
+- `\usepackage[usenames]{xcolor}` (16 colores)
+- `\usepackage[divpsnames]{xcolor}` (68 colores)
+- `\usepackage[svgnames]{xcolor}` (150 colores)
+- `\usepackage[x11names]{xcolor}` (300 colores)
 
 ## Ejercicio 1 ##
 
@@ -29,10 +30,19 @@ Veamos el archivo [`exercise3_1.tex`](https://github.com/carlosal1015/Curso-de-L
 \end{document}
 ```
 
+y [`color.tex`](https://github.com/carlosal1015/Curso-de-LaTeX/blob/master/Curso%20Vacacional%20B%C3%A1sico/Clases/Clase%202/color.tex)
+
+```tex
+\usepackage{xcolor}
+\definecolor{myGreen}{HTML}{36A736}
+\definecolor{myBlue}{HTML}{02528F}
+\definecolor{my}{HTML}{FF4312}
+```
+
 > **Observaciones:**
 - El archivo `colores.tex` almacena el paquete `\usepackage{xcolor}`.
 
-**Repasemos la siguiente tabla de unidades y algunos comandos importantes de longtudes:**
+**Ejemplos de definiciones de colores con el comando `\definecolor`:**
 
 |	Modelo |	Color												       	 | Example: `\definecolor{name}{model}{color}`|
 |	:---:	 |	:---:														     |	:---:							                        |
