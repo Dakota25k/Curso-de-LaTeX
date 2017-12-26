@@ -36,6 +36,7 @@ Veamos el archivo [`exercise5_1.tex`](https://github.com/carlosal1015/Curso-de-L
 \renewcommand{\obs}{\stepcounter{obs}{
           \bf Observación \theobs.}}
 ```
+## Referencias cruzadas ##
 
 > En cualquiera de los contadores en un documento LaTeX puede agregarse el comando `\label` para luego hacer referencia al número asignado por el contador.
 
@@ -51,8 +52,22 @@ Veamos el archivo [`exercise5_1.tex`](https://github.com/carlosal1015/Curso-de-L
 
 > Se puede hacer referencia a la página en la que aparece algún elemento etiquetado con `\label` utilizando el comando `\pageref`.
 
-## Referencias cruzadas ##
-
-
-
 ## Documentos dinámicos ##
+
+> El paquete `hyperref` habilita la creación de enlaces dinámicos dentro del documento y hacia objetos externos.
+
+> El cargar el paquete `hyperref` las llamadas al comando `\ref` se convierten en enlaces dinámicos.
+
+> Comandos muy útiles de `hyperref`:
+* `\url`  enlaza a una `url` sin texto de máscara.
+* `\href` enlaza a una `url` con texto de máscara.
+* `\href{mailto:}`  enlaza a una dirección email con máscara.
+* `\href{run:}` ebkaza a un archivo local.
+
+> Personalizar los colores para los enlaces con `\hypersetup` (en el preámbulo)
+
+* `\colorlinks` true or false.
+* `\hidelinks`  hide all links
+* `\linkcolor`  `\filecolor`
+* `\citecolor`  `\urlcolor`
+* `\linktoc`  none, section, page, all
