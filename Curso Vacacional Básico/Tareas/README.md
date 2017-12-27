@@ -1,23 +1,17 @@
 # Tareas asignadas :mortar_board: #
 
-* Clase 1:
-  - [x] Diseñar una página de título :straight_ruler:
+- Clase 1:
+  - [x] Crear una carta.
 * Clase 2:
-  - [ ] Desarrolar una clase, esto es, un archivo `file.cls`.
+  - [x] Diseñar una página de título :straight_ruler:
 * Clase 3:
-  - [ ] Por anunciar.
-* Clase 3:
-  - [ ] Por anunciar.
-* Clase 5:
-  - [ ] Por anunciar.
+  - [x] Desarrolar una clase, esto es, un archivo `file.cls`.
 * Clase 6:
-  - [ ] Por anunciar.
+  - [x] Crear una presentación que explica un tema aprendido.
 
 # Solución de las tareas #
 
-* Clase 1: [Ayuda memoria]()
-* Clase 2:
-* Clase 3:
-* Clase 4:
-* Clase 5:
-* Clase 6:
+* Clase 1: [Link]()
+* Clase 2: [Link]()
+* Clase 3: [Link]()
+* Clase 6: [Link]()
