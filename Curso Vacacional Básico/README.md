@@ -56,3 +56,5 @@ En mi caso el terminal me muestra:
 
 #### Temas: Beamer #####
 - Diseño de presentaciones con beamer.
+
+Si desea ver las clases, puede dar click [aquí](https://goo.gl/FF6RY3).
