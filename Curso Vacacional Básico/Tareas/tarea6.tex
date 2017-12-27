@@ -1,27 +1,45 @@
-%Tarea 6
+%Tarea de clase 6
 \documentclass[12pt]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+\spanishdatedel
+\usepackage{cprotect} % Allow \cprotect for display code with \verb|code|
 \usepackage{graphicx}
 \usetheme{Frankfurt}
+
 \begin{document}
 	\author{Oromion}
-	\title{Renombrando comandos en \LaTeX{}}
-	%\subtitle{}
-	%\logo{}
-	%\institute{}
-	%\date{}
-	%\subject{}
-	%\setbeamercovered{transparent}
-	%\setbeamertemplate{navigation symbols}{}
+	\title{Renombrando comandos en \LaTeX{} con}
+	\cprotect\subtitle{\verb|\renewcommand{cmd}[args]{def}|}
+	\logo{\LaTeX{}}
+	\institute{Lima, Perú}
+	\date{\today}
+	\subject{Fin del curso}
+	\setbeamercovered{transparent}
+	\setbeamertemplate{navigation symbols}{}
 	\begin{frame}[plain]
 	\maketitle
 \end{frame}
 
+
+\begin{frame}{Contenidos}{}
+\tableofcontents
+\end{frame}
+\section{Nuevo comando}
 \begin{frame}
-\frametitle{}
+\frametitle{\thesection.}
+
+\end{frame}
+\section{Definiendo nuevo comando}
+
+
+\begin{frame}
+\frametitle{\thesection.}
+\end{frame}
+\section{Comando robusto @}
+
+\begin{frame}
+\frametitle{\thesection.}
+
 \end{frame}
 \end{document}
