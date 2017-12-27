@@ -9,6 +9,7 @@
 \input{code.tex}
 \usepackage{cprotect} % Allow \cprotect for display code with \verb|code|
 \usepackage{graphicx}
+\usepackage{verbatim}
 \usetheme{Frankfurt}
 \usecolortheme{dolphin}
 \usefonttheme{professionalfonts}
@@ -19,7 +20,7 @@
 	\cprotect\subtitle{\verb|\renewcommand{cmd}[args]{def}|}
 	\logo{\LaTeX{}}
 	\institute{\large Universidad del Perú}
-	\date{\today}
+	\date{\textcolor{magenta}{\today}}
 	\subject{Fin del curso}
 	\setbeamercovered{transparent}
 	\setbeamertemplate{navigation symbols}{}
@@ -31,28 +32,43 @@
 \begin{frame}{Contenidos}{}
 \tableofcontents
 \end{frame}
-\section{Nuevo comando}
+\section{Introducción}
+\cprotect\subsection{Entiendiendo el comando: \verb!\newcommand{\newbox}[args]{def}!}
+
 \begin{frame}
-\frametitle{\thesection.}
-\begin{examples}{Comando \cmd{newcommand}}
-
-Define un nuevo comando y comete un error si ya está definido.
-\end{examples}
+\frametitle{\thesection. Nombrar una fórmula matemática}
+\begin{columns}
+	\column{0.5\textwidth}
+	Se desea nombrar a un color.
+	\begin{itemize}
+		\item A
+		\item Define un nuevo comando y comete un error si ya está definido.
+	\end{itemize}
+	\column{0.5\textwidth}
+	\begin{examples}{Comando \cmd{newcommand}}
+	Crear un comando para expresar la siguiente
+	\end{examples}
+\end{columns}
 \end{frame}
-\section{Definiendo nuevo comando}
 
-
+\cprotect\subsection{Aprendiendo el comando: \verb!\renewcommand{cmd}[args]{def}!}
+\cprotect\subsection{Extra: \verb!\providecommand{cmd}[args]{def}!}
 \begin{frame}
 \frametitle{\thesection.}
 \begin{block}{Comando \cmd{renewcommand}}
 Redefine un comando predefinido y comete un error si aún no está definido.
 \end{block}
 \end{frame}
-\section{Comando robusto @}
+\section{Ejemplos}
+\cprotect\subsection{Usando el comando robusto: \verb!\@!}
+
 \begin{frame}
 \frametitle{\thesection.}
 \begin{alertblock}{Comando \cmd{providecommand}}
 Define un nuevo comando si aún no está definido.
 \end{alertblock}
 \end{frame}
+\section{Agradecimientos}
+\subsection{Ubuntu Colombia}
+ 
 \end{document}

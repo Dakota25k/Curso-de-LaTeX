@@ -1,0 +1,5 @@
+\begin{verbatim}
+
+\begin{frame}[<alignment>]
+\frametitle{Frame Title Goes Here}
+Frame body text and/or LATEX code
