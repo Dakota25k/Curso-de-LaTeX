@@ -11,14 +11,14 @@
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\beamer@subsectionpages {3}{3}}
 \headcommand {\beamer@subsectionentry {0}{1}{2}{4}{\input tarea6-3.cpt\relax }}
-\headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{4}{\input tarea6-4.cpt\relax }}
-\headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{1}{4}{4}{\input tarea6-5.cpt\relax }}
-\headcommand {\slideentry {1}{4}{1}{4/4}{\input tarea6-5.cpt\relax }{0}}
+\headcommand {\slideentry {1}{2}{1}{4/4}{\input tarea6-3.cpt\relax }{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@sectionpages {3}{4}}
 \headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{5}{\input tarea6-4.cpt\relax }}
+\headcommand {\beamer@subsectionpages {5}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{5}{\input tarea6-5.cpt\relax }}
+\headcommand {\beamer@sectionpages {3}{4}}
+\headcommand {\beamer@subsectionpages {5}{4}}
 \headcommand {\sectionentry {2}{Ejemplos}{5}{Ejemplos}{0}}
 \headcommand {\beamer@subsectionpages {5}{4}}
 \headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Definiendo el estilo del modo matem\IeC {\'a}tico de una ecuaci\IeC {\'o}n en derivadas parciales}}
@@ -26,8 +26,15 @@
 \headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Creando un comando de una caja}}
 \headcommand {\slideentry {2}{2}{1}{5/5}{Creando un comando de una caja}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@partpages {1}{5}}
+\headcommand {\beamer@sectionpages {5}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\sectionentry {3}{3. Agradecimientos}{6}{3. Agradecimientos}{0}}
 \headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@sectionpages {6}{5}}
-\headcommand {\beamer@documentpages {5}}
-\headcommand {\def \inserttotalframenumber {5}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Ubuntu Colombia}}
+\headcommand {\slideentry {3}{1}{1}{6/6}{Ubuntu Colombia}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@partpages {1}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@sectionpages {6}{6}}
+\headcommand {\beamer@documentpages {6}}
+\headcommand {\def \inserttotalframenumber {6}}

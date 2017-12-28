@@ -1,5 +1,8 @@
-\begin{verbatim}
+\frametitle{\thesection.\thesubsection. Aprendiendo el comando \cmd{renewcommand}}
+\vspace*{-2cm}
+\centering
+\verb|\renewcommand{cmd}[args]{def}|
 
-\begin{frame}[<alignment>]
-\frametitle{Frame Title Goes Here}
-Frame body text and/or LATEX code
+\begin{block}{Comando \cmd{renewcommand}}
+Redefine un comando predefinido y comete un error si aún no está definido.
+\end{block}

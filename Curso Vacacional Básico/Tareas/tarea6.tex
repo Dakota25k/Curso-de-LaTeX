@@ -15,63 +15,87 @@
 \usefonttheme{professionalfonts}
 
 \begin{document}
-	\author{Matemático Oromion}
-	\title{\Large Renombrando comandos en \LaTeX{} con}
-	\cprotect\subtitle{\verb|\renewcommand{cmd}[args]{def}|}
-	\logo{\includegraphics[scale=.5]{peru.jpg}}
-	\institute{\large Universidad del Perú}
-	\date{\textcolor{magenta}{\today}}
-	\subject{Fin del curso}
-	\setbeamercovered{transparent}
-	\setbeamertemplate{navigation symbols}{}
-	\begin{frame}[plain]
+\author{Matemático Oromion}
+\title{\Large Renombrando comandos en \LaTeX{} con}
+\cprotect\subtitle{\verb|\renewcommand{cmd}[args]{def}|}
+\logo{\includegraphics[scale=.5]{peru.jpg}}
+\institute{\large Universidad del Perú}
+\date{\textcolor{magenta}{\today}}
+\subject{Fin del curso}
+\setbeamercovered{transparent}
+\setbeamertemplate{navigation symbols}{}
+
+\begin{frame}[plain]
 	\maketitle
 \end{frame}
 
-
-\begin{frame}{Contenidos}{}
+\begin{frame}{Contenidos}{Presentación final}
 \tableofcontents
 \end{frame}
+
 \section{Introducción}
 \cprotect\subsection{Entiendiendo el comando: \verb!\newcommand{\newbox}[args]{def}!}
 
-\begin{frame}
-\frametitle{\thesection. Nombrar una fórmula matemática}
+\begin{frame}[fragile]
+\frametitle{\thesection.\thesubsection. Entendiendo el comando \cmd{newcommand}}
+\vspace*{-2cm}
+\centering
+\verb|\newcommand{cmd}[args]{def}|
+
 \begin{columns}
-	\column{0.5\textwidth}
-	Se desea nombrar a un color.
-	\begin{itemize}
-		\item A
-		\item Define un nuevo comando y comete un error si ya está definido.
-	\end{itemize}
-	\column{0.5\textwidth}
-	\begin{examples}{Comando \cmd{newcommand}}
-	Crear un comando para expresar la siguiente
-	\end{examples}
+\column{0.5\textwidth}
+Se desea nombrar a un color.
+
+\begin{itemize}
+	\item El primer argumento obligatorio recibe el nombre del \cmd{comando}.
+	\item 
+\end{itemize}
+\column{0.5\textwidth}
+\begin{examples}{Comando \cmd{newcommand}}
+\begin{enumerate}
+\item[$\bullet$] A.
+\end{enumerate}
+\end{examples}
+
+\begin{alertblock}{¡Cuidado!}
+Se comete un error si el comando ya está definido.
+\end{alertblock}
 \end{columns}
+
 \end{frame}
 
 \cprotect\subsection{Aprendiendo el comando: \verb!\renewcommand{cmd}[args]{def}!}
-\cprotect\subsection{Extra: \verb!\providecommand{cmd}[args]{def}!}
-\cprotect\subsection{Usando el comando robusto: \verb!\@!}
-\begin{frame}
-\frametitle{\thesection.}
+
+\begin{frame}[fragile]
+\frametitle{\thesection.\thesubsection. Aprendiendo el comando \cmd{renewcommand}}
+\vspace*{-2cm}
+\centering
+\verb|\renewcommand{cmd}[args]{def}|
+
 \begin{block}{Comando \cmd{renewcommand}}
 Redefine un comando predefinido y comete un error si aún no está definido.
 \end{block}
 \end{frame}
-\section{Ejemplos}
-\subsection{Definiendo el estilo del modo matemático de una ecuación en derivadas parciales}
 
+\cprotect\subsection{Extra: \verb!\providecommand{cmd}[args]{def}!}
+\cprotect\subsection{Usando el comando robusto: \verb!\@!}
+
+\section{Ejemplos}
+
+\subsection{Definiendo el estilo del modo matemático de una ecuación en derivadas parciales}
 \subsection{Creando un comando de una caja}
 
 \begin{frame}
-\frametitle{\thesection.}
+\frametitle{\thesection.\thesubsection. Extra: \cmd{providecommand}}
+
 \begin{alertblock}{Comando \cmd{providecommand}}
 Define un nuevo comando si aún no está definido.
 \end{alertblock}
 \end{frame}
-\section{Agradecimientos}
+
+\section{\thesection. Agradecimientos}
 \subsection{Ubuntu Colombia}
- 
+\begin{frame}
+\frametitle{Agradecimientos}
+ \end{frame}
 \end{document}
