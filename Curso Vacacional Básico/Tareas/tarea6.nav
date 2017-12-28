@@ -23,18 +23,20 @@
 \headcommand {\beamer@subsectionpages {6}{5}}
 \headcommand {\sectionentry {2}{Ejemplos}{6}{Ejemplos}{0}}
 \headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Definiendo el estilo del modo matem\IeC {\'a}tico de una ecuaci\IeC {\'o}n en derivadas parciales}}
-\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{6}{Creando un comando de una caja}}
-\headcommand {\beamer@sectionpages {6}{5}}
-\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\sectionentry {3}{3. Agradecimientos}{6}{3. Agradecimientos}{0}}
-\headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Ubuntu Colombia}}
-\headcommand {\slideentry {3}{1}{1}{6/6}{Ubuntu Colombia}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Definiendo el estilo del modo matem\IeC {\'a}tico de una }}
+\headcommand {\slideentry {2}{1}{1}{6/6}{Definiendo el estilo del modo matem\IeC {\'a}tico de una }{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@partpages {1}{6}}
 \headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{7}{Creando un comando de una caja}}
 \headcommand {\beamer@sectionpages {6}{6}}
-\headcommand {\beamer@documentpages {6}}
-\headcommand {\def \inserttotalframenumber {6}}
+\headcommand {\beamer@subsectionpages {7}{6}}
+\headcommand {\sectionentry {3}{3. Agradecimientos}{7}{3. Agradecimientos}{0}}
+\headcommand {\beamer@subsectionpages {7}{6}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{7}{Ubuntu Colombia}}
+\headcommand {\slideentry {3}{1}{1}{7/7}{Ubuntu Colombia}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@partpages {1}{7}}
+\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\beamer@sectionpages {7}{7}}
+\headcommand {\beamer@documentpages {7}}
+\headcommand {\def \inserttotalframenumber {7}}

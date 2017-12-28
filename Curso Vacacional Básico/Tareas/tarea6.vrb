@@ -1,8 +1,7 @@
-\frametitle{\thesection.\thesubsection. Aprendiendo el comando \cmd{renewcommand}}
+\frametitle{\thesection.\thesubsection. Extra: \cmd{providecommand}}
 \vspace*{-2cm}
 \centering
-\verb|\renewcommand{cmd}[args]{def}|
-
-\begin{block}{Comando \cmd{renewcommand}}
-Redefine un comando predefinido y comete un error si aún no está definido.
-\end{block}
+\verb|\providecommand{cmd}[args]{def}|
+\begin{alertblock}{¡Cuidado!}
+Define un nuevo comando si aún no está definido.
+\end{alertblock}

@@ -7,9 +7,11 @@
 \uselanguage{Spanish} % Teoremas en idioma que elijas.
 \languagepath{Spanish}
 \input{code.tex}
+\input{comandos.tex}
 \usepackage{cprotect} % Allow \cprotect for display code with \verb|code|
 \usepackage{graphicx}
 \usepackage{verbatim}
+\usepackage{enumerate}
 \usetheme{Frankfurt}
 \usecolortheme{dolphin}
 \usefonttheme{professionalfonts}
@@ -37,25 +39,28 @@
 \cprotect\subsection{Entiendiendo el comando: \verb!\newcommand{\newbox}[args]{def}!}
 
 \begin{frame}[fragile]
-\frametitle{\thesection.\thesubsection. Entendiendo el comando \cmd{newcommand}}
-\vspace*{-2cm}
+\frametitle{\thesection.\thesubsection. Entendiendo el comando \cmd{newcommand} \footnote{Por favor, vea la lista completa de comandos en \texttt{comandos.tex} }}
 \centering
 \verb|\newcommand{cmd}[args]{def}|
 
 \begin{columns}
 \column{0.5\textwidth}
-Se desea nombrar a un color.
+
 
 \begin{itemize}
-	\item El primer argumento obligatorio recibe el nombre del \cmd{comando}.
-	\item 
+	\item El primer argumento obligatorio es para nombrar el \cmd{comando}.
+	\item El primer argumento opcional indica la cantidad de parámetros.
+	\item El segundo argumento obligatorio recibe la acción.
 \end{itemize}
 \column{0.5\textwidth}
-\begin{examples}{Comando \cmd{newcommand}}
-\begin{enumerate}
-\item[$\bullet$] A.
+\begin{block}{Ejemplos}
+\begin{enumerate}[a)]
+\item Con un argumento.
+$\gammita\quad\Rsqr[1]$
+\item Con dos argumentos.
+\[\polyrational{ax^{2}+bx+c}{x^{p}-1}\]
 \end{enumerate}
-\end{examples}
+\end{block}
 
 \begin{alertblock}{¡Cuidado!}
 Se comete un error si el comando ya está definido.
@@ -79,9 +84,11 @@ Redefine un comando predefinido y comete un error si aún no está definido.
 
 \cprotect\subsection{Extra: \verb!\providecommand{cmd}[args]{def}!}
 
-\begin{frame}
+\begin{frame}[fragile]
 \frametitle{\thesection.\thesubsection. Extra: \cmd{providecommand}}
-
+\vspace*{-2cm}
+\centering
+\verb|\providecommand{cmd}[args]{def}|
 \begin{alertblock}{¡Cuidado!}
 Define un nuevo comando si aún no está definido.
 \end{alertblock}
@@ -91,11 +98,19 @@ Define un nuevo comando si aún no está definido.
 
 \section{Ejemplos}
 
-\subsection{Definiendo el estilo del modo matemático de una ecuación en derivadas parciales}
+\subsection{Definiendo el estilo del modo matemático de una }
+
+\begin{frame}
+\frametitle{\thesection. \thesubsection. Ecuación en derivadas parciales}
+Comando renombrado \cmd{gammita}
+\[\gammita\]
+\end{frame}
+
 \subsection{Creando un comando de una caja}
 
 \section{\thesection. Agradecimientos}
 \subsection{Ubuntu Colombia}
+
 \begin{frame}
 \frametitle{Agradecimientos}
 \Large
