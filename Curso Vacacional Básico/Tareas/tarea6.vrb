@@ -1,7 +1,0 @@
-\frametitle{\thesection.\thesubsection. Extra: \cmd{providecommand}}
-\vspace*{-2cm}
-\centering
-\verb|\providecommand{cmd}[args]{def}|
-\begin{alertblock}{¡Cuidado!}
-Define un nuevo comando si aún no está definido.
-\end{alertblock}
