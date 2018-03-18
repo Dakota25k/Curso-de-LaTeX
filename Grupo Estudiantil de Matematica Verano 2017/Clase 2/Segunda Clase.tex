@@ -1,15 +1,33 @@
+%
+% Segunda Clase.tex -- a document for writing notes with GEM.
+%
+% Copyright © 2017 Oromion <caznaranl@uni.pe>
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+%s along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%
 \documentclass[a4paper,12pt]{article}
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage[dvipsnames,svgnames]{xcolor}
-\usepackage{enumerate} % Paquete para enumeraciones
+\usepackage{enumerate} % Paquete para enumeraciones.
 \usepackage{tikz}
-\usetikzlibrary{babel} % Evita conflictos con tikz y spanish
+\usetikzlibrary{babel} % Evita conflictos con tikz y spanish.
 % opening
 \title{Segunda clase de \LaTeX}
 \author{Grupo Estudiantil de Matemática}
-\date{\today}
+\date{1 de febrero del 2017}
 \usepackage{graphicx} % Se emplea para insertar imágenes
 \theoremstyle{theorem}
 \newtheorem{teo}{Teorema}[section]
@@ -85,14 +103,14 @@
 \begin{center}
 	\includegraphics{a}
 \end{center}
-\( {\int }_{2}^{3}xdx \)%nota es posible que te genere error ya que la ubicación del archivo con el que fue creado no está en tu pc. Para solucionar este error, clic en asitentes, luego insertar gráfico, seleccionar el archivo y clic en OK. ¡Gracias!
+\( {\int }_{2}^{3}xdx \)%nota es posible que te genere error ya que la ubicación del archivo con el que fue creado no está en tu pc. Para solucionar este error, clic en asistentes, luego insertar gráfico, seleccionar el archivo y clic en OK. ¡Gracias!
 
 \section{Tikz}
 \begin{tikzpicture}
 	\draw[color=green, dotted] (0,0) -- (5,0);
 	\draw[draw=red, fill= blue, dashed] (5,3) circle(3);
 	\draw (1,2) node[left] { \( \mbox{ Este es un texto} \)};
-	                % right  Drecha 
+	                % right  Derecha 
 	                % above  Arriba 
 	                % below  Abajo
 	
