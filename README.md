@@ -1,4 +1,4 @@
-# Curso de [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/1200px-LaTeX_logo.svg.png" height="60" alt="LaTeX">](http://blogdeoromion.pe.hu/)
+# Curso de [<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" height="60" alt="LaTeX">](http://blogdeoromion.pe.hu/)
 
 En este pequeño repositorio podrás encontrar los ejercicios y las diapositivas de clase del Taller de LaTeX  organizado por el [Centro de Responsabilidad Social y Extensión Universitaria](http://matematicas.unmsm.edu.pe/ceups/ceups.php) de la Facultad de Ciencias Matemáticas en la [Universidad Nacional Mayor de San Marcos](http://unmsm.edu.pe/) de Lima, Perú :peru: durante el verano del 2017.
 
