@@ -6,4 +6,7 @@ También encontrarás el primer y [segundo taller de LaTeX](https://sites.google
 
 Y también los apuntes de clase del Curso Vacional de LaTeX organizado por [Ubuntu Colombia](https://www.facebook.com/UbuntuColombia/) :colombia:.
 
+
 Muchas gracias.
+
+Oromion
