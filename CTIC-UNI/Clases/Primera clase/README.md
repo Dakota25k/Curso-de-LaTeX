@@ -1,10 +1,10 @@
-Curso básico de LaTeX
+Primera clase [01/06/2018]
 ===
-Profesor: Jhimy Alex Borbor Perea.
 
-# Primera clase [01/06/2018]
+Temas: Introducción a LaTeX
+===
 
-## Un poco de historia de LaTeX
+# Un poco de historia de LaTeX
 
 * En el año 1978, el científico de la computación de la Universidad de Stanford [Donald Erwin Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) creó el **lenguaje de Programación [TeX](https://en.wikipedia.org/wiki/TeX)** porque no le gustaba la calidad tipográfica de su época, esto incluye las fórmulas matemáticas. Durante su periodo escolar elaboró un gran compendio de gráficas de funciones matemáticas.
 * El matemático del Instituto tecnológico de Massachusetts, [**Leslie Lamport**](http://www.lamport.org/), creó LaTeX, un conjunto de macros TeX. LaTeX NO es un lenguaje de programación.
@@ -66,4 +66,4 @@ Día martes al medio día, el día miércoles se tomará un ejercicio como del t
 
 Consultas académicas
 ===
-Respuestas a la media noche vía Facebook o vía correo
+Respuestas a la media noche vía Facebook o vía correo.
