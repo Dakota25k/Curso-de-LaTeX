@@ -1,0 +1,450 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[lmargin=3cm, rmargin=2.5cm, tmargin=2.5cm, bmargin=2.5cm]{geometry}% Se usa para los márgenes.
+\usepackage{graphicx}
+\usepackage{showframe}%Se pueden poner notas al margen, todo el texto debe estar en el cuadrado del texto.
+\usepackage[intlimits]{amsmath}
+\numberwithin{equation}{section}
+%\usepackage[intlimits, leqno]{amsmath}% esa opción tendrán los límites de integración arriba y abajo
+
+%T1 para letra time, fontenc
+% Con tikz se puede adornar la caráctula.
+\begin{document}
+
+\begin{titlepage}
+\centering %Todo lo que esté en su entorno se centrará.
+\bfseries % El alcance es por el entorno que lo contiene.
+
+{\Large UNIVERSIDAD NACIONAL DE INGENIERÍA\\[2mm]
+
+FACULTAD DE CIENCIAS\\[3mm]
+
+ESCUELA PROFESIONAL DE MATEMÁTICA}\\[5mm]
+
+\includegraphics[scale=0.15]{logo}\\[10mm]
+
+presentado por:\\[1cm]
+
+{\LARGE Juan Pérez}\\[5mm]
+
+Asesor por:\\[1cm]
+
+{\Large John Smith}\\[1cm]
+
+UNI -- Perú\\[5mm]
+
+2018
+\end{titlepage}
+
+Esto es hoy día
+
+$$
+x^2+y^2=z^2\qquad x^{12}+y^{12}=z^{12}
+$$
+
+$$
+x_2+y_2=z_2\qquad x_{12}+y_{12}=z_{12}
+$$
+
+$$
+\frac{a}{b}\qquad\frac{x^2+y^2}{z^2}
+$$
+
+texto texto2 $\frac{a}{b}$ texto texto texto texto texto texto texto texto % Se hace más pequeño por el espacio interlineal. No modificarlo. Está mal cambiarlo, tipográficamente hablando.
+
+$$
+\sqrt{a+b+c}\qquad \sqrt[n]{a+b+c}
+$$
+
+$$
+\int f(x)dx \qquad \sum  a_i
+% Está mal escrito. d se ve como variable, debe ser una romana recta y separada de la inicial.
+$$
+
+$$
+\int\limits_{a}^{b} f(x)dx \qquad \sum_{i=1}^n a_i
+$$
+
+$$
+\int_{a}^{b} f(x)dx \qquad \sum\nolimits_{i=1}^n a_i %Modo desplegado.
+$$
+
+% El comando limits mueve los límites de integración en la parte superior de la integral.
+
+texto texto texto $\int_{a}^{b} f(x) dx \qquad \sum_{i=1}^n a_i$ texto texto 
+
+$$
+i=1,2,...,n (mal)\qquad i=1,2,\ldots,n% Incorrecto vs correcto.
+$$
+
+$$
+c+d+e+\cdots+z \qquad \vdots\qquad \ddots% Con otro paquete se pueden obtener en la otra diagonal.
+$$
+
+$$
+\alpha+\beta+\gamma+\varphi+\psi+\Omega%Lamda para un plano. Sigma distinto a la sumatoria.Se llama operador binario en LaTeX, en matemática no necesariamente. Puede generar un espacio extra en caso de solo usar, o de logica e y de logica.
+$$
+
+$$
+a, b \in V,\qquad a\times b\qquad axb(mal)
+$$
+
+$$
+f,g\in G ,\qquad f\circ g % Es importante dejar un espacio en blanco.
+$$
+
+$$
+f,g \in G, f\colon A\to B, g:B\longrightarrow C,
+\longrightarrow g\circ f:A\rightarrow C
+$$
+
+$$
+cos\alpha (mal) \qquad \cos\alpha
+$$
+
+$$
+\lim_{x\to\infty}\frac{1}{x}=0
+$$
+
+%ddot para segunda derivada, paquete vec ṕara flechas
+
+$$
+x,\hat{x},\tilde{x},\qquad x+\hat{x}=\tilde{x}
+$$
+
+%hat es el circunflejo en la parte superior.
+
+$$
+\hat{abc}\qquad \widehat{abc}
+$$
+
+$$
+\tilde{abc}\qquad \widetilde{abc}
+$$
+% Podemos manipular los tamaños.
+
+$$
+(\frac{a}{b})\qquad \left(\frac{a}{b}\right)\qquad 
+$$% Siempre el left y right van en pareja
+% Se puede mejor incluso con left right
+$$
+\left(\frac{a}{b}\right.
+$$% Para una regla de correspondencia, en vez de usar paréntsis se puede usar llaves.
+
+$$
+f=g \mbox{ cuando } f(x)=g(x) \forall x\in X
+$$% El para todo está muy pegado.% mbox lo encierra y lo vuelve letra% para el comando text necesita un paquete.
+
+$$
+abc\quad\mathrm{abc}\quad\mathsf{abc}\quad\mathtt{abc}\quad\mathbf{abc}\quad\mathit{abc}\quad\mathcal{ABC}% No es itálica, la otra es romana recta, letra san serif, lo hace romana y lo vuelve negraita, mathcal solo funciona con mayúsculas.
+$$
+
+$$% Es como el tabular
+\left(\begin{array}{ccc}%Faltan sus delimimitadores.
+ a & b & c \\
+ d & e & f \\
+ g & h & i
+\end{array}\right)_{3\times 3} \left(\begin{array}{c}
+x \\
+y \\
+z
+\end{array}\right)% Funciona en el modo matemático.
+$$
+
+$$
+\left[\begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{array}\right]
+$$
+
+%$$
+%\left{\begin{array}{ccc}
+%a & b & c \\
+%d & e & f \\
+%g & h & i
+%\end{array}\right}
+%$$
+
+$$
+\left\{\begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{array}\right\}
+$$
+
+$$
+\bar{xy}\qquad \overline{xyz}\quad\underbrace{abc} %overline crea una barra sobre su argumento
+$$
+underline funciona en matemática como en texto.
+
+$$
+\overbrace{3+3+3+3}^{12}\qquad\underbrace{3+3+3+3}_{12}
+$$
+
+$$
+a+b+c\stackrel{\mathrm{def.}}{=}x
+$$
+
+%No usar eqnarray
+
+NO USAR
+
+\begin{eqnarray}% Es un arreglo de tres columnas
+a + b + c	& = & b + c \\
+			& = & f + g \\
+			& = & x + y
+\end{eqnarray}% Se alinea respecto a la segunda columna. Se pude manejar la dimensión.
+La versión con asterisco hace lo mismo, pero le quita la numeración.
+
+\begin{eqnarray*}% Es un arreglo de tres columnas
+a + b + c	& = & b + c \\
+& = & f + g \\
+& = & x + y
+\end{eqnarray*}% Se alinea respecto a la segunda columna. Se pude manejar la dimensión.
+
+Operadores binarios en el sentido de \LaTeX{}
+
+$$
+a+b+c=\;\forall a,b\in A
+$$
+
+$$
+a\; b\: c\,d\!e
+$$% Son para afinar los operadores binarios.
+
+texto texto texto texto $\displaystyle\int_a^b f(x)\,\mathrm{d}x$texto texto texto texto texto
+
+Solo va la d y no la x, porque x es variable.
+$$\textstyle\int_a^b f(x)\,\mathrm{d}x$$
+
+estilo texto vs estilo desplegado.
+
+$$
+x^{x^x}\quad\scriptscriptstyle{abc}\qquad\scriptstyle{abc}%estilo desplegado, scriptstyle scriptscriptstyle
+$$
+
+$$
+(\frac{a}{b})\quad\big(\frac{a}{b}\big)\quad\Big(\frac{a}{b}\Big)\quad\bigg(\frac{a}{b}\bigg)\quad\Bigg(\frac{a}{b}\Bigg)% Se prefiere el tercero y el cuarto según sea fraccion o integral .
+$$
+Hay cuatro tamaños disponibles
+
+\begin{equation}
+a+b+c=b+c
+\end{equation}
+
+\newpage
+
+$$
+abcd\quad \boldsymbol{abcd}\quad\mathbf{abc}
+$$
+
+$$
+abcd\quad \pmb{abcd}% lo mueve a la fuerza. No es una negrita real. No usar
+$$
+
+Con \LaTeX{} estándar no existe \texttt{equation} con asterisco.
+
+\begin{equation*}
+a+b+c=de
+\end{equation*}
+
+\begin{multline}
+a+b+c+d+e+g+g+f+s+afs++wetfg\\+w+gs+dfawsd+fsd+=
+asg+we\\+w+qtgw+sfs+qg+w=sfg
+\end{multline}
+
+\begin{multline*}
+a+b+c+d+e+g+g+f+s+afs++wetfg\\+w+gs+dfawsd+fsd+=
+asg+we\\+w+qtgw+sfs+qg+w=sfg
+\end{multline*}
+
+\begin{equation}
+\begin{split}
+a+c+s+d=fasdf \\
+asrfsdfad
+\end{split}
+\end{equation}
+%starversion o asterisco
+
+\begin{gather}
+a+b+c+d+e+ +gsedf \\
+f = s \\
+a+gsdfas
+\end{gather} %lo que se obtiene es centrar
+
+\begin{gather*}
+a+b+c+d+e+ +gsedf \\
+f = s \\
+a+gsdfas
+\end{gather*}
+
+\begin{align}
+a+b+c & = b+c\\
+& = f+g\\
+& = x+y % se alinea con respecto al que alineo
+\end{align}
+
+\begin{align*}
+a+b+c & = b+c & a &=b \\
+& = f+g &	c&=d\\
+& = x+y &	c&=a+b+d% se alinea con respecto al que alineo
+\end{align*}
+
+\begin{flalign}
+a+b+c & = b+c\\
+& = f+g\\
+& = x+y
+\end{flalign}
+
+
+\begin{flalign*}
+a+b+c & = b+c\\
+& = f+g\\
+& = x+y
+\end{flalign*}
+
+\begin{align}
+\label{eq:1}a &=b000\\
+c&=d000 \notag\\
+\label{eq:2}c&=a+b+d000
+\end{align}
+
+Por las ecuaciones \eqref{eq:1} y \eqref{eq:2}
+
+\begin{align}
+a+b+c & = b+c & a&=b \tag{Teorema de Pitágoras}\\
+& = f+g & c&=d\\
+& = x+y & c&=a+b+d \tag*{T. Pitágoras}
+\end{align}
+
+En estas ecuaciones agarra todo el ancho de la línea, para explicar la ecuación es mejor detallarlo afuera del entorno.
+
+$$
+f(x)=\left\{\begin{aligned}
+ab+d+c&= sdfr \\
+a& f+g+ f\\
+&=qe
+\end{aligned}\right.
+$$
+
+$$
+f(x)=\left\{\begin{gathered}
+ab+d+c=sdfr \\
+af+g+ f\\
+=qe
+\end{gathered}\right.
+$$
+
+$$
+f(x)=\begin{cases}
+x^2&, x\in X \\
+x/2&, x\in X^C
+\end{cases}
+$$
+
+$$
+x_{\mbox{longitud}}\qquad x_{\text{longitud}}%sino usar mathrm y es una palabra grande, con \ŧext se hace el tamaño de un subindice.
+$$
+
+$$
+f=g\text{ cuando }f(x)=g(x),\forall x\in A.
+$$
+%Trabajar con tcolorbox.
+
+\begin{align}
+a+b+c & = b+c\\
+& = f+g \\ \intertext{Por lo tanto}%tengo que aprender a usarlo.
+& = x+y
+\end{align}
+% No se debe escribir el por lo tanto dentro de la misma línea y dejar un espacio en blanco.
+
+En gathered no se usa \&.
+
+El eqref se usa cuando se etiqueta las ecuaciones.
+
+Usando las Ecuaciones \eqref{eq:1} y \eqref{eq:2}.
+
+\begin{enumerate}
+\item algo
+\end{enumerate}
+
+Viendo (1)%Los correctores los destrozan.
+
+\chapter{Mi clase del 5 de junio}
+
+Esto es hoy día.
+
+\begin{equation}
+\alpha
+\end{equation}
+
+\chapter{Otro capítulo}
+
+\section{Básico}
+
+$$
+f(x)=\left\{
+x+y
+\right\}
+$$
+
+texto texto texto, no hagan una matriz dentro de un texto $\left(\begin{smallmatrix} a & b\\ c & d \end{smallmatrix}\right)$ texto texto.
+
+$$
+\begin{matrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{matrix}
+$$
+
+$$
+\begin{pmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{pmatrix}
+$$
+
+$$
+\begin{bmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{bmatrix}
+$$
+
+$$
+\begin{Bmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{Bmatrix}
+$$
+
+$$
+\begin{vmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{vmatrix}
+$$
+
+$$
+\begin{Vmatrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{Vmatrix}
+$$% Como norma matricial.
+
+\end{document}
+cuando viene en pares hay que usar split
+Mañana es la práctica se entrega hasta el medio día.
+
+luego, por lo tanto, haciendo 1 y 2
+babel, sen con babel eslopping no existe
+
+En reporte la mayor jerarquía es reporte.
