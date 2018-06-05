@@ -1,0 +1,395 @@
+\documentclass{article}
+\usepackage[spanish, es-sloppy]{babel}
+\usepackage[dvipsnames, usenames]{color}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{here}
+\title{Mi primer documento}
+\author{yo mismo\thanks{Lima}\\UNI\and y el otro\\CTIC}
+\date{hoy día}
+\renewcommand{\spanishlisttablename}{Mis tablas}
+\renewcommand{\spanishabstractname}{Abstracto2}
+%\renewcommand{\spanishabstractname}{Abstract}
+\pagestyle{empty}
+
+\begin{document}
+%Leer el Carrasco.
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+Primer abstracto.
+\end{abstract}
+
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+Segundo abstracto.
+\end{abstract}
+\renewcommand{\abstractname}{}
+
+\begin{abstract}
+Tercer abstracto.
+\end{abstract}
+
+\newpage
+\vspace*{4cm}
+Hola.
+
+\vspace{2cm}
+
+\hspace*{3cm} mundo \hspace{4cm} mundo 2. \ \ \ día.\quad lunes\qquad 4 de junio.
+
+tierra\\ b\medskip a
+\enlargethispage{2mm}
+\lipsum[2-4]
+
+%Hay dos paquetes más para etiquetas.
+Dentro de la etiqueta debe haber palabras clave,  se etiqueta el número.
+% Si no hay palabra se usa asterisco y si hay palabra no se asterisco.
+
+\newpage
+\begin{flushright}
+El otro movimiento que\\ te enseñaron es el de la rotación\\ la Tierra gira en forma a su\\ propio eje. 
+\end{flushright}
+
+\textbackslash \{ \} \$
+\section[Letra]{Tipos de letra por defecto}
+"estas no son comillas"
+
+``son comillas''
+
+
+Universidad Nacional de Ingeniería
+\section[Tamaño]{Tamaños de letra}\label{sec:2}
+
+\textrm{Universidad Nacional de Ingeniería} % Es un comando con argumento.
+
+{\rmfamily Universidad Nacional de Ingeniería} % Este es un comando sin argumento.
+
+%Comparar la letra Serif del sin San Serif o palo seco.
+\textsf{Universidad Nacional de Ingeniería}
+
+{\sffamily Universidad Nacional de Ingeniería}
+
+\texttt{Universidad Nacional de Ingeniería}
+
+{\ttfamily Universidad Nacional de Ingeniería} % Cada letra está dentro de un cuadrado de un mismo ancho.
+
+\textup{Universidad Nacional de Ingeniería}
+
+{\upshape Texto}
+
+\textit{Universidad Nacional de Ingeniería}
+
+{\itshape Universidad Nacional de Ingeniería}
+
+\textsl{Universidad Nacional de Ingeniería}
+
+{\slshape Universidad Nacional de Ingeniería}
+
+\textsc{Universidad Nacional de Ingeniería}
+
+\tableofcontents
+
+{\scshape Texto}
+
+\textmd{Texto}
+
+{\mdseries Texto}
+
+\textbf{Texto}
+
+{\bfseries Texto}
+
+\emph{Texto}
+
+{\em Texto}
+
+\section{Otras cosas}
+
+\underline{Universidad Nacional de Ingeniería}
+
+{\Huge Universidad Nacional de Ingeniería}
+
+{\LARGE Universidad Nacional de Ingeniería}
+
+\section{Cosas extras}
+
+{\large Universidad Nacional de Ingeniería}
+
+{\tiny Universidad Nacional de Ingeniería}
+
+\subsection{Con color}
+
+\textcolor{Orchid}{Universidad Nacional de Ingeniería}
+
+{\color{Peach} Universidad Nacional de Ingeniería}
+
+% Es preferible que sea ordenado.
+
+% Se recomienda usar cuando solo es menor a una línea.
+%small caps
+
+% Slan quiere decir oblicua.
+\newpage
+
+
+Por lo visto en la sección \ref{sec:2} cambiamos a letras por lo visto en la página \pageref{sec:2}.
+
+\newpage
+
+\includegraphics[width=4cm]{logo.png}%No es necesario colocar extensión.
+\includegraphics[height=2cm]{logo}% El ancho o alto se mantiene en proporción con el anterior.
+\includegraphics[width=4cm,height=2cm]{logo}
+
+\includegraphics[scale=0.3]{logo}
+
+\newpage
+
+\begin{center}
+\includegraphics[scale=0.1]{logo}
+\end{center}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=3cm]{logo}
+	\caption[Escudo de la UNI]{Esto es el escudo de la UNI.}\label{fig:1}
+\end{figure}
+
+\listoffigures
+\listoftables
+
+Tenemos el escudo de la UNI \ref{fig:1} en la página \pageref{fig:1}.
+% Figura y no figura
+% Tabla y no tabla
+\begin{enumerate}
+	\item Hola
+	\begin{enumerate}
+		\item texto1
+		\item texto2
+		\begin{enumerate}
+			\item Nivel 3
+			\item Nivel 3 2
+			\begin{enumerate}
+				\item 1
+				\item 2
+%				\begin{enumerate}
+%					\item a
+%					\item b
+%					\item c
+%				\end{enumerate}
+				\item 3
+			\end{enumerate}
+			\item Nivel 4
+		\end{enumerate}
+		\item texto3
+	\end{enumerate}
+	\item mundo
+	\item hoy
+	\item día
+\end{enumerate}
+
+\begin{itemize}
+	\item a
+	\item b
+	\item c
+	\begin{itemize}
+		\item x
+		\item y
+		\begin{itemize}
+			\item a
+			\item c
+			\begin{itemize}
+				\item 5
+				\item 6
+%				\begin{itemize}
+%					\item you
+%				\end{itemize}
+				\item 3
+			\end{itemize}
+			\item d
+		\end{itemize}
+		\item z
+	\end{itemize}
+	\item d
+\end{itemize}
+
+\begin{enumerate}
+	\item A
+	\begin{itemize}
+		\item a
+		\item a
+		\begin{enumerate}
+			\item x
+			\begin{itemize}
+				\item y
+			\end{itemize}
+			\item 
+		\end{enumerate} 
+	\end{itemize}
+	\item 
+\end{enumerate}
+\newpage
+
+\begin{description}
+	\item[casa] Es un lugar donde vivimos.
+	
+	\lipsum[1]
+	
+	\item[silla] Donde nos sentamos.\footnote{esto es una nota de página}
+	\lipsum[1]
+\end{description}
+También se puede referenciar los enumerate y los itemize, los description también se pueden, pero es necesario renombrar un comando.
+
+%No usar parámetro opcional en enumerate ni itemize.
+%\includegraphics{logouni.eps}
+%variorref, cleverref.
+% Fuente no es traducción de font.
+
+En el libro de Cascal ver lo que ocurre con una tabla.
+
+Es posible resetear el contador de , en reporte se resetea los contadores de nota de página.
+
+Un tabular es un arreglo o "matriz", estas tablas, las filas\\[2cm]
+
+\renewcommand{\spanishtablename}{Tablita}
+
+\begin{tabular}{lcr}
+	Mesa & Silla & Casa \\
+	mesa & silla & casa \\
+	MESA & SILLA & CASA
+\end{tabular}
+
+\ \\[2cm]
+\begin{table}[H] %con H se evita que flote
+\centering
+\caption{Esto es una tabla}% Se estila que el caption esté en la parte superior.
+\begin{tabular}{|l|c|r|}
+	\hline
+	Mesa & Silla & Casa \\
+	\hline
+	mesa & silla & casa \\
+	\hline
+	MESA & SILLA & CASA \\
+	\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H] %con H se evita que flote
+	\centering
+	\caption{Esto es una tabla n°2}\label{tab:2}% Se estila que el caption esté en la parte superior.
+	\begin{tabular}{|l|c|r|p{3cm}||}
+		\hline
+		\multicolumn{2}{|c|}{palabra} & Casa \\
+		\cline{2-3}
+		mesa & silla & casa \\
+		\hline\hline
+		MESA & SILLA & CASA\newline \\
+		\hline
+	\end{tabular}
+\end{table}
+% Más adelante veremos el color.El tamaño del cuadro no es precisamente 3pt, sino que puede variar. 0.4pt
+% No se acostumbra ahora usar rayas verticales.
+Vemos en la Tabla \ref{tab:2} \ldots lo realizado en \cite{V14} o \cite{smi17}.
+\begin{thebibliography}{99}
+	\bibitem{V14} Venero B., Armando. ``Análisis matemático''. Gemar, 2014.
+	\bibitem{smi17} Smith, John. \emph{Acerca del agua}. Algo, 2017.
+\end{thebibliography}
+\newpage
+
+\rule{2cm}{3cm}
+
+\rule{2cm}{4cm}
+
+\fbox{Este es un texto.}%Esta separación se puede cambiar.
+
+\setlength{\fboxrule}{0.5mm}
+
+\fbox{Otro texto.}
+
+\setlength{\fboxsep}{1cm}
+
+\fbox{esto es un texto}
+
+\setlength{\fboxrule}{0.6pt}% grosor
+% La separacion con el texto es mas grande.
+\setlength{\fboxsep}{2pt}% separacion
+\fbox{Esto es un texto}
+
+%\parbox{5cm}{\lipsum[1]}
+%\ \\
+
+\begin{minipage}{5cm}
+\lipsum[1]
+\end{minipage}
+%Ver libro de Pascal
+\newpage
+
+texto1 texto2 texto3 \raisebox{2mm}{texto4} texto 5 \raisebox{-2mm}{texto5}
+
+\newpage
+
+hola
+\vfill
+
+se va a la ultima linea permitida
+
+\newpage
+
+holi
+\hfill
+al final de linea
+
+Nombre \hrulefill
+
+Apellidos \dotfill
+
+\clearpage
+
+\lipsum[1] $g(x)=x+y+z$ \lipsum[2] $y^{2}$ y $z=y$.
+
+% El grifo es itálico, 
+
+$$
+x+y=g(x)
+$$
+
+Cuando llega a la mitad el porcentaje de espacio en modo matemático que cuando no supera el espacio.
+
+El entorno equation sirve para numerar ecuaciones.
+
+\begin{equation}\label{eq:1}
+\int
+\end{equation}
+
+Mi ecuación es (\ref{eq:1}).%\eqref{eq:1}
+
+\end{document}
+
+No hay la negrita en la letra Times. Cómo instalar mtpro2.
+
+Checkear la
+
+Lucida fonts pesa 2megas.
+
+Usar la columna de la derecha cuando se usa el paquete babel, sino usar la primera tabla.
+
+Existe bibtex, biblatex y biber.
+
+Tarea: Estudiar.
+
+Checkear la tilde grave, tilde aguda y apostrofes.
+
+Computer Modern es la fuente por defecto del LaTeX
+
+
+La AMS vio que se puede sacar provecho LaTeX para matemática.
+
+Los símbolos vienen en forma de comandos.
+
+En la primera $ es un comando robusto $, 
+$$ es mejor $$ que \[\]
+
+Si eres ordenado, es mejor usar $$ $$, si eres desordenado, mejor usar \[\]
+
+display equation quiere decir desplegado.
