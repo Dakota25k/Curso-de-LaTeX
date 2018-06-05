@@ -1,0 +1,418 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[lmargin=3cm,rmargin=2.5cm,tmargin=2.5cm,bmargin=2.5cm]{geometry}
+
+\usepackage{showframe}
+
+\usepackage{graphicx}
+
+\usepackage[intlimits]{amsmath}
+%\usepackage[intlimits,leqno]{amsmath}
+
+\numberwithin{equation}{section}
+
+\begin{document}
+\begin{titlepage}
+\centering
+\bfseries
+
+	
+{\Large UNIVERSIDAD NACIONAL DE INGENIERÍA\\[2mm]
+
+FACULTAD DE CIENCIAS\\[3mm]
+
+ESCUELA PROFESIONAL DE MATEMÁTICA}\\[5mm]
+
+
+\includegraphics[scale=0.13]{uni}\\[10mm]	
+
+presentado por:\\[1cm]
+
+{\LARGE Juan Pérez}\\[5mm]
+
+Asesor:\\[1cm]
+
+{\Large John Smith}\\[1cm]
+
+UNI-PERÚ\\[5mm]
+
+2018
+	
+\end{titlepage}
+
+
+
+\chapter{Mi clase del 5 de junio}
+
+\section{básico}
+Esto es hoy día
+
+$$
+x^2+y^2=z^2\qquad x^{12}+y^{12}=z^{12}
+$$
+
+$$
+x_2+y_2=z_2\qquad x_{12}+y_{12}=z_{12}
+$$
+
+$$
+\frac{a}{b}\qquad\frac{x^2+y^2}{z^2}
+$$
+
+texto texto2 $\frac{a}{b}$ texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+
+$$
+\sqrt{a+b+c}\qquad \sqrt[n]{a+b+c}
+$$
+
+$$
+\int f(x)dx \qquad \sum a_i
+$$
+
+
+$$
+\int_{a}^{b} f(x)dx \qquad \sum_{i=1}^n a_i
+$$
+
+$$
+\int\limits_{a}^{b} f(x)dx \qquad \sum_{i=1}^n a_i
+$$
+
+$$
+\int_{a}^{b} f(x)dx \qquad \sum\nolimits_{i=1}^n a_i
+$$
+
+texto texto texto  $\int_{a}^{b} f(x)dx \qquad \sum_{i=1}^n a_i$ texto texto texto texto  texto texto  texto texto  texto texto  texto texto
+
+$$
+i=1,2,...,n (mal)\qquad i=1,2,\ldots,n
+$$ 
+
+$$
+c+d+e+\cdots+z\qquad \vdots\qquad \ddots
+$$
+
+$$
+\alpha+\beta+\gamma+\varphi+\psi+\Omega
+$$
+
+$$
+a,b \in V,\qquad a\times b\qquad axb(mal)
+$$
+
+$$
+f,g\in G ,\qquad f\circ g
+$$
+
+$$
+f,g \in G, f:A\to B, g:B\longrightarrow C, \Longrightarrow g\circ f:A\rightarrow C
+$$
+
+$$
+cos\alpha (mal) \qquad \cos\alpha 
+$$
+
+$$
+\lim_{x\to\infty}\frac{1}{x}=0
+$$
+
+$$
+x,\hat{x},\tilde{x},\qquad x+\hat{x}=\tilde{x}
+$$
+
+$$
+\hat{abc}\qquad \widehat{abc}
+$$
+
+$$
+\tilde{abc}\qquad \widetilde{abc}
+$$
+
+$$
+(\frac{a}{b})\qquad \left(\frac{a}{b}\right)
+$$
+
+$$
+\left(\frac{a}{b}\right.
+$$
+
+$$
+f=g \mbox{ cuando } f(x)=g(x) \forall x\in X
+$$
+
+$$
+abc\quad \mathrm{abc}\quad\mathsf{abc}\quad\mathtt{abc}\quad\mathbf{abc}\quad\mathit{abc}\quad\mathcal{ABC}
+$$
+
+
+
+$$
+\left(\begin{array}{ccc}
+ a & b & c \\
+ d & e & f \\
+ g & h & i
+\end{array}\right)_{3\times 3} \left(\begin{array}{c}
+x \\
+y \\
+z
+\end{array}\right)
+$$
+
+$$
+\left[\begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{array}\right]
+$$
+
+$$
+\bar{xy}\qquad \overline{xyz}\quad\underline{abc}
+$$
+
+$$
+\overbrace{3+3+3+3}^{12}\qquad\underbrace{3+3+3+3}_{12}
+$$
+
+$$
+a+b+c\stackrel{\mathrm{def.}}{=} x
+$$
+
+\begin{equation}
+a+b+c=b+c
+\end{equation}
+
+NO USAR
+\begin{eqnarray}
+a+b+c & = & b+c \\
+      & = & f+g \\
+      & = & x+y
+\end{eqnarray}
+
+\begin{eqnarray*}
+a+b+c & = & b+c \\
+& = & f+g \\
+& = & x+y
+\end{eqnarray*}
+
+$$
+a+b=c\;\forall a,b\in A
+$$
+
+$$
+a\; b\:c\,d\!e
+$$
+
+texto texto texto $\displaystyle\int_a^b f(x)\,\mathrm{d}x$ texto texto texto
+
+$$\textstyle\int_a^b f(x)\,\mathrm{d}x$$
+
+$$
+x^{x^x} \quad \scriptscriptstyle{abc}\quad \scriptstyle{abc}
+$$
+
+$$
+(\frac{a}{b})\quad \big(\frac{a}{b}\big)\quad \Big(\frac{a}{b}\Big)\quad \bigg(\frac{a}{b}\bigg)\quad \Bigg(\frac{a}{b}\Bigg)
+$$
+
+
+
+\newpage
+
+
+\section{del paquete amsmath}
+$$
+abcd\quad \boldsymbol{abcd}\quad\mathbf{abc}
+$$
+
+$$
+abcd\quad \pmb{abcd}
+$$
+
+\begin{equation*}
+a+b+c=de
+\end{equation*}
+
+\begin{multline}
+a+b+c+d+e+g+g+f+s+afs++wetg\\+w+gs+dfawsd+fsd+=asg+we\\+w+qtgw+sfs+qg+w=sfg
+\end{multline}
+
+\begin{multline*}
+a+b+c+d+e+g+g+f+s+afs++wetg\\+w+gs+dfawsd+fsd+=asg+we\\+w+qtgw+sfs+qg+w=sfg
+\end{multline*}
+
+\begin{equation}
+\begin{split}
+a+c+s+d=fasdf \\
+asrfsdfasd
+\end{split}
+\end{equation}
+
+\begin{gather}
+a+b+c+d+e +gsedf \\
+f=s \\
+a+gsdfas
+\end{gather}
+
+\begin{gather*}
+a+b+c+d+e +gsedf \\
+f=s \\
+a+gsdfas
+\end{gather*}
+
+\begin{align*}
+a+b+c & =  b+c \\
+      & =  f+g \\
+      & =  x+y
+\end{align*}
+
+\begin{align}
+a+b+c & =  b+c \\
+& =  f+g \\
+& =  x+y
+\end{align}
+
+
+\begin{align}
+a+b+c & =  b+c & a&=b \\
+& =  f+g  &   c&=d\\
+& =  x+y  &    c&=a+b+d
+\end{align}
+
+\begin{flalign}
+a+b+c & =  b+c & a&=b \\
+& =  f+g  &   c&=d\\
+& =  x+y  &    c&=a+b+d
+\end{flalign}
+
+\begin{flalign*}
+a+b+c & =  b+c & a&=b \\
+& =  f+g  &   c&=d\\
+& =  x+y  &    c&=a+b+d
+\end{flalign*}
+
+
+\begin{align}
+\label{ec1} a&=b000 \\
+c&=d0000 \notag\\
+\label{ec2} c&=a+b+d000
+\end{align}
+
+Por las Ecuaciones \ref{ec1} y (\ref{ec2}) y 
+
+\begin{align}
+a+b+c & =  b+c & a&=b \tag{T. Pitágoras}\\
+& =  f+g  &   c&=d\\
+& =  x+y  &    c&=a+b+d \tag*{T. Pitágoras}
+\end{align}
+
+\chapter{Otro capítulo}
+
+$$
+f(x)=\left\{\begin{aligned}
+ab+d+c&= sdfr \\
+     a&=f+g+ f\\
+      &=qe
+\end{aligned}\right.
+$$
+
+$$
+f(x)=\left\{\begin{gathered}
+ab+d+c= sdfr \\
+a=f+g+ f\\
+=qe
+\end{gathered}\right.
+$$
+
+$$
+f(x)=\begin{cases}
+x^2&, x\in X \\
+x/2&, x\in X^C
+\end{cases}
+$$
+
+$$
+x_{\mbox{longitud}}\qquad x_{\text{longitud}}
+$$
+
+$$
+f=g\text{ cuando }f(x)=g(x),\forall x\in A
+$$
+
+
+\begin{align}
+a+b+c & =  b+c \\
+& =  f+g \\ \intertext{Por lo tanto}
+& =  x+y
+\end{align}
+
+Usando las Ecuaciones \eqref{ec1} y \eqref{ec2}
+
+\begin{enumerate}
+\item algo	
+\end{enumerate}
+
+Viendo (1)
+
+
+texto texto $(\begin{smallmatrix}a & b \\ c & d\end{smallmatrix})$ texto texto texto texto texto texto
+
+
+$$
+\begin{matrix}
+a & b  & c \\
+d & e & f \\
+g & h & i
+\end{matrix}
+$$
+
+$$
+\begin{pmatrix}
+a & b  & c \\
+d & e & f \\
+g & h & i
+\end{pmatrix}
+$$
+
+$$
+\begin{bmatrix}
+a & b  & c \\
+d & e & f \\
+g & h & i
+\end{bmatrix}
+$$
+
+$$
+\begin{Bmatrix}
+a & b  & c \\
+d & e & f \\
+g & h & i
+\end{Bmatrix}
+$$
+
+$$
+\begin{vmatrix}
+a & b  & c \\
+d & e & f \\
+g & h & i
+\end{vmatrix}
+$$
+
+$$
+\begin{Vmatrix}
+a & b  & c \\
+d & e & f \\
+g & h & i
+\end{Vmatrix}
+$$
+
+$$
+\begin{pmatrix}
+a & b  & c \\
+d & e & f \\
+\hdotsfor{3}
+\end{pmatrix}
+$$
+
+
+\end{document}
