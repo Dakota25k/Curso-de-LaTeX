@@ -4,9 +4,9 @@ Primera clase [01/06/2018]
 Temas: Introducción a LaTeX
 ===
 
-# Un poco de historia de LaTeX
+## Un poco de la historia de LaTeX
 
-* En el año 1978, el científico de la computación de la Universidad de Stanford [Donald Erwin Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) creó el **lenguaje de Programación [TeX](https://en.wikipedia.org/wiki/TeX)** porque no le gustaba la calidad tipográfica de su época, esto incluye las fórmulas matemáticas. Durante su periodo escolar elaboró un gran compendio de gráficas de funciones matemáticas.
+* En el año 1978, el científico de la computación de la [Universidad de Stanford](https://www.stanford.edu/), [Donald Erwin Knuth](https://en.wikipedia.org/wiki/Donald_Knuth), creó el **lenguaje de Programación [TeX](https://en.wikipedia.org/wiki/TeX)** porque no le gustaba la calidad tipográfica de su época, esto incluye las fórmulas matemáticas. Durante su periodo escolar elaboró un gran compendio de gráficas de funciones matemáticas.
 * El matemático del Instituto tecnológico de Massachusetts, [**Leslie Lamport**](http://www.lamport.org/), creó LaTeX, un conjunto de macros TeX. LaTeX NO es un lenguaje de programación.
 * La primera versión de LaTeX fue en el año 1986 y su siguiente actualización fue en 1996, conocida como LaTeX 2-épsilon. Esta es la versión actual.
 * El último compendio oficial se publicó en el 2004 financiada por el TeX User Group.
@@ -18,9 +18,9 @@ Podemos resumir en que
 
 > LaTeX es un conjunto de comandos amigables, en cambio TeX es un lenguaje de programación.
 
-Los comandos en LaTeX pueden tener un máximo de 9 argumentos.
+En general, los comandos en LaTeX pueden tener un máximo de 9 argumentos.
 
-A veces es dificultoso reconocer un argumento obligatorio `{}` de un argumento opcional `[]`.
+Hay que diferenciar el argumento obligatorio `{}` del argumento opcional `[]`.
 
 - Table of content
 - Table of figures

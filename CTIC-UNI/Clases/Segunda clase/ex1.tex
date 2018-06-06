@@ -1,8 +1,10 @@
 \documentclass{article}
+\usepackage[utf8]{inputenc}
 \usepackage[spanish, es-sloppy]{babel}
 \usepackage[dvipsnames, usenames]{color}
 \usepackage{lipsum}
-\usepackage{graphicx}
+\usepackage[pdftex]{graphicx}
+\graphicspath{{../../images/}}
 \usepackage{here}
 \title{Mi primer documento}
 \author{yo mismo\thanks{Lima}\\UNI\and y el otro\\CTIC}
@@ -142,7 +144,7 @@ Por lo visto en la sección \ref{sec:2} cambiamos a letras por lo visto en la p�
 \includegraphics[height=2cm]{logo}% El ancho o alto se mantiene en proporción con el anterior.
 \includegraphics[width=4cm,height=2cm]{logo}
 
-\includegraphics[scale=0.3]{logo}
+\includegraphics[scale=0.3]{logouni}
 
 \newpage
 
@@ -277,7 +279,7 @@ Un tabular es un arreglo o "matriz", estas tablas, las filas\\[2cm]
 
 \begin{table}[H] %con H se evita que flote
 	\centering
-	\caption{Esto es una tabla n°2}\label{tab:2}% Se estila que el caption esté en la parte superior.
+	\caption{Esto es una tabla $n^{\circ}2$}\label{tab:2}% Se estila que el caption esté en la parte superior.
 	\begin{tabular}{|l|c|r|p{3cm}||}
 		\hline
 		\multicolumn{2}{|c|}{palabra} & Casa \\
