@@ -8,7 +8,7 @@ Curso de LaTeX Básico
 
 **Instructor**: [Mat. Jhimy Alex Borbor Perea.](https://es-la.facebook.com/80R80R)
 
-**E-mail**: [j.borbor@uni.pe](mailto:j.borbor@uni.pe)
+**E-mail :email:**: [j.borbor@uni.pe](mailto:j.borbor@uni.pe)
 
 **Aula**: Laboratorio N°5 del [Centro de Tecnologías de la Información y Comunicaciones](http://www.ctic.uni.edu.pe/) de la [Universidad Nacional de Ingeniería](http://www.uni.edu.pe/).
 
