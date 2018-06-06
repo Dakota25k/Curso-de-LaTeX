@@ -6,7 +6,7 @@ Curso de LaTeX Básico
 </p>
 
 
-**Instructor**: [Mat. Jhimy Alex Borbor Perea.]()
+**Instructor**: [Mat. Jhimy Alex Borbor Perea.](https://es-la.facebook.com/80R80R)
 
 **E-mail**: [j.borbor@uni.pe](mailto:j.borbor@uni.pe)
 
@@ -20,8 +20,9 @@ Nota mínima aprobatoria: 14/20 (escala vigesimal).
 
 |   Sesión  |   Fecha   |   Temas   |
 |:---------:|:---------:|:---------:|
-| 1 | 01/06/2018 | [Introducción a LaTeX](). |
-| 2 | 04/06/2018 | |
-| 3 | 05/06/2018 | |
-| 4 | 06/06/2018 | |
-| 5 | 30/06/2018 | |
+| 1 | 01/06/2018 | [Instalación de TeXLive, uso de LaTeX online: Overleaf, cómo funciiona LaTeX.](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/CTIC-UNI/Clases/Primera%20clase) |
+| 2 | 04/06/2018 | [Composición de un documento, alineación y párrafos especiales, caracteres reservados y signos ortográficos, tipos y colores, artículos y reportes, referencias cruzadas, listas, columnas, notas de pie de página, citas bibliográficas, cajas y marcos.](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/CTIC-UNI/Clases/Segunda%20clase)|
+| 3 | 05/06/2018 | [Elementos en modo matemático, símbolos matemáticos, elementos adicionales, afinando la representación matemática, paquete `amsmath`.](https://github.com/carlosal1015/Curso-de-LaTeX/tree/master/CTIC-UNI/Clases/Tercera%20clase)|
+| 4 | 06/06/2018 | [Manipulación de la bibliografía, algunos paquetes para texto, algunos paquetes para tablas, algunos paquetes para matemática.]()|
+| 5 | 08/06/2018 | [Tikz básico, beamer básico.]()|
+| 6 | 11/06/2018 | [Paquetes para diseño de encabezados e índices, algunos comandos del paquetes `listings`, algunos comandos del paquetes `hyperref`.]() |
