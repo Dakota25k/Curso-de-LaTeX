@@ -1,0 +1,427 @@
+%Se usa sin asterisco cuando el comando es simple. Acorta el tiempo de compilación. Si es nrecomand, debe ser un comando no usado por latex
+\documentclass{report}
+\usepackage{color}
+\newcommand*{\fd}{$\Longrightarrow$} %Opcional y obligatorio en newcommand.
+
+%\newcommand{}{}
+\newcommand{\deri}[2]{\frac{\partial #1}{\partial #2}} % Definimos un comando %débil?
+\newcommand{\dir}[4]{}
+
+\usepackage{amsmath}
+
+\DeclareMathOperator{\sen}{sen}
+
+\DeclareMathOperator*{\algo}{algo}
+
+\usepackage{amssymb}
+\usepackage{amsthm}%Mejora el newtheorem del paquete anterior.
+
+\newtheorem*{cor}{Corolario}
+%%Deben estar debajo del paquete
+\theoremstyle{remark}%Solo en la proposicion, el cuerpo en romano y proposicion en itálicas
+\newtheorem{ej}{Ejemplo}
+\swapnumbers
+\newtheorem{ejr}[ej]{Ejercicio}%Comparte el contador de ejemplo
+%%
+
+%También es posible redefinir, 
+
+\newtheorem{teo}{Teorema}[chapter]%ehn la parte derecha de teorema, dentro de su numero va a estar chapter.
+\newtheorem{prop}[teo]{Proposición}
+%vamos a compartir el contador
+
+\usepackage{url}
+\usepackage{fancybox}
+\usepackage{enumitem}
+\setlist[enumerate,1]{label=\arabic*--+)}
+\setlist[enumerate,2]{label=\Alph*\}}
+
+\usepackage{mathptmx}%no importa el orden, también hay que usar uarial, es libre pero no tiene derechos para distribuir.
+%fancyhdr es muy importante para el pie de pagina, archivos membretados, ver numeraction en articulo, libre, ver numeracion en book, estamos enfocados en reporte y articulo,
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{John Smith}%en la documentacion se puede cambiar en las paginas chapter
+\chead{}
+\rhead{Tercera clase de \LaTeX}
+\lfoot{.}
+\cfoot{.}%0.4 pt es la por defecto de latex
+\rfoot{\thepage}
+%\rfoot{\arabic{page}}%poner contador, % se pierde la numeracion
+\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{2mm}% se puede manipular con dos lineas y colores en dos lineas
+
+\usepackage[percent]{overpic}
+
+
+\usepackage{pdflscape}
+
+\usepackage{multicol}%2017-04
+%\usepackage{hyperref}
+\usepackage{apacite}% se colocar después de hyperref necesariamente.
+%Poner al último siempre
+
+\begin{document}
+\pagenumbering{roman}%solo valido con el contador \thepage
+
+% Tarea: Cómo crear una página en blanco en LaTeX.
+
+$$
+\sqrt[\uproot{6}\leftroot{3}\frac{n}{2}]{\frac{1}{\sum\limits_{i=1}^n}a_i}
+$$
+% Crear un comando que me indique cuanto se desplaza.
+
+% Es la 1/12 de un M. 1em= ancho de letra M
+% 1mu=1/12
+% matematica unit
+
+$$
+x+y\fbox{+y}%las y son distintas, se puede subsanar usando los simbolos de dolar
+$$
+
+$$
+x+y\boxed{+y}%las y son distintas, se puede subsanar usando los simbolos de dolar
+$$
+% creo que no hay down, right root.
+
+$$
+\overleftarrow{abc}\qquad\underleftrightarrow{xyz}
+$$
+
+$$
+A\xleftarrow[r_0]{abc}
+$$
+
+%es mas usado que el stack
+
+$$
+\overset{\mathrm{def}}{=}\qquad\overset{\circ}{A}
+$$% hay un paquete accents que mejora
+
+$$
+\underset{--}{B}--
+$$%los que van a arriba o abajo se hacen mas pequeños
+
+texto texto $\dfrac{a}{b}$ texto texto $\dbinom{n}{r}$ $\binom{n}{r}$
+
+$$
+\tfrac{a}{b}\qquad\tbinom{r}{n}\binom{r}{n}
+$$
+
+%LOS DELIMITADORES SIRVEN PARA DAR FINEZA A LOS DELIMITADORES
+
+$$
+\Bigl(\sum_{i=1}^{n}a_i\Bigr)%r envez de l tambien funciona
+$$
+
+
+$$%en babel con es sloppy no existe seno
+\sen\alpha+\cos\beta%tambien se puede declara como limite o infimo
+$$
+
+$$
+\algo_{x\downarrow0}\sqrt{x}=0%algo se creó con asterisco.
+$$%operatorname generaliza, no se usa.
+
+% el* hace que los indices vayan abajo.
+
+$$
+\sum_{\substack{i=1\\i\neq555}}^{n_0}a_i%hacemos un indice de dos niveles
+$$%los subindices se centran
+% estudiar, picture crear un
+
+%noexiste el  argumento r
+
+$$
+\sum_{\begin{subarray}{l}
+i=1\\i\neq555
+\end{subarray}}^{n_0}a_i
+$$
+
+$$
+\sideset{_a^b}{_c^d}\sum%simbolos de cristofel se puede aplicar en teoria de superficies
+$$
+
+
+$$
+\int\int f(x,y) d(x,y)\qquad\iint f(\bar{x})d\bar{x}%se puede arreglar usando espacio negativo
+$$
+
+$$
+\iiint f(z)dz\qquad\iiiint f(h)dh
+$$%amsym junta a amsfont + , es la union de paquetes
+%contador page
+%no tener numero implica no numeracion. se estila que los corolarios no tenga numero.
+\chapter{mi teorema cero}%texstudio es un editor
+\pagenumbering{arabic}
+\begin{teo}%la caratual no lleva numeracion y luego va en arabigo.
+	esto es un teorema
+\end{teo}
+
+\begin{cor}
+esto es un corolario esto es un corolario
+\end{cor}
+
+\begin{prop}
+Esto es una proposción matemática
+\end{prop}
+
+\begin{ej}
+	contenidos...
+\end{ej}
+
+\begin{ej}
+	contenidos...
+\end{ej}
+
+\begin{ejr}
+	contenidos...
+\end{ejr}
+
+\renewcommand{\qedsymbol}{\color{red}$\heartsuit$}%biber se usa mas para arabe, europa del este, etc
+\begin{proof}[Demostración]
+Esto es una prueba Esto es una prueba Esto es una prueba Esto es una prueba Esto es una prueba Esto es una prueba Esto es una prueba Esto es una prueba Esto es una prueba Esto es una prueba Esto es una prueba Esto es una pruebaEsto es una pruebaEsto es una prueba% Cuadradito de Halmos.%\spanishproofname, \proofname, cambiar, 
+\end{proof}
+%ximatriz se mejor con tikzdiagram para los diagramas conmutativas 
+\newpage
+
+\tableofcontents
+
+\setcounter{chapter}{5} %Buscar valores de los contadores. Usos del newcommand. 
+
+\chapter{Mi primer capítulo}
+
+
+$$
+\frac{\partial f}{\partial x} + \frac{\partial f}{\partial y} = \cdots
+$$
+
+$$
+\frac{\partial f}{\partial x} + \frac{\partial f}{\partial y} = \cdots
+$$
+
+$$
+\deri{f}{x} + \deri{g}{y} + \deri{h}{z}\quad f(r)dr
+$$%antes se usaba blackboard para reales, etc.
+
+texto texto texto
+
+$$
+\idotsint_{R^n} f(x)dx
+$$
+
+$$
+\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$
+
+
+$$
+\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$%\leqslant%preferencia en economia
+
+
+
+\section{Sección primera}
+
+
+\begin{ej}
+	contenidos...
+\end{ej}
+
+\begin{ej}
+	contenidos...
+\end{ej}
+
+\begin{ejr}
+	contenidos...
+\end{ejr}
+
+\renewcommand{\thesection}{\arabic{chapter}--\arabic{section}}
+\addtocounter{section}{20}
+%leer copca y goosen
+\section{Sección segunda}
+
+\subsection{a}
+\cite{VE14}
+
+\cite[cap. 5]{VE14}
+
+\cite<ver>[cap. 5]{VE14}
+
+\subsection{b}
+%fullcite se usa para mencionar a los otros autores.%bibtex, biblatex
+\citeNP{VE14}
+\citeNP[cap. 5]{VE14}
+
+\citeNP<ver>[cap. 5]{VE14}
+
+\subsection{c}
+\citeA{VE14}
+\citeA[cap. 5]{VE14}
+
+\citeA<ver>[cap. 5]{VE14}
+
+\nocite{*}
+\bibliographystyle{apacite}
+\bibliography{biblio}
+
+\url{www.google.com}%monoespaciado
+\shadowbox{\parbox{6cm}{Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetarioMovimiento planetario Movimiento planetario Movimiento planetarioMovimiento planetarioMovimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario }}%disminuye el tiempo de compliacion
+
+
+\doublebox{\parbox{6cm}{Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetarioMovimiento planetario Movimiento planetario Movimiento planetarioMovimiento planetarioMovimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario }}
+
+\cornersize*{13mm}
+\ovalbox{\parbox{6cm}{Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetarioMovimiento planetario Movimiento planetario Movimiento planetarioMovimiento planetarioMovimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario }}
+
+\Ovalbox{\parbox{6cm}{Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetarioMovimiento planetario Movimiento planetario Movimiento planetarioMovimiento planetarioMovimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario Movimiento planetario }}
+%pequeñas 2, 3mm, doublebox, el cornersize es para el radio de curvatura, es mejor usar con *
+
+\begin{enumerate}[topsep=12cm,partopsep=0pt,parsep=0pt,itemsep=0pt]%si el tipo de letra es 10, el topsep va anetre 12 y 14 pt, el vertical.
+	\item algo
+	\item algo
+	\item Esta oscilación fue descrita por 
+	\item algo
+\end{enumerate}%existen 2 opciones noitemsep, nosep, anula todo de golpe
+
+Ahora vamos a anular los espacios horizontales.
+
+
+\noindent texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+
+\begin{enumerate}[leftmargin=*]% todo izquiera
+	\item algo
+	\item algo
+	\item Esta oscilación fue descrita por 
+	\item algo
+\end{enumerate}
+
+\begin{enumerate}[labelsep=*]%genera separacion
+	\item algo
+	\item algo
+	\item Esta oscilación fue descrita por 
+	\item algo
+\end{enumerate}
+
+\begin{enumerate}[label=\Roman*))]%romano "come" espacio con IV, VI, arabiga
+\item algo
+\item algo
+\item Esta oscilación fue descrita por 
+\item algo
+\end{enumerate}
+
+\begin{enumerate}[label=\alph*)]
+	\item algo
+	\item algo
+	\item Esta oscilación fue descrita por 
+	\item algo
+\end{enumerate}
+
+\begin{enumerate}[label=\arabic*]%como poner corchetes en latex?????
+	\item algo
+	\item algo
+	\item Esta oscilación fue descrita por 
+	\item algo
+\end{enumerate}
+
+
+%cambiar numeracion en 1000
+\begin{enumerate}[start=1000, label=\Roman*)]
+	\item algo
+	\item algo
+	\item Esta oscilación fue descrita por 
+	\item algo
+\end{enumerate}
+
+\begin{enumerate}[resume*]%conserva las propiedades del anterior. locales al documento, locales al entorno, locales al comando., si en un archivo de 1000000000 paginas, los niveles del 1 al 4, se puede poner por niveles., el local al comando tiene fuerza local al entorno y al local al entorno tiene mayor fuerza que el local al documento.
+	\item algo
+	\item algo
+	\item Esta oscilación fue descrita por 
+	\item algo
+\end{enumerate}
+
+\begin{enumerate}[resume]
+	\item algo
+	\item algo
+	\item Esta oscilación fue descrita por 
+	\item algo
+\end{enumerate}
+
+\begin{enumerate}
+	\item text
+	\item text	
+	\begin{enumerate}
+		\item text
+		\item text
+	\end{enumerate}
+\end{enumerate}
+
+\begin{overpic}[width=\linewidth,grid]{picture}
+\put(30,40){\sffamily La función coseno}%las coordenadas en LaTeX son entre paréntesis.
+\put(75,30){\LARGE $\cos x$}% es herencia del entorno picture, poner flechita
+\end{overpic}
+
+\begin{landscape}
+Esta oscilación ffue descrita por primera vez por el astrónomo, geógrafo y matemático griego Hiparco de Nicea que vivió 
+
+\begin{table}
+\centering
+\begin{tabular}{*{18}{c}}% 20 veces repetir c
+	agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua  \\
+	agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua  \\
+	agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua  \\
+	agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua  \\
+	agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua & agua  \\
+\end{tabular}
+\caption{tabla muy ancha}
+\end{table}
+
+\end{landscape}
+%lo ideal es que cada alumna está separada a la misma distancia
+\setlength{\columnsep}{1cm}%aqui es local, global seria en el preambiulo
+\setlength{\columnseprule}{1mm}
+\begin{multicols}{3}% en caso de no balanceo
+contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido conteni
+
+\columnbreak%pasa a la siguiente columna
+
+do contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenidocontenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenidocontenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenidocontenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenidocontenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenidocontenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenidocontenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenidocontenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido
+\end{multicols}
+
+%\begin{overpíc}[width=\linewidth]{picture}%ancho de la linea
+%%\put(30,40){\sffamily La función coseno}%las coordenadas en LaTeX son entre paréntesis.
+%%\put(75,30){\LARGE $\cos x$}% es herencia del entorno picture, poner flechita
+%\end{overpíc}%se puede poner dentro de un entorno y etiquetar con label y colocar un suubtitulo con caption
+
+%el paquete overpic jala el paquete graphicx
+\end{document}%newapa version 6, el portable lo hacen depende del sistema linux.
+
+Cómo contar los comandos en mi documento en LaTeX?
+
+El setcounter inicializa el contador
+
+
+Qué es una dependencia del contador
+
+Texto en romana y no todo en itálica.
+
+Escribir por messenger al profesor
+
+Máximo hora de entrega lunes al medio dia, las dos listas de ejercicio, crear con el entorno picture
+
+Usar bibtex, estilo apa, autor entre parantesis año,
+
+para el autor se poner o autor o editor, no debe faltar, leer las paginas 766-769 o el copka, leer con paciencia.
+
+
+
+% No enviar 11 y 57
+
+% recortar el pdf
+
+% tucolumn hace tus documentos con doble columna.
+
+http://ctan.uniminuto.edu/macros/latex/contrib/fancybox/fancybox-doc.pdf
+
+mtsf file
