@@ -1,0 +1,442 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{here}
+%\usepackage{color}
+\usepackage{rotfloat}
+\usepackage{picins} % Paquete antiguo de 1992.
+\usepackage[leftcaption]{sidecap}% El caption va a la izquierda
+\usepackage{subfig}
+\usepackage{caption}% El caption * no coloca numeración
+% elcaptionof va cuando no está dentro del entorno figure
+\captionsetup[figure]{format=hang, labelformat=parens, font={footnotesize, it, color=magenta}, margin=3cm}%también separa, numeración entre paréntesis
+\captionsetup[table]{indent=4cm,labelsep=endash, labelfont={small, bf, color=red}, textfont={small, color=blue}, width=8cm, skip=1cm}%endash es un grion
+\usepackage{diagbox}
+\usepackage{multirow}
+\usepackage{array}
+\setlength{\extrarowheight}{2pt}
+
+\usepackage[x11names,table]{xcolor}% desactivar paquete color :)
+\definecolor{yo}{cmy}{0.6,0.3,0.2}
+\usepackage{hhline}
+\usepackage{longtable}
+
+\usepackage{bm}
+\usepackage{eucal}
+\usepackage{mathrsfs}
+\usepackage{dsfont}%mathbb
+\usepackage{empheq}
+\usepackage{mathtools}
+%modificar la medida entre arriba y abajo, ahora se ve mejor, hay el espacio entre las líneas.
+
+%justificacion es por defecto, centerlast indica que la ultima linea estará centrada, pero las demas de arriba estarán justificasdas, raggedleft es alineacion izquierda, derecha.
+
+%en la tesis debe estar separada por puntos, negritas, etc, etc, etc.
+% tener cuidado con el margin y el ancho del caption.
+%por lo general el espacio entre el caption de las figuras es bueno.
+\usepackage{lipsum}
+% En la documentacion de subfig está bien empalmado con el paquete caption
+% texmakeup
+
+
+\begin{document}% En LaTeX se puede formar if else boolean, dimensiones, newcommand, enviroments, makeindex,imakeindex lista decentes
+	
+%multilined, 
+
+\begin{align}
+a+b+c&=\alpha \\
+\Aboxed{b+d&=\gamma}
+\end{align}%bonito
+
+%mathools generalizan amsmath
+
+%similar con overbracket
+$$
+\begin{pmatrix*}[r]%hacia la derecha
+aaaaaaa & bb & d \\% Están centradas las columnas. CUando hay negativos, se quiere alinear
+a & b & dddd
+\end{pmatrix*}
+$$
+
+$$
+\underbracket[1.6pt][5mm]{4+4+4}_{16}%parece un corcherte rotado
+$$
+
+$$
+\sum_{\mathclap{i=56848515651}}^{n_0} a_i %pasa a menudo, junta el índice.
+$$
+
+$$
+A\xleftrightarrow[c]{a+b}0%en amsmath solo hay flecha en una dirección.
+$$
+
+$$
+A\xLeftrightarrow[c]{a+b}0
+$$
+
+%si se desea resaltar solo una, usar el entorno equation.
+%econonmia tex
+\begin{empheq}[left=\Rightarrow,right=\Longleftarrow,outerbox=\colorbox{cyan!30}]{align}
+a+b+c&=\alpha \\
+b+d&=\gamma
+\end{empheq}
+%command + enter en mac
+\begin{empheq}[left=\Rightarrow,right=\Longleftarrow,innerbox=\colorbox{yellow}]{align}
+a+b+c&=\alpha \\
+b+d&=\gamma
+\end{empheq}
+
+\begin{empheq}[left=\Rightarrow,right=\Longleftarrow]{align}
+a+b+c&=\alpha \\
+b+d&=\gamma
+\end{empheq}
+
+\begin{empheq}[box=\fcolorbox{red}{Orchid1}]{align}
+a+b+c&=\alpha \\
+b+d&=\gamma
+\end{empheq}
+
+\begin{empheq}[box=\colorbox{Orchid1}]{align}
+a+b+c&=\alpha \\
+b+d&=\gamma
+\end{empheq}
+
+%Enfatizar las ecuaciones.% el segundo trabajo dura día lunes dura una semana
+
+$$
+\mathcal{L}
+$$
+
+$$
+\alpha \bm{\alpha}
+$$
+
+%lista de símbolos y abreviaturas.
+
+$$
+\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$
+
+$$
+\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}% Esta fuente se usa para plano o recta
+$$
+%letra opentype y y truetype. Existen compresores para pasar de uno a otro
+% se usa minionpro, es de adobe
+$$
+\mathds{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$
+
+%eucal cambia el mathcal
+
+%corta la tabla y el [] lo alínea, el caption necesariamente va adentro
+\begin{longtable}[r]{cccc}
+	\caption{Una tabla muy grande}\\
+	\hline
+	casa** & mesa** & silla** & libro** \\
+	\endfirsthead
+	casa* & mesa* & silla * & libro* \\%ayuda a crear encabezado
+	\hline
+	\endhead
+	\multicolumn{4}{r}{continua ..}\\
+	\endfoot
+	\multicolumn{4}{r}{fin.}\\
+	\endlastfoot
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	\pagebreak%corta la tabla
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	\hline
+\end{longtable}
+% La primera página va en blanco, supera los márgenes, en la siguiente también y lo deja alli
+
+\newpage
+
+\begin{tabular}{|c|c|c|c|}
+	\hline
+\rowcolor{green} & mesa & silla & libro \\
+\hhline{|>{\arrayrulecolor{green}}->{\arrayrulecolor{black}}|---}%\cline{2-4}
+\rowcolor{green} \multirow{-2}{*}{HOY}& Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO\\
+	\hline
+\end{tabular}
+
+\begin{table}[H]%Entorno table
+\centering
+\rowcolors{3}{yellow!30}{cyan!30}%el primer número (3) indica a partir de qué columna empieza a colorear
+\begin{tabular}{cccc}
+	\hline
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	\hline
+\end{tabular}
+\end{table}
+%indica a partir de que fila 3 empieza a colorear y las filas impares es yellow suave, y las filas paraes van cyan 30
+
+
+\arrayrulecolor{red} % es mejor que se encuentre dentro del entorno table
+\doublerulesepcolor{red}
+
+\begin{tabular}{c||c|c||>{\columncolor{cyan!60}}c}
+	\hline
+	casa & mesa & silla & libro \\
+	\rowcolor{yellow} Casa & Mesa & Silla & Libro \\
+	CASA & \cellcolor{olive!40} MESA & SILLA & LIBRO \\
+	\hline
+\end{tabular}
+
+\arrayrulecolor{black}
+
+%poner color a las línaas
+
+\colorbox{green}{texto texto}
+
+%conviene hace un \newcommand{}{}
+
+\pagecolor{Pink1!15}
+
+{\color{DarkOrchid1} texto texto }
+
+\textcolor{DarkOrchid1!50}{texto texto texto}%mezcla 50% de blanco
+
+\textcolor{DarkOrchid1!50!yellow!60}{texto texto } %Mezclar colores, en caso que no llegue a 100, lo mezcla con blanco
+
+\textcolor{-DarkOrchid1!}{texto texto}
+
+\textcolor{-white}{texto}%blanco es ausencia de color
+
+\textcolor{-black}{texto texto}
+
+\colorbox{black}{\textcolor{-black}{texto}}
+%complemento fisico, longitud de onda
+%complemento artistico, pinceles, mezclar colores
+%complemento de computacion
+
+%RGB fue el primer modelo
+
+%un color es la mezcla de colores red, green, blue
+
+% se suaviza colocando ! y un valor entre 0 y 100
+
+
+%el uso del RGB mayúscula
+\textcolor[RGB]{130,200,100}{texto texto}
+
+\textcolor[rgb]{0.3,0.1,0.9}{texto texto}
+
+%escala de grises
+\textcolor[gray]{0.8}{texto texto}
+
+\textcolor[gray]{0.2}{texto texto} %1 significa el blanco, cercano 1 significa cercano al blanco
+
+
+%utilidad de los colores.
+
+\newpage
+
+\nopagecolor % este comando es nuevo, antes, utf8 puede crear problemas con la mac.
+
+\begin{tabular}{m{2.5cm}|>{\centering}m{3cm}|m{1.5cm}|>{\centering\arraybackslash}m{2cm}}% queda alineada a la izquierda
+	\hline% el centering funciona en todas las columnas, excepto la última. y si se coloca, no compilará, ahora con \arraybackslash se centró el útlimo
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	\hline
+\end{tabular}
+% ¿Cómo centrar la primera casa?, hay que poner algo antes de casa, con hspace hay que estar midiendo visualmente.
+\ \\[2cm]
+%xcolor agarra colortbl, usa color y colortbl, este paquete mejora el paquete color, en xcolor no es necesario usar usenames, pero si dvipsnames, recomendacion no mezclar opciones, pues magenta tiene dos versiones distintas.
+
+	%el bf series s etermina en &, es su limita.
+\begin{tabular}{>{\bfseries\sffamily}c|>{$}c<{$}|c|m{3cm}}%primera columna en negrita
+	\hline
+	casa & x+y & silla & libro estudiado el día de hoy \\%linea alineada a la parte superior, si se desea inicial al centro, se usa m, o hacia abajo con bottom b.
+	Casa & \sum a_i & Silla & Libro \\
+	CASA & \cos\alpha & SILLA & LIBRO \\%evitando simbolo de $
+	\hline
+\end{tabular}
+
+% Si en vez de tabular se usarray, también se puede , se puede poner el criterio de la derivada., también poner en modo texto
+\ \\[2cm]
+
+\begin{tabular}{c|c|c|c}
+	\hline
+	 & mesa & silla & libro \\
+	 \cline{2-4}
+	\multirow{-2}{3cm}{AHORA ahora hoy siempre hoy}& Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	\hline
+\end{tabular}
+
+\ \\[2cm]
+
+% el 2 balancea esa fila y la siguiente
+\begin{tabular}{c|c|c|c}
+	\hline
+	\multirow{2}{*}{AHORA}& Mesa & Silla & Libro \\
+	\cline{2-4}
+	 & MESA & SILLA & LIBRO \\
+	 & MESA & SILLA & LIBRO \\
+	\hline
+\end{tabular}
+
+\ \\[2cm]
+
+%\begin{tabular}{|c|c|c|c}
+%	\hline
+%	\multicolumn{2}{*}[-0.5mm]{AHORA} & mesa & silla & libro \\
+%	\cline{2-4}
+%	& Mesa & Silla & Libro \\
+%	CASA& MESA & SILLA & LIBRO \\
+%	\hline
+%\end{tabular}
+% Se escoge una celda y colocamos el comando multirow que necesita tres argumentos.
+El primer argumento indica el numero de columnas, si no se quiere medificar el segundo se poner *, en la tercera se pone el texto
+
+
+\begin{tabular}{cccc}
+	\hline
+	\diagbox[dir=NW]{AHORA}{MAÑANA}{SIEMPRE} & mesa & silla & libro \\%empieaza en noroeste y terminar en sureste, también vale NE, el paquete forma la caja
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	\hline
+\end{tabular}
+% el slashbox no tiene un argumento más, pero sí diagbox
+\ \\[2cm]%multicolumn une 2 columnas, multirow une fos filas
+
+\begin{tabular}{cccc}
+	\hline
+	casa & mesa & silla & libro \\
+	Casa & Mesa & Silla & Libro \\
+	CASA & MESA & SILLA & LIBRO \\
+	\hline
+\end{tabular}
+
+	
+\newpage
+
+\piccaption{Logo del Centro de Tecnologías de la Información y Comunicaciones}
+\parpic(8cm, 6cm)[rs][r]{\includegraphics{ctic}}%comando hyphenation, cómo cortarlo
+Seguramente lo habrás aprendido en la escuela primaria: la Tierra describe una ór\-bita
+\lipsum[1]
+
+\begin{sidewaysfigure}
+\centering
+\includegraphics{ctic}
+\caption*{El logo de CTIC}
+\end{sidewaysfigure}
+\lipsum[1-5]
+
+%ancho de 2 a 1 la relacion del ancho del caption con la figura
+% Aquí no funciona el H mayúscula. Aquí h minúscula es fuerte, en cambio el H no es fuerte.
+\begin{SCfigure}[2][h]
+\includegraphics[scale=0.7]{ctic}
+\caption{La Tierra gira en torno a su propio eje gira en torno a su propio eje}
+\end{SCfigure}
+
+\begin{figure}
+\centering
+\subfloat[Logo de CTIC\label{f1a}]{\includegraphics[scale=0.4]{ctic}}\hspace{1cm}
+\subfloat[Escudo de la Universidad Nacional de Ingeniería\label{f1b}]{\includegraphics[scale=0.4]{logouni}}
+\caption{Investifación UNI}\label{f1}
+\end{figure}
+\lipsum[1]
+
+\pagebreak%lo que intenta, lo anterior a la página lo intenta llenar y después da el saltol, se trata de justificar el vertical.
+%Existen las viudas y huérfanas, si se desea que pasen a la siguiente línea.
+
+%en el sentido vertical existe el linebreak, lo manda a la siguiente línea y lo justifica lo restante.
+
+%ponwe letras y resaltar matemáticas.
+
+Viendo la figura \ref{f1}\subref{f1a} (ctic) y la figura \ref{f1}\subref{f1b}
+
+\begin{table}[H]
+\centering
+\caption{Esto es una tabla}
+	\begin{tabular}{|cc|c}
+		\hline
+		a & b & c \\
+		d & e & f \\
+		g & h & i \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tablaEsto es una tablaEsto es una tablaEsto es una tablaEsto es una tablaEsto es una tablaEsto es una tabla}
+	\begin{tabular}{|cc|c}
+		\hline
+		a & b & c \\
+		d & e & f \\
+		g & h & i \\
+		\hline
+	\end{tabular}
+\end{table}
+%Sintaxis
+% El paquete subfig, tenemos dos figuras 
+\end{document}
+picins es obsoleto porque nadie en 24 años.
+
+picins funciona bien sin el entorno enumarate.
+floatslet, wrapfigure, dibujo con tikz.
+
+floatplt
+
+¿Cómo se puede usar paquetes que no están en TeXLive?
+floatflp
+
+paquete legend
+En libro el caption va a la hacia afuera
+Portable en Si
+
+
+En la práctica 2 se usa la práctica 1
