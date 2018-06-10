@@ -1,0 +1,177 @@
+\documentclass{report}
+\usepackage[T1]{fontenc}
+%\usepackage{luximono}
+\usepackage[x11names]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+%\usepackage{listingsutf8}
+%\lstset{inputencoding=utf8/latin1}%se puede declarar comandos globales a todo el código
+\usepackage[linktocpage=true,breaklinks=true,colorlinks=true,urlcolor=-Orchid1,pdfstartview=FitH]{hyperref}
+%el hidelinks oculta los link en el color, es decir, a blanco negro., es mejor poner, existe un paquete bookmarks
+\renewcommand{\lstlistingname}{Programa}
+\renewcommand{\lstlistlistingname}{Tabla de programas}
+\begin{document}%%No podemos colocar letras con tilde//Cóomo comentar en verbatim.
+texto texto \lstinline|\end{document}|%sus demilimatadores deben ser el mismo, pueden ser barras, guiones o llaves.
+\chapter{Hola}
+%Hemos mostrado comandos macros o comandos en \LaTeX
+\tableofcontents
+\url{www.google.com}
+%%Debe de estar pegado al marco, sin líneas en blanco para que no haya inconvenientes
+%teletipo monoespaciado, regla no firmada.
+\section{básico}
+
+\begin{lstlisting}
+\huge
+\textbf{ }
+For
+If
+\LaTeX
+\end{lstlisting}
+
+\lstinputlisting[linerange={30-40},language=TeX,caption={copiado de CTAN}, label={pro1},captionpos=b]{picins.sty}
+
+Usando el programa \ref{pro1} se aprende a  poner gráficos al lado de texto.
+
+\lstlistoflistings
+\hyperlink{fin}{final del documento}
+\begin{lstlisting}[linewidth=8cm,breaklines=true]
+#include<stdio.h>
+int main(){
+	printf("Hola mundo");
+	return 0;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[xleftmargin=5cm]
+#include<stdio.h>
+int main(){
+printf("Hola mundo");
+return 0;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[frame=single,framerule=2pt,backgroundcolor=\color{yellow!40},rulecolor=\color{red}]
+#include<stdio.h>
+int main(){
+printf("Hola mundo");
+return 0;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[mathescape=true]
+integral $\int_a^b$
+\end{lstlisting}
+%la a cambia modo texto con las barras
+\begin{lstlisting}[escapechar=|]
+hola mec|á|nica
+\end{lstlisting}
+
+%la tarea es en artículo.
+\begin{lstlisting}[inputencoding=utf8,literate={á}{{\'a}}1{é}{{\'e}}1{ñ}{{\~n}}1{ú}{{\'u}}1]
+mecánica té ñandú
+\end{lstlisting}
+%en powerdot se puede hacer reloj
+
+\section{intermedio}
+
+% Esta es una manera un poco tosca.
+%en report la tabla de listings empieza en una nueva página
+
+texto texto texto texto texto texto texto texto texto texto texto texto
+%Se estila que los flotantes estén en la parte superior.
+
+\begin{lstlisting}[firstline=2,lastline=4]
+#include<stdio.h>
+int main(){
+printf("Hola mundo");
+return 0;
+}
+\end{lstlisting}
+% Modificar las lineas que se muestran.
+%Índice de códigos
+
+\begin{lstlisting}[linerange={2-3}]
+#include<stdio.h>
+int main(){
+printf("Hola mundo");
+return 0;
+}
+\end{lstlisting}
+%anular los 8 primeros caracteres, para crear .dtx,
+\begin{lstlisting}[gobble=8]
+#include<stdio.h>
+int main(){
+printf("Hola mundo");
+return 0;
+}
+\end{lstlisting}
+\newpage
+
+\begin{lstlisting}[showtabs=true, showspaces=true]
+#include<stdio.h>
+	int main(){
+	printf("Hola mundo");
+	return 0;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[numbers=left,numberstyle={\scriptsize\color{blue!20}}, numberblanklines=false, firstline=2,firstnumber=2]
+#include<stdio.h>
+	int main(){
+	printf("Hola mundo");
+	return 0;
+}
+\end{lstlisting}
+
+
+\begin{lstlisting}[caption={Mi primer código pirateado}]
+#include<stdio.h>
+	int main(){
+	printf("Hola mundo");
+	return 0;
+}
+\end{lstlisting}
+
+\section{avanzado}
+%\lstinputlisting{picins.sty}
+%Cuidado con codificación correcta.
+\newpage
+
+\lstinputlisting[linerange={20-35}, language=TeX]{picins.sty}
+
+\newpage
+
+\begin{verbatim}
+hola	mundo
+
+hoy día
+\end{verbatim}
+%También se pueden resaltar palabras que uno desee.
+%Lo que se pone itálica son los comentarios.
+
+\begin{lstlisting}[language=C, basicstyle=\ttfamily]
+#include <stdio.h>
+int main(){
+	printf("Hola mundo");
+	return 0;
+}
+\end{lstlisting}
+\chapter{Aprendiendo a poner programas
+	\texorpdfstring{$\int$}{integral}}
+
+\href{http://www.uni.edu.pe}{Universidad} %universidad esconde 
+
+
+
+
+
+\ \\[2cm]
+%sanserif tiene solo medio y no boldface.
+%se puede usar luxymono y se mantendría resaltado.
+\hypertarget{fin}{My final}%está enfocado a screen y pantalla.
+\end{document}
+Con el paquete listings se pueden hacer cosas relativamente estándares, se puede poner colores o manipular para el uso de tildes.
+
+p es para la siguiente pagina, b bottom, t top, h,  here.
+
+lo que hace breaklines=true, con pagebackref aparece una bibliografia con bibtex.
