@@ -1,0 +1,148 @@
+%frame es mas general
+%slide
+%diapositiva
+\documentclass[utf8,spanish,
+xcolor={x11names, table}]{beamer}
+\usepackage{lipsum}
+\usepackage{ragged2e}%Paquete para justificar
+\uselanguage{spanish}
+\languagepath{spanish}
+%\spanishdatedel%, no compila porque es del paquete spanish. 
+\usetheme{CambridgeUS}
+%\usetheme{Warsaw}
+
+\title{Mi primera exposición con beamer}
+\subtitle{algo básico}
+\author{Johm Smith}
+\institute[UNI]{Universidad Nacional de Ingeniería}% primer slide de color negro, en power dot existe una opcion
+\date{11-junio-2018}
+% Para jerarquizar se coloca fuera de los frames.
+
+\begin{document}
+
+\maketitle
+\begin{frame}{contenido de mi expo}
+	\tableofcontents%beamer comenzo como algo simple, tableofcontents tiene mas opciones.
+\end{frame}
+
+
+
+\section{Comenzando beamer}
+\subsection{Parte 1}
+\subsection{Parte 2}
+
+\section{Creando overlays}
+
+\begin{frame}{mi primera diapo}{hoy lunes 11}
+Hola mundo.\today
+\end{frame}
+
+\begin{frame}[t]
+\today%se empieza a llenar desde la parte de arriba
+\end{frame}
+
+\begin{frame}[plain]
+	\hspace*{-1cm}\includegraphics[width=128mm,height=96mm]{uni}
+\end{frame}
+
+\begin{frame}[fragile]
+	\begin{verbatim}
+	hola mundo hoy día
+	\end{verbatim}
+\end{frame}
+
+\begin{frame}
+	hola mundo \pause
+	
+	hola2 \pause
+	
+	hola3
+\end{frame}
+
+%No se estila mostrar la bibliografia
+\begin{frame}{Bibliografía}
+\begin{thebibliography}{9}%[allowframebreaks]
+\bibitem{Kop04}
+Kopka, Helmut; Daly, Patrick W.
+\newblock {\em Guide to \LaTeX}.
+4th ed.
+\newblock Pearson Education,
+Inc., 2004.
+\end{thebibliography}
+\end{frame}
+
+\begin{frame}{Listas}
+\begin{enumerate}[A)]%Cambio con respecto a texlive 2017.
+	\item[1)] hola
+	\item algo
+	\item hoy
+\end{enumerate}
+
+\begin{itemize}
+	\item hola2
+	\item algo2
+	\item hoy2
+\end{itemize}
+
+\begin{description}[MMMMMM] %hi%acabar temprano, esta metido en un caja cuyo ancho es 6m
+	\item [casa] Movimiento de precesión de los equinoccios
+	
+	\item [mesa] Movimiento de precesión de los equinoccios Movimiento de precesión de los equinoccios
+	
+	\item [silla] hola
+\end{description}
+\end{frame}
+
+\begin{frame}
+	hola mundo \alert{hoy} día\newline%\\
+	
+	\begin{alertenv}
+		esto es importante
+	\end{alertenv}
+\end{frame}
+
+\begin{frame}
+\justifying%justificar textos en beamer, por defecto se alinea a la derecha, se puede declarar arriba para justificar todas las diapoitivas
+\lipsum[4]
+\end{frame}
+
+\begin{frame}
+	\begin{block}{Mi ejemplo}
+		esto es un bloque
+	\end{block}
+
+	\begin{exampleblock}{algo}
+		esto es un bloque importante%estos bloques se resaltan
+	\end{exampleblock}
+
+	\begin{alertblock}{algo más}
+	esto es un bloque de alerta
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}
+	\begin{example}[de las cortezas cerebrales]
+		esto es algo
+	\end{example}
+\end{frame}
+\end{document}
+el spanish no es del paquete babel, beamer lo usa como traducción.
+% dar clic y muestra la acción copiar
+
+%en la versión 2016, cambbie \begin{frame}\end{frame}
+para no perder la caldad de la letra 128 mm x 96 mm, hay que tener en cuenta al insertar imágenes, en el estándar.
+
+En la pc2 se debe reescalar, minipage.
+
+Cascales
+
+alowframebreaks
+
+existen como cuatro coma
+
+ndos para hacer overlides
+
+\LaTeX usa el paqete amsthm, , con los nuevos ambientes, ya no es necesario crear nuevos paquetes.
+
+
+Hay temas fuertes de matematicas aplicadas a la biologia, hay ecuaciones integrales, ecuaciones en derivadas parciales.
