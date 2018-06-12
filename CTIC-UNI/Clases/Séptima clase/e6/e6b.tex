@@ -1,0 +1,159 @@
+%%\documentclass[utf8,spanish, xcolor={x11names,table},14pt]{beamer}
+\documentclass[utf8,spanish, xcolor={x11names,table},14pt, handout]{beamer}
+
+\uselanguage{spanish}
+\languagepath{spanish}
+
+%\usetheme{Warsaw}
+%\usetheme{CambridgeUS}
+\usetheme{AnnArbor}
+\usecolortheme{crane}
+\useinnertheme{rectangles}
+\useoutertheme[hooks]{tree}
+
+\usefonttheme[onlymath]{serif}
+
+\usepackage{ragged2e}
+
+
+\title{Mi primera exposición con beamer}
+\subtitle{algo básico}
+\author{John Smith}
+\institute[UNI]{Universidad Nacional de Ingeniería}
+\date{11-junio-2018}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{contenido de mi expo}\transboxin
+  \tableofcontents
+\end{frame}
+
+\section{Comenzando beamer}
+\subsection{parte 1}
+\begin{frame}{mi primera diapo}{hoy lunes 11}\transglitter
+  hola mundo
+  $$
+  \int_a^b\sum_{i=1}^n f(a_i)\,\mathrm{d}x_i
+  $$
+\end{frame}
+
+\begin{frame}[t]
+  hola mundo
+\end{frame}
+
+\begin{frame}[b]
+  hola mundo
+\end{frame}
+
+\begin{frame}[plain]
+  \hspace*{-1cm}\includegraphics[width=128mm, height=96mm]{uni}
+\end{frame}
+
+\subsection{parte 2}
+\begin{frame}[fragile]
+  \begin{verbatim}
+    hola    mundo hoy dia
+  \end{verbatim}
+\end{frame}
+
+
+\section{creando overlays-básico}
+\begin{frame}
+  hola mundo \pause
+  
+  hola2 \pause
+  
+  hola3
+\end{frame}
+
+\begin{frame}{Bibliografía}\transblindsvertical
+\begin{thebibliography}{9}
+\bibitem{Kop04}
+Kopka, Helmut; Daly, Patrick W.
+\newblock {\em Guide to \LaTeX}. 4th ed.
+\newblock Pearson Education, Inc., 2004.
+\end{thebibliography}
+\end{frame}
+
+\begin{frame}{Listas}\transboxin
+  \begin{enumerate}[1)]
+    \item hola
+    \item algo
+    \item hoy
+  \end{enumerate}
+  
+  \begin{itemize}
+    \item hola2
+    \item algo2
+    \item hoy2
+  \end{itemize}
+  
+  \begin{description}[MMMMMM]
+    \item[casa] Movimiento de precesión de los equinoccios
+    
+    \item[mesa] Movimiento de precesión de los equinoccios
+        Movimiento de precesión de los equinoccios
+        
+    \item[silla] hola
+  \end{description}
+\end{frame}
+
+\begin{frame}\transglitter
+  hola mundo \alert{hoy} día\newline
+  
+  \begin{alertenv}
+    esto es importante
+  \end{alertenv}
+\end{frame}
+
+\begin{frame}\transblindsvertical
+\justifying
+Seguramente lo habrás aprendido en la escuela primaria: la Tierra describe una órbita elíptica alrededor del Sol.
+Este recorrido, que se conoce como movimiento de traslación, le toma al planeta unos 365 días
+(más 5 horas, 45 minutos y 46 segundos).\newline
+
+El otro movimiento que te enseñaron es el de rotación: la Tierra gira en torno a su propio eje.\newline
+
+Este giro sobre sí misma le toma aproximadamente un día (23 horas, 56 minutos 4,1 segundos, para ser exactos).
+
+Sin embargo, estos no son los únicos movimientos que hace la Tierra.
+
+Te contamos —o recordamos— cuáles son los otros tres, también importantes, que ejecuta el planeta.
+\end{frame}
+
+\begin{frame}\transsplithorizontalin
+  \begin{block}{}
+    esto es un bloque
+  \end{block}
+  
+  \begin{exampleblock}{Mi ejemplo}
+    Para mis ejemplos
+  \end{exampleblock}
+  
+  \begin{alertblock}{algo}
+    esto es un bloque importante
+  \end{alertblock}
+  Te contamos —o recordamos— cuáles son los otros tres, también importantes, que ejecuta el planeta.
+\end{frame}
+
+\begin{frame}\transsplithorizontalin
+  \begin{example}[de las cortezas cerebrales]
+    esto es algo
+  \end{example}
+\end{frame}
+
+\begin{frame}\transboxin
+\begin{columns}[T]
+\begin{column}{5cm}
+  hola mundo hoy día
+\end{column}
+\begin{column}{5cm}
+  Este es el movimiento que describe el eje inclinado de la tierra de forma circular.
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\end{document}
