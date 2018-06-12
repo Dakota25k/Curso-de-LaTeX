@@ -1,21 +1,25 @@
+% !TeX document-id = {3a76180a-e30e-4f5d-9fbb-ced79b3e9951}
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish, es-sloppy]{babel}
+\usepackage[spanish, es-sloppy]{babel} 		% En el caso que se nombre más de un idioma, prevalece el último idioma.
 \usepackage[dvipsnames, usenames]{color}
-\usepackage{lipsum}
+\usepackage{lipsum}							% Generar texto
 \usepackage[pdftex]{graphicx}
-\graphicspath{{../../images/}}
-\usepackage{here}
+\graphicspath{{../../images/}}				% Ruta de las imágenes
+\usepackage{here}							% Paquete obsoleto, permite inserción de float.
+
 \title{Mi primer documento}
-\author{yo mismo\thanks{Lima}\\UNI\and y el otro\\CTIC}
+\author{Oromion\thanks{Lima - Perú}\\UNI\and y el otro\\CTIC}
 \date{hoy día}
-\renewcommand{\spanishlisttablename}{Mis tablas}
-\renewcommand{\spanishabstractname}{Abstracto2}
-%\renewcommand{\spanishabstractname}{Abstract}
+
+\renewcommand{\spanishlisttablename}{Mis tablas}	% Comandos globales, válidos cuando se utiliza el paquete babel con opción spanish.
+\renewcommand{\spanishabstractname}{Abstracto2}		% Comandos globales, válidos cuando se utiliza el paquete babel con opción spanish.
+
 \pagestyle{empty}
 
 \begin{document}
-%Leer el Carrasco.
+%TODO Leer el libro El Universo LaTeX de Rodrigo Castro.
 \maketitle
 \thispagestyle{empty}
 
@@ -45,7 +49,7 @@ tierra\\ b\medskip a
 \enlargethispage{2mm}
 \lipsum[2-4]
 
-%Hay dos paquetes más para etiquetas.
+%	Hay dos paquetes más para etiquetas.
 Dentro de la etiqueta debe haber palabras clave,  se etiqueta el número.
 % Si no hay palabra se usa asterisco y si hay palabra no se asterisco.
 

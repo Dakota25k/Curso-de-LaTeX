@@ -22,9 +22,9 @@ En general, los comandos en LaTeX pueden tener un máximo de 9 argumentos.
 
 Hay que diferenciar el argumento obligatorio `{}` del argumento opcional `[]`.
 
-- Table of content
-- Table of figures
-- Table of tables
+- Table of content (`\tableofcontents`).
+- Table of figures (`\listoffigures`).
+- Table of tables (`\listoftables`).
 
 El valor de `2.54cm` está truncado. 
 
@@ -36,8 +36,6 @@ La parte del preámbulo está antes de `\begin{document}`, en el preámbulo va l
 
 La codificacion `utf8` se refiere a la codificacion UNICODE.
 
-Lunes, miércoles, viernes y sábado, martes al mediodía hasta las 3 de la tarde.
-
 El paquete `tcloft` se sufre en aprender.
 
 ## Tips
@@ -48,6 +46,7 @@ El paquete `tcloft` se sufre en aprender.
 - Tildes
 - A lo mucho ocho caracteres.
 - No usen guión, coma o punto.
+
 En LaTeX todos los párrafos empiezan con una sangría.
 
 El espacio interlineal en Word es distinto al de LaTeX.
@@ -56,14 +55,11 @@ En este curso vamos a practicar con 20 o 30 paquetes.
 
 > LaTeX no reconoce espacios ambientes, es decir, da igual los saltos de línea o espacios en blanco que se deje, siempre se considera que es un salto de línea o un espacio en blanco.
 
-\parindent se puede manipular con un número a su lado.
+Con el comando '\parindent' se puede manipular con un número a su lado.
 
 No hacer índice, empezar haciendo media página de texto.
 
-La próxima semana tendremos clase:
-
-Día martes al medio día, el día miércoles se tomará un ejercicio como del tipo 2.
-
 Consultas académicas
 ===
-Respuestas a la media noche vía Facebook o vía correo.
+- Vía Facebook :computer:.
+- Vía correo electrónico :email:.
