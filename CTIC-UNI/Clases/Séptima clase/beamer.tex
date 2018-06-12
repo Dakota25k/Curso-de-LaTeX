@@ -2,14 +2,19 @@
 %slide
 %diapositiva
 \documentclass[utf8,spanish,
-xcolor={x11names, table}]{beamer}
+xcolor={x11names, table},14pt,handout]{beamer} % Handout anula los overlays.
 \usepackage{lipsum}
 \usepackage{ragged2e}%Paquete para justificar
 \uselanguage{spanish}
 \languagepath{spanish}
 %\spanishdatedel%, no compila porque es del paquete spanish. 
-\usetheme{CambridgeUS}
+%\usetheme{CambridgeUS}
 %\usetheme{Warsaw}
+\usetheme{AnnArbor}
+\usecolortheme{crane}
+\useinnertheme{rectangles}
+\useoutertheme[hooks]{tree}
+\usefonttheme[onlymath]{serif}
 
 \title{Mi primera exposición con beamer}
 \subtitle{algo básico}
@@ -21,7 +26,7 @@ xcolor={x11names, table}]{beamer}
 \begin{document}
 
 \maketitle
-\begin{frame}{contenido de mi expo}
+\begin{frame}{contenido de mi expo}\transblindshorizontal
 	\tableofcontents%beamer comenzo como algo simple, tableofcontents tiene mas opciones.
 \end{frame}
 
@@ -33,11 +38,11 @@ xcolor={x11names, table}]{beamer}
 
 \section{Creando overlays}
 
-\begin{frame}{mi primera diapo}{hoy lunes 11}
+\begin{frame}{mi primera diapo}{hoy lunes 11}\transblindsvertical
 Hola mundo.\today
 \end{frame}
 
-\begin{frame}[t]
+\begin{frame}[t]\transboxin
 \today%se empieza a llenar desde la parte de arriba
 \end{frame}
 
@@ -45,7 +50,7 @@ Hola mundo.\today
 	\hspace*{-1cm}\includegraphics[width=128mm,height=96mm]{uni}
 \end{frame}
 
-\begin{frame}[fragile]
+\begin{frame}[fragile]\transboxout
 	\begin{verbatim}
 	hola mundo hoy día
 	\end{verbatim}
@@ -125,6 +130,22 @@ Inc., 2004.
 		esto es algo
 	\end{example}
 \end{frame}
+
+\begin{frame}
+\begin{columns}[T]
+	\begin{column}{5cm}%necesita un argumento obligatorio, como todo es 128, esos 8 le damos a los margenes
+		hola mundo hoy día
+		$$
+		\int_a^b\sum_{i=1}^{n}%son letras san serif que se usan en modo  matematico, se ve feo. se debe usar letras en san serif y modo matematico en serif
+		$$
+	\end{column}
+
+	\begin{column}{5cm}%hay una T y t.
+		Este es el movimiento que descirbe el eje inclinado de la tierra de forma circular
+	\end{column}
+
+\end{columns}
+\end{frame}
 \end{document}
 el spanish no es del paquete babel, beamer lo usa como traducción.
 % dar clic y muestra la acción copiar
@@ -146,3 +167,29 @@ ndos para hacer overlides
 
 
 Hay temas fuertes de matematicas aplicadas a la biologia, hay ecuaciones integrales, ecuaciones en derivadas parciales.
+
+
+Aqui no es necesario usar multicol, porque hay un paquete column.
+
+Para usar duraciones hay que tener una buena máquina
+
+
+foxit, reader,
+
+sumatra no
+
+profesional fonts
+
+Hace trabajo con la versión 0.3 el trabajo final.
+
+Profundizar el uso de handout.
+
+
+%TODO Libro de Cascales habla sobre el comando picture y ve el comando graphics y escala la la caja que lo contiene, estudiar eso para el dibujo o gráfico
+
+arrastrar al archivo ejecutable y correr.
+%include deja una línea en blanco cuando se usa, el \input{} necesita ficheros tex incluso  sin su extension
+http://ctan.uniminuto.edu/macros/latex/contrib/beamer/doc/beameruserguide.pdf
+https://hartwork.org/beamer-theme-matrix/
+https://askubuntu.com/questions/17338/how-do-i-create-a-cube-effect-for-pdf-presentation-transitions
+http://recherche.noiraudes.net/en/LaTeX.php
