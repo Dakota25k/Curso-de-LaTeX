@@ -30,7 +30,7 @@
 	top = 2cm,
 	bottom = 3cm
 }
-%\setlength\footskip{0pt}
+
 \title{\Huge\bfseries Algo de matemática y economía}
 \author{\color{red}{Juan Pérez}\thanks{Gracias a CTIC}}
 \date{junio, 6 del 2018}
@@ -60,16 +60,12 @@
 \renewcommand{\refname}{Referencias que usé}
 
 %\setlist[enumerate,1]{label=\arabic*.}
-%\setlength{\parskip}{1em}
-%\setlength{\baselineskip}{0cm}
-%\setlength{\footskip}{0pt}
 
 \global\mdfdefinestyle{minkowski}{%
 	linecolor=black,linewidth=3pt,%
 	leftmargin=1cm,rightmargin=1cm
 }
-%\setlength{\textheight}{0.83\paperheight}
-%\newgeometry{textheight=\paperheight,textwidth=0.83\paperwidth}
+
 \begin{document}
 
 \maketitle
@@ -117,8 +113,6 @@ $$
 Es fácil verificar que $(X,d)$ es de hecho un espacio métrico. Aquí $d$ es llamado \textbf{métrica discreta} sobre $X$, y $(X,d)$ es llamado un \textbf{espacio discreto}.
 \end{example}
 
-%\baselineskip=0pt
-%\vspace*{10cm}
 \clearpage
 \setcounter{page}{2}
 \newgeometry{
@@ -127,8 +121,7 @@ Es fácil verificar que $(X,d)$ es de hecho un espacio métrico. Aquí $d$ es ll
 	top = 2cm,
 	bottom = 1.5cm
 }
-%\setlength{\textheight}{0.85\paperheight}
-%\restoregeometry
+
 \begin{mdframed}[style=minkowski]
 	\vspace*{3mm}
 	\color{Violet}
@@ -210,12 +203,11 @@ Mirando el numerado en esta expresión, podemos ver que la ecuación se cumplir�
 \pp_k& = \frac{\mmax{0}{\pp_k+\gzp[\ast]{k}}}{\sum\limits_{n=1}^N\mmax{0}{\pp_n+\gzp[\ast]{k}}}>0		&	(\text{Caso 2})
 \end{align}
 
-\begin{enumerate}[label={\bfseries Caso~\arabic*},wide =\parindent]
+\begin{enumerate}[label={\bfseries Caso \arabic{enumi}},ref=Caso \arabic{enumi},wide =\parindent,leftmargin=2.5em]
 
 \item $\pp_k=0=\mmax{0}{\pp_n+\gzp[\ast]{n}}$. Por lo tanto, $0\geq \pp_k+\gzp[\ast]{k}=\gzp[\ast]{k}$ y $Z_k(\pp)\leq0$. Este es el caso de bienes libres con mercandos transparentes on con exceso de oferta en el equilibrio.\label{case:1}
 	
-\item Para evitar una notación complicada, sea
-\label{case:2}
+\item Para evitar una notación complicada, sea\label{case:2}
 $$
 \lambda=\frac{1}{\sum\limits_{n=1}^N\mmax{0}{\pp_n+\gzp[\ast]{n}}}
 $$
@@ -228,7 +220,7 @@ entonces multiplicaremos por $Z_k(\pp)$ para conseguir
 \begin{equation}\label{eq:6}
 \left(1-\lambda\right)\pp_kZ_k(\pp)=\lambda\gamma^{k}{\left(Z_k(p^{\ast})\right)}^{2}
 \end{equation}
-y ahora sumemos sobre todo $k$ en el \ref{case:2}, obteniendo
+y ahora sumemos sobre todo $k$ en el \textbf{\ref{case:2}}, obteniendo
 $$
 (1-\lambda)\sum_{\substack{k\in\text{ \ref{case:2}}}}\pzp{k}=\lambda\sum_{\substack{k\in\text{ \ref{case:2}}}}\gamma^{k}{\left(Z_k(p^{\ast})\right)}^{2}.
 $$
@@ -236,20 +228,20 @@ La \walrass{} dice que
 $$
 0=\sum_{k=1}^{N}\pzp{k}=\sum_{\substack{k\in\text{ \ref{case:1}}}}\pzp{k}+\sum_{\substack{k\in}\text{ \ref{case:2}}}\pzp{k}.
 $$
-Pero para $k\in$ \ref{case:1}, $\pp_kZ_k(\pp)=0$, y luego
+Pero para $k\in$ \textbf{\ref{case:1}}, $\pp_kZ_k(\pp)=0$, y luego
 $$
 0=\sum_{\substack{k\in}\text{ \ref{case:1}}}\pzp{k}.
 $$
 
 Por lo tanto,
 $$
-\sum_{k\in\text{ \ref{case:2}}}\pzp{k}=0
+\sum_{k\in\text{ \ref{case:2}}}\pzp{k}=0.
 $$
 Luego, de \eqref{eq:6} tenemos
 $$
 0=\left(1-\lambda\right)\cdot\sum_{\substack{k\in\text{ \ref{case:2}}}}\pzp{k}=\lambda\cdot\sum_{\substack{k\in\text{ \ref{case:2}}}}\gamma^{k}{\left(Z_k(p^{\ast})\right)}^{2}.
 $$
-Usando la \walrass, establecemos que el lado izquierdo es igual a $0$, pero el lado derecho puede ser cero solo si $Z_k(\pp)=0$ para todo $k$ tal que $\pp>0$ ($k$ en el ). Así, $\pp$ es un equilibrio. Esto concluye la prueba.
+Usando la \walrass, establecemos que el lado izquierdo es igual a $0$, pero el lado derecho puede ser cero solo si $Z_k(\pp)=0$ para todo $k$ tal que $\pp>0$ ($k$ en el \ref{case:2}). Así, $\pp$ es un equilibrio. Esto concluye la prueba.
 \end{enumerate}
 \end{proof}
 
