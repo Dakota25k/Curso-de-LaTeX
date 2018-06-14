@@ -38,10 +38,10 @@ Tercer abstracto.
 \end{abstract}
 
 \newpage
-\vspace*{4cm}
+\vspace*{4cm}	% Si en la página actual no se encuentra texto antes de usar el comando.
 Hola.
 
-\vspace{2cm}
+\vspace{2cm}	% Si en la página actual se encuentra texto antes de usar el comando.
 
 \hspace*{3cm} mundo \hspace{4cm} mundo 2. \ \ \ día.\quad lunes\qquad 4 de junio.
 
@@ -50,8 +50,7 @@ tierra\\ b\medskip a
 \lipsum[2-4]
 
 %	Hay dos paquetes más para etiquetas.
-Dentro de la etiqueta debe haber palabras clave,  se etiqueta el número.
-% Si no hay palabra se usa asterisco y si hay palabra no se asterisco.
+Dentro de la etiqueta debe haber palabras clave, se etiqueta el número.
 
 \newpage
 \begin{flushright}
@@ -68,15 +67,17 @@ El otro movimiento que\\ te enseñaron es el de la rotación\\ la Tierra gira en
 Universidad Nacional de Ingeniería
 \section[Tamaño]{Tamaños de letra}\label{sec:2}
 
+%% Tipo de letra romana.
 \textrm{Universidad Nacional de Ingeniería} % Es un comando con argumento.
 
 {\rmfamily Universidad Nacional de Ingeniería} % Este es un comando sin argumento.
 
 %Comparar la letra Serif del sin San Serif o palo seco.
+% Tipo de letra sin serifas.
 \textsf{Universidad Nacional de Ingeniería}
 
 {\sffamily Universidad Nacional de Ingeniería}
-
+% Tipo de letra teletype
 \texttt{Universidad Nacional de Ingeniería}
 
 {\ttfamily Universidad Nacional de Ingeniería} % Cada letra está dentro de un cuadrado de un mismo ancho.
@@ -89,11 +90,11 @@ Universidad Nacional de Ingeniería
 
 {\itshape Universidad Nacional de Ingeniería}
 
-\textsl{Universidad Nacional de Ingeniería}
+\textsl{Universidad Nacional de Ingeniería}	% Slan quiere decir oblicua.
 
 {\slshape Universidad Nacional de Ingeniería}
 
-\textsc{Universidad Nacional de Ingeniería}
+\textsc{Universidad Nacional de Ingeniería} % Small Caps
 
 \tableofcontents
 
@@ -134,21 +135,18 @@ Universidad Nacional de Ingeniería
 % Es preferible que sea ordenado.
 
 % Se recomienda usar cuando solo es menor a una línea.
-%small caps
 
-% Slan quiere decir oblicua.
 \newpage
-
 
 Por lo visto en la sección \ref{sec:2} cambiamos a letras por lo visto en la página \pageref{sec:2}.
 
 \newpage
 
-\includegraphics[width=4cm]{logo.png}%No es necesario colocar extensión.
-\includegraphics[height=2cm]{logo}% El ancho o alto se mantiene en proporción con el anterior.
-\includegraphics[width=4cm,height=2cm]{logo}
+\includegraphics[width=4cm]{logo.png}			% No es necesario colocar la extensión de la imagen.
+\includegraphics[height=2cm]{logo}				% El ancho o el alto se mantiene en proporción con el anterior.
+\includegraphics[width=4cm,height=2cm]{logo}	% Hay deformación.
 
-\includegraphics[scale=0.3]{logouni}
+\includegraphics[scale=0.3]{logouni}			% Reescalando imagen.
 
 \newpage
 
@@ -157,9 +155,9 @@ Por lo visto en la sección \ref{sec:2} cambiamos a letras por lo visto en la p�
 \end{center}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=3cm]{logo}
-	\caption[Escudo de la UNI]{Esto es el escudo de la UNI.}\label{fig:1}
+\centering
+\includegraphics[width=3cm]{logo}
+\caption[Escudo de la UNI]{Esto es el escudo de la UNI.}\label{fig:1}
 \end{figure}
 
 \listoffigures
@@ -179,7 +177,7 @@ Tenemos el escudo de la UNI \ref{fig:1} en la página \pageref{fig:1}.
 			\begin{enumerate}
 				\item 1
 				\item 2
-%				\begin{enumerate}
+%				\begin{enumerate}		% Si se supera el nivel 4 de anidamientos se obtiene un error.
 %					\item a
 %					\item b
 %					\item c
@@ -208,7 +206,7 @@ Tenemos el escudo de la UNI \ref{fig:1} en la página \pageref{fig:1}.
 			\begin{itemize}
 				\item 5
 				\item 6
-%				\begin{itemize}
+%				\begin{itemize}			% Si se supera el nivel 4 de anidamientos se obtiene un error.
 %					\item you
 %				\end{itemize}
 				\item 3
@@ -239,18 +237,19 @@ Tenemos el escudo de la UNI \ref{fig:1} en la página \pageref{fig:1}.
 
 \begin{description}
 	\item[casa] Es un lugar donde vivimos.
-	
+
 	\lipsum[1]
-	
+
 	\item[silla] Donde nos sentamos.\footnote{esto es una nota de página}
+
 	\lipsum[1]
 \end{description}
+
 También se puede referenciar los enumerate y los itemize, los description también se pueden, pero es necesario renombrar un comando.
 
 %No usar parámetro opcional en enumerate ni itemize.
 %\includegraphics{logouni.eps}
 %variorref, cleverref.
-% Fuente no es traducción de font.
 
 En el libro de Cascal ver lo que ocurre con una tabla.
 
@@ -368,6 +367,6 @@ El entorno equation sirve para numerar ecuaciones.
 \int
 \end{equation}
 
-Mi ecuación es (\ref{eq:1}).%\eqref{eq:1}
+Mi ecuación es (\ref{eq:1}).% Más adelante utilizaremos: \eqref{eq:1}.
 
 \end{document}

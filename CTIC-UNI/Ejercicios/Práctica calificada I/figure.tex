@@ -1,0 +1,52 @@
+\setlength{\unitlength}{1cm}
+\begin{picture}(12,12)
+\thicklines
+
+% Tracing the coordinate axes
+\put(6,6){\vector(1,0){5}}				% Semiaxis X	(A)
+\put(6,6){\vector(-1,0){5}}				% Semiaxis -X	(B)
+\put(6,6){\vector(0,1){5}}				% Semiaxis Y	(C)
+\put(6,6){\vector(0,-1){5}}				% Semiaxis -Y	(D)
+
+% Marking the metrics
+\put(7.7,7.7){\makebox(0,0){\large$C_1$}}
+\put(8.5,8.5){\makebox(0,0){\large$C_2$}}
+\put(9.1,9.1){\makebox(0,0){\large$C_3$}}
+\put(10.3,10.3){\makebox(0,0){\large$C_\infty$}}
+
+% Drawing $C_1$
+\put(10,6){\line(-1,1){4}}				% (A-C)
+\put(6,10){\line(-1,-1){4}}				% (C-B)
+\put(2,6){\line(1,-1){4}}				% (B-D)
+\put(6,2){\line(1,1){4}}				% (D-A)
+
+% Marking the ``ones''
+\put(10.2,5.75){\makebox(0,0){$1$}}		% (A)
+\put(5.8,10.25){\makebox(0,0){$1$}}		% (C)
+\put(1.7,5.75){\makebox(0,0){$-1$}}		% (B)
+\put(5.7,1.75){\makebox(0,0){$-1$}}		% (D)
+
+% Marking the circles
+\put(10,6){\circle*{0.15}}					% (A)
+\put(6,10){\circle*{0.15}}					% (C)
+\put(2,6){\circle*{0.15}}					% (B)
+\put(6,2){\circle*{0.15}}					% (D)
+
+% Drawing $C_\infty$
+\put(10,2){\line(0,1){8}}				% (A-C)
+\put(10,10){\line(-1,0){8}}				% (C-B)
+\put(2,10){\line(0,-1){8}}				% (B-D)
+\put(2,2){\line(1,0){8}}				% (D-A)
+
+% Drawing $C_2$ with bezier curves
+\cbezier(2,6)(2,4)(4,2)(6,2)
+\cbezier(6,2)(8,2)(10,4)(10,6)
+\cbezier(10,6)(10,8)(8,10)(6,10)
+\cbezier(6,10)(4,10)(2,8)(2,6)
+
+% Drawing $C_3$ with bezier curves
+\cbezier(2,6)(2,2.5)(2.5,2)(6,2)
+\cbezier(6,2)(9.5,2)(10,2.5)(10,6)
+\cbezier(10,6)(10,9.5)(9.5,10)(6,10)
+\cbezier(6,10)(2.5,10)(2,9.5)(2,6)
+\end{picture}

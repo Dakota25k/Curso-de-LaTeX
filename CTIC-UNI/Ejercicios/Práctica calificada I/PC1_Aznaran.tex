@@ -1,0 +1,264 @@
+%
+% PC1_Aznarantex -- a tex source file.
+%
+% Copyright © 2018 Oromion <caznaranl@uni.pe>
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+%s along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}														% Use it only if you have the version of texlive 2018 or higher
+\usepackage[T1]{fontenc}														% Enable Computer modern boldface font
+\usepackage[dvipsnames, x11usenames]{xcolor}
+\usepackage{graphicx,float,pict2e,mdframed}
+\usepackage{mathtools,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[lmargin=2cm, rmargin=1.5cm, tmargin=2cm, bmargin=1.5cm]{geometry}
+
+%\setlength\footskip{0pt}
+\title{\bfseries Algo de matemática y economía}
+\author{\color{red}{Juan Pérez}\thanks{Gracias a CTIC}}
+\date{junio, 6 del 2018}
+\linespread{1}
+%\fontfamily{cmb}																% What does this?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{definition}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{definition}{Definición}
+\newtheorem{example}{Ejemplo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\brouwer}{Teorema del Punto Fijo de Brouwer}
+\newcommand{\walras}{Ley de Walras y Continuidad}
+\newcommand{\walrass}{Ley de Walras}
+\newcommand{\mmax}[2]{\max\left[#1,#2\right]}
+
+\newcommand{\pzp}[1]{\pp_{#1}Z_{#1}(\pp)}
+\newcommand{\gzp}[2][]{\gamma^{#2}Z_{#2}(p^{#1})}
+\newcommand{\pp}{p^{\ast}}
+
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\listfigurename}{Mis figuras}
+\renewcommand{\listtablename}{Las tablas de clase}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\refname}{Referencias que usé}
+
+%\setlist[enumerate,1]{label=\arabic*.}
+%\setlength{\parskip}{1em}
+%\setlength{\baselineskip}{0cm}
+%\setlength{\footskip}{0pt}
+
+\global\mdfdefinestyle{minkowski}{%
+	linecolor=black,linewidth=3pt,%
+	leftmargin=1cm,rightmargin=1cm
+}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
+\thispagestyle{empty}
+\section{Espacios métricos}
+
+Ver \cite[Capítulo C]{Ok2007}
+
+\subsection{Nociones básicas}
+
+\subsubsection{Espacios métricos. Definición y ejemplos}
+
+\begin{definition}
+
+Sea $X$ un conjunto no vacío. Una función $d:X\times X\rightarrow\mathbb{R}_{+}$ que satisface las siguientes propiedades es llamada una \textbf{función distancia} (o una \textbf{métrica}) sobre $X$: Para cualquier $x,y,z\in X$,
+
+\begin{enumerate}[label=\arabic*.]
+
+	\item $d(x,y)=0$ si y sólo si $x=y$ \label{def:1}
+	
+	\item (Simetría) $d(x,y)=d(y,x)$ \label{def:2}
+	
+	\item (Desigualdad triangular) $d(x,y)\leq d(x,z)+d(z,y)$. \label{def:3}
+
+\end{enumerate}
+
+\end{definition}
+
+Si $d$ es una función distancia sobre $X$, decimos que $(X,d)$ es un \textbf{espacio métrico}, y nos referimos a los elementos \linebreak de $X$ como \textbf{puntos} en $(X,d)$. Si $d$ satisface \ref{def:2} y \ref{def:3}, y $d(x,x)=0$ para cualquier $x\in X$, entonces decimos que $d$ \linebreak es una \textbf{semimétrica} sobre $X$, y $(X,d)$ es un \textbf{espacio semimétrico}
+
+\begin{example}
+
+Sea $X$ un conjunto no vacío. Una manera trivial de hacer $X$ un espacio métrico es usar la métrica $d:X\times X\rightarrow\mathbb{R}_+$, que es definida por
+$$
+d(x,y)\coloneqq\begin{cases}
+1,&x\neq y\\
+0,& x=y
+\end{cases}
+$$
+Es fácil verificar que $(X,d)$ es de hecho un espacio métrico. Aquí $d$ es llamado \textbf{métrica discreta} sobre $X$, y $(X,d)$ es llamado un \textbf{espacio discreto}.
+\end{example}
+
+%\baselineskip=0pt
+%\vspace*{10cm}
+
+\newpage
+\setcounter{page}{2}
+
+\begin{mdframed}[style=minkowski]
+	\vspace*{3mm}
+	\color{Violet}
+	\textsc{Desigualdad de Minkowski 1}
+	
+	\noindent
+	Para cualquier $n\in\mathbb{N}, a_i, b_i\in\mathbb{R}, i=1,\ldots,n$ y cualquier $1\leq p<\infty$,
+	\
+	$$
+	{\left(\sum_{i=1}^{n}{\left\lvert a_i+b_i\right\rvert}^{p}\right)}^{\frac{1}{p}}\leq
+	{\left(\sum_{i=1}^{n}{\left\lvert a_i\right\rvert}^{p}\right)}^{\frac{1}{p}}+
+	{\left(\sum_{i=1}^{n}{\left\lvert b_i\right\rvert}^{p}\right)}^{\frac{1}{p}}
+	$$
+	\
+\end{mdframed}
+
+\begin{figure}[H]
+	\centering
+	\scalebox{.5}{\input{figure.tex}}
+	\caption{Bolas en $\mathbb{R}^2$.}
+\end{figure}
+
+\section[Equilibrio]{Equilibrio en la economía}
+
+Ver \cite[Capítulo 5]{Starr2011}
+
+{
+\sffamily\LARGE
+Ahora enunciaremos y probaremos el mayor resultado de esta introducción, que bajo las hipótesis introducidas arriba, la \walras, existe un equilibrio en la economía. Para hacer esto, necesitamos una pieza adicional de estructura matemática, el \brouwer.
+}
+
+\begin{theorem}[\brouwer]\label{eq:brouwer}
+
+Sean $f(\cdot)$ una función continua, $f:P\rightarrow P$. Entonces existe $x^{\star}\in P$ tal que $f(x^{\star})=x^{\star}$.
+
+\end{theorem}
+
+\begin{theorem}
+
+Consideremos que se satisface la \walras. Entonces existe $p^{\star}\in P$ tal que $p^{\star}$ es un equilibrio.
+
+\end{theorem}
+
+\begin{proof}[Prueba]
+{\color{Green}
+La prueba del teorema es el análisis matemático de una historia. Supongamos precios asignados por un \linebreak subastador. Él llama un vector de precios $p$, y el mercado responde con un vector de exceso de demanda $Z(p)$. Algunos bienes estar en exceso de oferta en $p$, mientras otros estarán en exceso de demanda. El subastador entonces hace lo obvio. Él alza el precio de los bienes en exceso de demanda y reduce el precio de los bienes en exceso de oferta. Pero no se puede mucho cualquiera de los cambios; los precios deben mantenerse en el simplex. ¿Cómo debe asegurarse de mantener los precios en el simplex? Primero, los precios deben permanecer no negativos. Cuando él reduce un precio, debe asegurarse no reducirlo bajo cero. Cuando el aumenta los precios, debería estar seguro que el nuevo precio resultante permanece en el simplex. ¿Cómo puede hacer esto? Él modifica los nuevos precios tal que sumen uno. Además, queremos usar el \brouwer sobre el proceso de modificación de precios; de ahí que el subastador debe hacer el ajuste de precios una función continua del simplex en sí mismo. Esto nos lleva a la siguiente función de modificación de precios $T$, que representa como el subastador administra los precios.
+}
+
+\clearpage
+
+Sea $T: P\rightarrow P$, donde $T(p)=\left(T_1(p),T_2(p),\ldots,T_k(p),\ldots,T_N(p)\right)$. $T_k(p)$ es el precio modificado del bien $k$, modficado por el subastador tratando de llevar a la oferta y la demanda al balance. Sea $\gamma^k>0$. El proceso de ajuste del $k$-ésimo precio puede ser representado como $T_k(p)$, definido como sigue:
+\begin{equation}\label{eq:1}
+T_k(p)\equiv\frac{\mmax{0}{p_k+\gzp{k}}}{\sum\limits_{n=1}^N\mmax{0}{p_n+\gzp{n}}}.
+\end{equation}
+
+La función $T$ es una función de ajuste de precios. Éste aumenta el precio relativo de bienes en exceso de demanda y reduce el precio el precio de bienes en exceso de oferta mientras mantiene el vector de precio en el simplex. La expresión $p_k+\gzp{k}$ representa la idea que los precios de bienes en exceso de demanda deben aumentar y aquellos en exceso de oferta se deben reducir. El operador $\mmax{0}{\cdot}$ representa la idea que precios modificados deben ser no \linebreak negativos. La forma fraccional de $T$ nos recuerda que después que cada precio es ajustado individualmente, ellos son reajustados proporcionalmente para mantenerse en el simplex. Para que $T$ esté bien definido, debemos mostrar que el denominador no es cero, esto es,
+
+\begin{equation}\label{eq:2}
+\sum_{n=1}^{N}\mmax{0}{p_n+\gzp{n}}\neq0.
+\end{equation}
+
+Omitimos la demostración formal de \eqref{eq:2}, notando solamente que sigue de la \walrass. Para que la suma en el denominador sea cero o negativo, todos los bienes deben estar en exceso de oferta simultáneamente, que es contrario a nuestras nociones de escasez y---apareciendo---a la \walrass. Recordemos que $Z(\cdot)$ es una función continua. Las operaciones de $\max\left[\right]$, suma y división por una función distinta de cero mantienen la continuidad. Por lo tanto, $T(p)$ es una función continua del simplex en sí mismo.
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
+Por el \brouwer, existe $\pp\in P$ tal que $T(\pp)=\pp$. Como $T(\cdot)$ es la función de ajuste de precio del subastador, esto significa que $\pp$ es un precio en el cual el subastador detiene el ajuste. Su regla de ajuste de precios dice que una vez que ha encontrado $\pp$ el proceso de ajuste se detiene.
+
+Ahora debemos mostrar que la decisión del subastador de parar ajustando el precio es realmente lo correcto a hacer. Esto es, queremos mostrar que $\pp$ no es sólo el punto de parado del proceso de ajuste de precios sino también que actualmente representa equilibrio general de precios para la economía. Por lo tanto debemos mostrar que en $\pp$ todos los mercados están definidos con la posible excepción de unos pocos con bienes libres con sobre oferta.
+
+Como $T(\pp)=\pp$, para cada bien $k$, $T_k(\pp)=\pp_k$. Esto es, para todo $k=1,\ldots,N$,
+\begin{equation}\label{eq:3}
+\pp_k=\frac{\mmax{0}{\pp_k+\gzp[\ast]{k}}}{\sum\limits_{n=1}^{N}\mmax{0}{\pp_n+\gzp[\ast]{n}}}.
+\end{equation}
+Mirando el numerado en esta expresión, podemos ver que la ecuación se cumplirá cuando
+
+\begin{align}
+\pp_k & = 0 	&(\text{Caso 1})\\
+\intertext{o por}
+\pp_k& = \frac{\mmax{0}{\pp_k+\gzp[\ast]{k}}}{\sum\limits_{n=1}^N\mmax{0}{\pp_n+\gzp[\ast]{k}}}>0		&	(\text{Caso 2})
+\end{align}
+
+\begin{enumerate}[label={\bfseries Caso~\arabic*},wide =\parindent]
+
+\item $\pp_k=0=\mmax{0}{\pp_n+\gzp[\ast]{n}}$. Por lo tanto, $0\geq \pp_k+\gzp[\ast]{k}=\gzp[\ast]{k}$ y $Z_k(\pp)\leq0$. Este es el caso de bienes libres con mercandos transparentes on con exceso de oferta en el equilibrio.\label{case:1}
+	
+\item Para evitar una notación complicada, sea
+\label{case:2}
+$$
+\lambda=\frac{1}{\sum\limits_{n=1}^N\mmax{0}{\pp_n+\gzp[\ast]{n}}}
+$$
+
+entonces $T_k(\pp)=\lambda(\pp_k+\gzp[\ast]{k})$. Como $\pp$ es el punto fijo de $T$ tenemos $\pp=\lambda\left(\pp_k+\gzp[\ast]{k}\right)$. Esta expresión es verdadera para todo $k$ con $\pp_k>0$, y $\lambda$ es el mismo para todo $k$. Haremos algo de álgebra en esta expresión. Primero combinemos términos en $\pp_k$,
+$$
+\left(1-\lambda\right)\pp_k=\lambda\gzp[\ast]{k};
+$$
+entonces multiplicaremos por $Z_k(\pp)$ para conseguir
+\begin{equation}\label{eq:6}
+\left(1-\lambda\right)\pp_kZ_k(\pp)=\lambda\gamma^{k}{\left(Z_k(p^{\ast})\right)}^{2}
+\end{equation}
+y ahora sumemos sobre todo $k$ en el \ref{case:2}, obteniendo
+$$
+(1-\lambda)\sum_{\substack{k\in\text{ \ref{case:2}}}}\pzp{k}=\lambda\sum_{\substack{k\in\text{ \ref{case:2}}}}\gamma^{k}{\left(Z_k(p^{\ast})\right)}^{2}.
+$$
+La \walrass{} dice que
+$$
+0=\sum_{k=1}^{N}\pzp{k}=\sum_{\substack{k\in\text{ \ref{case:1}}}}\pzp{k}+\sum_{\substack{k\in}\text{ \ref{case:2}}}\pzp{k}.
+$$
+Pero para $k\in$ \ref{case:1}, $\pp_kZ_k(\pp)=0$, y luego
+$$
+0=\sum_{\substack{k\in}\text{ \ref{case:1}}}\pzp{k}.
+$$
+
+Por lo tanto,
+$$
+\sum_{k\in\text{ \ref{case:2}}}\pzp{k}=0
+$$
+Luego, de \eqref{eq:6} tenemos
+$$
+0=\left(1-\lambda\right)\cdot\sum_{\substack{k\in\text{ \ref{case:2}}}}\pzp{k}=\lambda\cdot\sum_{\substack{k\in\text{ \ref{case:2}}}}\gamma^{k}{\left(Z_k(p^{\ast})\right)}^{2}.
+$$
+Usando la \walrass, establecemos que el lado izquierdo es igual a $0$, pero el lado derecho puede ser cero solo si $Z_k(\pp)=0$ para todo $k$ tal que $\pp>0$ ($k$ en el ). Así, $\pp$ es un equilibrio. Esto concluye la prueba.
+\end{enumerate}
+\end{proof}
+
+\section[Una tabla]{La tabla de la 1$^{\text{ra}}$ clase}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|r|c|l|}
+		\hline
+		\multicolumn{3}{|c|}{Una tabla simple}	\\
+		\hline
+		abab & cded & ef 						\\
+		\cline{1-2}
+		\multicolumn{2}{|c|}{ghi} & 			\\
+		\hline
+		j & k & lm								\\
+		\hline
+	\end{tabular}
+	\caption[Primera tabla]{Tabla simple.}
+\end{table}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+\end{document}
+Para utilizar la función máx sin tilde se activa el paquete babel con opción spanish y se coloca el comando \unaccentedoperators
