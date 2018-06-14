@@ -1,5 +1,5 @@
 %
-% PC1_Aznarantex -- a tex source file.
+% PC1_Aznaran.tex -- a tex source file.
 %
 % Copyright © 2018 Oromion <caznaranl@uni.pe>
 %
@@ -17,20 +17,25 @@
 %s along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 \documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}														% Use it only if you have the version of texlive 2018 or higher
-\usepackage[T1]{fontenc}														% Enable Computer modern boldface font
+\usepackage[utf8]{inputenc}							% For TexLive 2017 or earlier
+\usepackage[T1]{fontenc}							% Enable Computer modern boldface font
 \usepackage[dvipsnames, x11usenames]{xcolor}
 \usepackage{graphicx,float,pict2e,mdframed}
 \usepackage{mathtools,amssymb,amsthm}
 \usepackage{enumitem}
-\usepackage[lmargin=2cm, rmargin=1.5cm, tmargin=2cm, bmargin=1.5cm]{geometry}
-
+\usepackage{geometry}
+\geometry{
+	left = 2cm,
+	right = 1.5cm,
+	top = 2cm,
+	bottom = 3cm
+}
 %\setlength\footskip{0pt}
-\title{\bfseries Algo de matemática y economía}
+\title{\Huge\bfseries Algo de matemática y economía}
 \author{\color{red}{Juan Pérez}\thanks{Gracias a CTIC}}
 \date{junio, 6 del 2018}
 \linespread{1}
-%\fontfamily{cmb}																% What does this?
+%\fontfamily{cmb}									% What does this?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \theoremstyle{definition}
@@ -63,6 +68,8 @@
 	linecolor=black,linewidth=3pt,%
 	leftmargin=1cm,rightmargin=1cm
 }
+%\setlength{\textheight}{0.83\paperheight}
+%\newgeometry{textheight=\paperheight,textwidth=0.83\paperwidth}
 \begin{document}
 
 \maketitle
@@ -70,6 +77,7 @@
 \listoffigures
 \listoftables
 \thispagestyle{empty}
+
 \section{Espacios métricos}
 
 Ver \cite[Capítulo C]{Ok2007}
@@ -105,15 +113,22 @@ d(x,y)\coloneqq\begin{cases}
 0,& x=y
 \end{cases}
 $$
+
 Es fácil verificar que $(X,d)$ es de hecho un espacio métrico. Aquí $d$ es llamado \textbf{métrica discreta} sobre $X$, y $(X,d)$ es llamado un \textbf{espacio discreto}.
 \end{example}
 
 %\baselineskip=0pt
 %\vspace*{10cm}
-
-\newpage
+\clearpage
 \setcounter{page}{2}
-
+\newgeometry{
+	left = 2cm,
+	right = 1.5cm,
+	top = 2cm,
+	bottom = 1.5cm
+}
+%\setlength{\textheight}{0.85\paperheight}
+%\restoregeometry
 \begin{mdframed}[style=minkowski]
 	\vspace*{3mm}
 	\color{Violet}
