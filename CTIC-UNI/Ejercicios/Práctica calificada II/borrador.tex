@@ -1,0 +1,391 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-sloppy]{babel}
+
+\usepackage[lmargin=3cm,rmargin=2.5cm,tmargin=2.5cm,bmargin=2cm]{geometry}
+\linespread{1.5}
+\setlength{\parindent}{0pt}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+
+%\usepackage[x11names]{xcolor}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{afterpage}
+
+\usepackage{tikz}
+\usepackage{listings}
+
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.pathreplacing}
+\newcommand*{\tikzgrid}[2]{\draw[help lines](0,0)grid[step=0.2,lightgray,ultra thin](#1,#2);\draw[help lines](0,0)grid[gray](#1,#2);\foreach\x in{0,1,...,#1}\node[below]at(\x,0){\scriptsize\x};\foreach\y in{1,2,...,#2}\node[left]at(0,\y){\scriptsize\y};}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\colorbox{black}{\textcolor{white}{Tesis para optar el título}}}
+\chead{}
+\rhead{}
+\lfoot{Juan Pérez}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\usepackage{fancybox}
+\usepackage{longtable}
+\usepackage{ragged2e}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{3}
+
+\usepackage{titlesec}
+\titleformat{name=\chapter}
+[display]
+{\color{olive}\centering\LARGE\sffamily}
+{Capítulo\space \arabic{chapter}}
+{0mm}
+{}
+\titlespacing*{\chapter}
+{0pt}
+{-2cm}
+{1cm}
+
+\titleformat{name=\section}
+[hang]
+{\color{orange}\titlerule\RaggedLeft\bfseries\Large}
+{\thesection\space}
+{0cm}
+{}
+\titlespacing{\section}
+{0pt}
+{2cm}
+{0cm}
+
+
+\newcommand{\blankpage}{
+	\newpage
+	\thispagestyle{empty}
+	\mbox{}
+	\newpage
+}
+\usepackage{picins}
+\usepackage{here}
+\usepackage{hhline}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\newcommand{\salto}{\\[-3mm]}
+\newcommand{\salti}{\\[-1.5mm]}
+\usepackage{array}
+\usepackage{listings}
+
+%\usepackage{tocloft}
+\usepackage[titles]{tocloft}
+\setlength{\cftbeforetoctitleskip}{5cm}
+\setlength{\cftaftertoctitleskip}{2cm}
+\renewcommand{\cfttoctitlefont} {\hfil\LARGE\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+
+\renewcommand{\cftdot}{-}
+\renewcommand{\cftdotsep}{20}
+\renewcommand{\cftdotsep}{\cftnodots}
+
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{0pt}
+\setlength{\cftsubsubsecindent}{0pt}
+
+\renewcommand{\lstlistingname}{Código}
+\usepackage[hidelinks,linktocpage=true,colorlinks =true,linkcolor=red]{hyperref}
+\usepackage{apacite}
+
+
+\begin{document}
+		
+	
+\begin{titlepage}
+
+
+	\begin{center}
+		{\Large UNIVERSIDAD NACIONAL DE INGENIERÍA\\[-0.4cm]
+		FACULTAD DE HUMANIDADES\\[-0.4cm]
+		ESCUELA PROFESIONAL DE FILOSOFÍA\\[1cm]
+		\includegraphics[width=3cm]{escudo}\\[0.8cm]
+		Tesis para Optar\\[-0.4cm]
+		el Título Profesional de\\
+		LICENCIADO en FILOSOFÍA}
+		
+		\begin{tikzpicture}[very thick]
+		%\tikzgrid{17}{3}
+		\draw[line width=5mm,black](0,1)--(0,3);
+		\draw[line width=5mm,black](0,2)--(15,2); 
+		\end{tikzpicture}
+		
+		\scalebox{0.9}{Título:}\\[0.5cm]
+		{\LARGE{Aprendiendo \LaTeX \ para mis trabajos}}\\[1cm]
+		
+		\scalebox{0.9}{Presentado por:}\\[0.5cm]
+		{\Large\textbf{Juan Pérez}}\\[1cm]
+		\scalebox{0.9}{Asesor}\\
+		\scalebox{0.9}{Dr. John Smith}
+		\vfill 
+		LIMA - PERÚ\\
+		2018
+			
+	\end{center}
+	
+\end{titlepage}
+
+\blankpage
+
+\pagenumbering{roman}
+\addtocounter{page}{1}	
+
+\ \\[16cm]
+\begin{longtable}[r]{l}
+	\parbox{6.2cm}{\textbf{Dedicatoria}\\
+		Dedicado  a  los  que  alguna  vez  me
+		ayudaron en comprender los conocimientos básicos durante mis estudios
+		de pregrado.}
+\end{longtable}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+\newpage
+\pagenumbering{arabic}
+\addtocounter{page}{5}
+\chapter{Juegos de Mesa}
+\section{Los expertos en juegos de mesa usan mejor el cerebro}
+\ \\[0.5cm]
+\piccaption[Los científicos estudiaron a expertos en shogi, el ajedrez japonés.]{Los científicos estudiaron a expertos en shogi, el ajedrez japonés.}
+\parpic(8.85cm,4.85cm)[rs][br]{\includegraphics[page=8,trim=10cm 16.4cm 2.7cm 9cm,clip]{pc2a}}\label{f1}
+Una nueva investigación descubrió
+que los expertos en juegos de me-
+sa, como el ajedrez, utilizan una
+región del cerebro que el resto no
+solemos usar.\\ El estudio, publicado en Science,
+llevó a cabo escáneres cerebrales de jugadores, tanto profesionales como aficionados, del juego japonés shogi, también llamado ajedrez japonés debido a su similitud.\\Los investigadores del Instituto de Ciencia Cerebral Riken, en Japón, descubrieron que las jugadas intuitivas que llevan a cabo estos jugadores no son naturales, sino que surgen del entrenamiento cerebral.
+
+\footnote{Ver Figura\ref{f1}}
+
+\newpage
+Los profesionales del shogi entrenan hasta por 10 años, tres o cuatro horas al día, para lograr la habilidad que se requiere para jugar a ese nivel.
+
+\color{DarkGrey}
+\begin{longtable}[r]{r}
+\textcolor{ForestGreen}{\Huge{“}} \textcolor{DarkGrey}El hallazgo fue una sorpresa,\\
+porque al volverse expertos\\
+los maestros shogi comienzan\\
+a usar todas las regiones del\\
+cerebro \textcolor{ForestGreen}{\Huge{”}}\\
+\textcolor{magenta}{\scalebox{0.6}{Prof. Keiji Tanaka}}
+\end{longtable}
+\color{black}
+Estos individuos son capaces de llevar a cabo decisiones “intuitivas” muy rápidas sobre la jugada o combinación de jugadas que harán en el tablero para lograr el mejor resultado.
+
+Los científicos reclutaron a jugadores profesionales miembros de la Asociación Japonesa de Shogi.
+
+También participó en el estudio un grupo de jugadores aficionados.
+
+A 17 de los profesionales se les presentó un juego de shogi que ya estaba en progreso y se les dieron dos segundos para elegir la mejor jugada siguiente, de entre cuatro jugadas.
+
+Según los investigadores, los escáneres cerebrales de estos jugadores mostraron una activación significativa en el área del núcleo caudado mientras llevaban a cabo sus jugadas rápidas.
+
+Durante mucho tiempo se ha pensado que esa región del cerebro es responsable del control de los movimientos corporales voluntarios. Pero estudios más recientes lo han vinculado al aprendizaje y la memoria.
+
+\subsection{Actividad cerebral}
+
+Cuando se les pidió a los jugadores aficionados que eligieran rápidamente su mejor jugada siguiente, no se observó activación significativa en el núcleo caudado.
+
+Esta actividad cerebral sólo se vio en los jugadores profesionales que llevaban a cabo decisiones muy rápidas sobre la siguiente mejor jugada.
+\newpage
+\begin{center}
+	\includegraphics[page=10,trim=4cm 23cm 4cm 2.5cm,clip]{pc2a}
+	\caption{\small Quienes juegan profesionalmente utilizan partes del cerebro que otros no usan.}
+\end{center}
+
+Además, se encontró que los profesionales no usaban esa área del cerebro cuando se les daba un tiempo mayor a los ocho segundos para que pensaran estratégicamente sobre las siguientes jugadas que debían realizar.
+
+\subsection{¿Con cuántas copas da positivo?}	
+	\begin{table}[H]
+		\centering
+		\caption{Copas para alcanzar 0,25 mg/l}\label{t1}
+		\vspace{1.8cm}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			\multirow{3}{*}{Tipos de bebida} &\multicolumn{2}{|c|}{Estimación para}&\multicolumn{4}{|c|}{Percepción de la población}\\
+			\cline{4-7}
+			&\multicolumn{2}{|c|}{alcanzar 0,25}&\multicolumn{2}{|c|}{Medias}&\multicolumn{2}{|c|}{Medianas}\\
+			\cline{2-7}
+			& Hombre &Mujer&Hombre&Mujer&Hombre&Mujer\\
+			\hline
+			Vasos de cerveza& 1,5 & 1,0&4,0&2,0&3,8&2,0\\
+			\hline
+			Copas de vino& 2,0 & 1,5 &3,8&2,0&3,8&2,0\\
+			\hline
+		\end{tabular}
+	\end{table}	
+	
+	Extraido de:
+	
+	\textcolor{red}{\url{https://www.vinetur.com/2015100621273/con-cuantas-copas-da-positivo.html}}
+	
+\section{Una tabla}	
+
+La siguiente tabla (Ver (Voss, 2011)) tiene las siguientes entradas.
+
+\begin{enumerate}
+	\item ab
+	\item cd
+	\item ef
+	\item ghi
+	\item j
+	\item k
+	\item lm
+\end{enumerate}
+
+\begin{table}[H]
+	\centering
+	\caption{La siguiente tabla es muy simple.}\label{t2}
+	\vspace{1.8cm}
+	\begin{tabular}{|c|c|l||}
+	\hline
+	\multicolumn{3}{|c|}{Una tabla simple}\\
+	\hline
+	ab&cd&ef\\
+	\cline{1-2}
+	\multicolumn{2}{|c|}{ghi}&\\
+	\hline
+	\multicolumn{1}{|r|}{j}&k&lm\\
+	\hline
+	\end{tabular}
+\end{table}
+
+\chapter{Otras cosas}
+\section{Rol de la Educación en la prevención de la TB}
+\vspace{8.5cm}
+\begin{center}
+\cornersize*{100mm}
+\setlength{\fboxsep}{5mm}
+\Ovalbox{\parbox{11.5cm}{El sistema educativo en la etapa de la formación del educando, tiene
+		la finalidad clara de trasmitir a todos los actores de la comunidad
+		educativa los elementos básicos de la cultura. Formarles para asumir
+		sus deberes y ejercer sus derechos y prepararles para la incorporación
+		a la vida activa}}
+\end{center}
+\newpage
+\begin{landscape}
+	\begin{center}
+		\footnotesize
+		\sffamily
+		
+		\begin{tikzpicture}[very thick]
+						
+				%\tikzgrid{20}{13}
+				\useasboundingbox(0,0)rectangle(20,13);
+				\node[text width=16cm,align=center,fill=DarkBlue!7,rounded corners=5mm]at(9.6,6.4){\vspace{12cm}};
+				\node[text width=7cm,align=center,fill=DarkOrange]at(9,1){\textcolor{white}{\bfseries{Retroalimentación}}};
+				\draw[line width=3mm,MidnightBlue](3.2,2.4)--(3.2,1.6)--(14.8,1.6)--(14.8,2.4);
+				\draw[fill=MidnightBlue,draw=MidnightBlue,] (2.9,2.4) -- (3.5,2.4) -- (3.2,2.7) -- cycle;
+				\draw[fill=MidnightBlue,draw=MidnightBlue,] (14.5,2.4) -- (15.1,2.4) -- (14.8,2.7) -- cycle;
+				\node[text width=2cm,align=center,fill=DarkOrange,rounded corners]at(3.6,11.6){\textcolor{white}{\bfseries\sffamily{Abogacía}}};
+				\node[text width=2.5cm,align=center,fill=DarkOrange,rounded corners]at(7,11.6){\textcolor{white}{\bfseries\sffamily{Movilización\\[-3mm]social\\[-3mm](Capacitación)}}};
+				\node[text width=3cm,align=center,fill=DarkOrange,rounded corners]at(10.9,11.6){\textcolor{white}{\bfseries\sffamily{Comunicación e\\[-3mm]información}}};
+				\node[text width=3.5cm,align=center,fill=Green!70,rounded corners]at(15.4,11.6){\textcolor{white}{\bfseries\sffamily{Acompañamiento}}};
+				\draw[line width=3mm,MidnightBlue](4.9,11.6)--(5.2,11.6);
+				\draw[fill=MidnightBlue,draw=MidnightBlue,] (5.2,11.8) -- (5.4,11.6) -- (5.2,11.4) -- cycle;
+				\draw[line width=3mm,MidnightBlue](8.5,11.6)--(8.8,11.6);
+				\draw[fill=MidnightBlue,draw=MidnightBlue,] (8.8,11.8) -- (9,11.6) -- (8.8,11.4) -- cycle;
+				\draw[line width=3mm,MidnightBlue](12.7,11.6)--(13,11.6);
+				\draw[fill=MidnightBlue,draw=MidnightBlue,] (13,11.8) -- (13.2,11.6) -- (13,11.4) -- cycle;
+				\node[text width=2.7cm,align=center,fill=NavyBlue,rounded corners]at(3.4,10){\textcolor{white}{Reuniones de\\[-3mm]sensibilización}};
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](2.09,9.6)--(2.09,8.4)--(2.4,8.4);
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](2.09,8.4)--(2.09,6.8)--(2.4,6.8);
+				\node[text width=2.7cm,align=center,fill=NavyBlue,rounded corners]at(7.2,9.8){\textcolor{white}{Capacitación a\\[-3mm]docentes\\[-3mm]universitarios}};
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](6,9.24)--(6,8.4)--(6.3,8.4);
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](6,8.4)--(6,7.25)--(6.3,7.25);		
+				\node[text width=2.7cm,align=center,fill=NavyBlue,rounded corners]at(10.9,10){\textcolor{white}{Acciones\\[-3mm]promocionales}};
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](9.8,9.56)--(9.8,8.6)--(10.1,8.6);
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](9.8,8.6)--(9.8,7.15)--(10.1,7.15);
+				\node[draw=DarkTurquoise,text width=2.6cm,fill=white,rounded corners]at(3.8,8.4){\textcolor{blue}{Reuniones con\\[-3mm]autoridades\\[-3mm]universitarias}};
+				\node[draw=DarkTurquoise,text width=2.6cm,fill=white,rounded corners]at(3.8,6.5){\textcolor{blue}{Reuniones con\\[-3mm]responsables de\\[-3mm]Servicio de Salud\\[-3mm]Universitario y\\[-3mm]Bienestar Social}};
+				\node[draw=DarkTurquoise,text width=2.2cm,fill=white,rounded corners]at(7.6,8.5){\textcolor{blue}{Módulo de\\[-3mm]capacitación}};
+				\node[draw=DarkTurquoise,text width=2.2cm,fill=white,rounded corners]at(7.6,7.3){\textcolor{blue}{Talleres de\\[-3mm]capacitación}};
+				\node[draw=DarkTurquoise,text width=2.5cm,fill=white,rounded corners]at(11.5,8.6){\textcolor{blue}{Implementación\\[-3mm]de iniciativas\\[-3mm]saludables}};
+				\node[draw=DarkTurquoise,text width=2.5cm,fill=white,rounded corners]at(11.5,7.2){\textcolor{blue}{Consumo\\[-3mm]universitario}};
+				\node[text width=2.9cm,align=center,fill=NavyBlue,rounded corners]at(7.4,6){\textcolor{white}{Capacitación a\\[-3mm]personal de Salud y\\[-3mm]de Bienestar Social}};
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](6.1,4.6)--(6.1,3.4)--(6.4,3.4);
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](6.1,5.45)--(6.1,4.6)--(6.4,4.6);
+				\node[text width=2.7cm,align=center,fill=NavyBlue,rounded corners]at(11.1,6){\textcolor{white}{Réplicas a\\[-3mm]estudiantes}};
+				\draw[arrows={-Straight Barb[scale=0.7,width=1mm,blue]},ultra thick,color=blue](9.9,5.6)--(9.9,4.7)--(10.2,4.7);
+				\node[draw=DarkTurquoise,text width=2.4cm,fill=white,align=center,rounded corners]at(7.8,4.6){\textcolor{blue}{Talleres sobre\\[-3mm]guías nacionales}};
+				\node[draw=DarkTurquoise,text width=2.4cm,fill=white,align=center,rounded corners]at(7.8,3.2){\textcolor{blue}{Talleres sobre\\[-3mm]metodologías de\\[-3mm]capacitación\\[-3mm]docente}};
+				\draw [dotted,ultra thick,color=LightSeaGreen,arrows={-Straight Barb[scale=1,width=2.5mm,LightSeaGreen]}] (6.4,3) -- (5.65,3)--(5.65,6);
+				\draw [ultra thick,color=LightSeaGreen,arrows={-Straight Barb[scale=1,width=2.5mm,LightSeaGreen]}] (5.84,6.2) -- (5.4,6.2)--(5.4,9.75)--(5.71,9.75);
+				\draw [ultra thick,color=LightSeaGreen,arrows={-Straight Barb[scale=1,width=2.5mm,LightSeaGreen]}] (8.66,9.75) -- (9.15,9.75)--(9.15,6)--(9.64,6);
+				\node[draw=DarkTurquoise,text width=2.5cm,fill=white,align=center,rounded corners]at(11.6,4.6){\textcolor{blue}{Charlas realizado\\[-3mm]por docentes}};
+				\node[text width=2.7cm,align=center,fill=NavyBlue,rounded corners]at(11.2,3.2){\textcolor{white}{Material de\\[-3mm]comunicación\\[-3mm]producidos}};
+				\draw [dotted,ultra thick,color=LightSeaGreen,arrows={-Straight Barb[scale=1,width=2.5mm,LightSeaGreen]}] (12.67,3.2) -- (13.1,3.2)--(13.1,6)--(12.6,6);
+				\draw [dotted,ultra thick,color=LightSeaGreen,arrows={-Straight Barb[scale=1,width=2.5mm,LightSeaGreen]}] (13.1,6) -- (13.1,10.1)--(12.4,10.1);
+				\node[text width=3.5cm,align=center,fill=Green!70,rounded corners]at(15.4,8.2){\textcolor{white}{\bfseries\sffamily{Recojo de reportes\\[-3mm]de atención}}};
+				\node[text width=3.5cm,align=center,fill=Green!70,rounded corners]at(15.4,5){\textcolor{white}{\bfseries{Visitas de\\[-3mm]acompañamiento y\\[-3mm]supervisón}}};
+				\draw[ultra thick,color=olive](13.35,2.55)--(13.35,6.3)--(13.95,6.5)--(13.35,6.7)--(13.35,10.45);
+				\draw[ultra thick,color=olive](13.1,10.5)--(13.3,10.5);
+				\draw[ultra thick,color=olive](13.1,2.5)--(13.3,2.5);
+				\draw[ultra thick,color=olive] (13.35,10.44) arc (0:90:0.06);
+				\draw[ultra thick,color=olive] (13.35,2.56) arc (0:-90:0.06);
+				
+		\end{tikzpicture}
+		
+		
+	\end{center}
+		\caption{ruta metodológica de la propuesta de intervención}
+\end{landscape}
+
+\begin{landscape}	
+	\begin{table}[H]
+		\centering
+		\caption{Población universitaria por año censal y universidad en Lima y Callao}\label{t3}
+		\vspace{1.8cm}
+		\linespread{1.5}
+		
+		\small
+		\sffamily
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\rowcolor{ForestGreen!77}&\multicolumn{4}{|c|}{\bfseries\small\textcolor{white}{Año 1996}}&&\multicolumn{4}{|c|}{\bfseries\small\textcolor{white}{Año 2010}}&\\
+			\hhline{|>{\arrayrulecolor{ForestGreen!77}}->{\arrayrulecolor{black}}---->{\arrayrulecolor{ForestGreen!77}}->{\arrayrulecolor{black}}---->{\arrayrulecolor{ForestGreen!77}}->{\arrayrulecolor{black}}|}
+			\rowcolor{ForestGreen!77}&\multicolumn{2}{|c|}{\small\textcolor{white}{Alumnos}}&&&&\multicolumn{2}{|c|}{\small\textcolor{white}{Alumnos}}&&&\\
+			\hhline{|>{\arrayrulecolor{ForestGreen!77}}->{\arrayrulecolor{black}}|-->{\arrayrulecolor{ForestGreen!77}}--->{\arrayrulecolor{black}}-->{\arrayrulecolor{ForestGreen!77}}--->{\arrayrulecolor{black}}|}
+			\rowcolor{ForestGreen!77}&&&&&&&&&&\\
+			\hhline{|>{\arrayrulecolor{ForestGreen!77}}----------->{\arrayrulecolor{black}}|}
+			\rowcolor{ForestGreen!77}\multirow{-4}{*}{\bfseries\small\textcolor{white}{Universidad}}& \multirow{-2}{*}{\parbox{1.3cm}{\centering\small\textcolor{white}{ Pre\salto grado}}} &\multirow{-2}{*}{\parbox{1.3cm}{\centering\small\textcolor{white}{ Post\salto grado}}}& \multirow{-3}{*}{\small{\parbox{1.8cm}{\centering \textcolor{white}{Docente\salto universita-\salto rio}}}}&\multirow{-3}{*}{\small{\parbox{2cm}{\centering\textcolor{white}{ Personal\salto administra-\salto tivo y de\salto servicio}}}}&\multirow{-4}{*}{\bfseries\small\textcolor{white}{Total}}&\multirow{-2}{*}{\parbox{1.3cm}{\centering\small\textcolor{white}{ Pre\salto grado}}} &\multirow{-2}{*}{\parbox{1.3cm}{\centering\small \textcolor{white}{Post\salto grado}}}&\multirow{-3}{*}{\small{\parbox{1.8cm}{\centering \textcolor{white}{Docente\salto universita-\salto rio}}}}&\multirow{-3}{*}{\small{\parbox{2cm}{\centering\textcolor{white}{ Personal\salto administra-\salto tivo y de\salto servicio}}}}&\multirow{-4}{*}{\bfseries\small\textcolor{white}{Total}}\\
+			\hline
+			\multicolumn{1}{|m{4cm}|}{\raggedright\footnotesize Universidad Nacional\salti
+				Agraria La Molina}&3,225 &268 &453 &498 &4,434&4,903& 976& 445& 802& 7,126\\
+			\hline
+			\rowcolor{OrangeRed!80}\multicolumn{1}{|m{4cm}|}{\raggedright\footnotesize Universidad Nacional de\salti Ingeniería} &6953& 277& 940& 598&8768 &11034& 1 068& 1210& 1 489 &14801\\
+			\hline
+			\multicolumn{1}{|m{4cm}|}{\raggedright\footnotesize Universidad Nacional de\salti Educación Enrique\salti Guzmán y Valle}&6388 &147& 458&344& 7337& 9178& 2 144& 727& 561& 12610\\
+			\hline
+			\multicolumn{1}{|m{4cm}|}{\raggedright\footnotesize Universidad Nacional del\salti
+				Callao}&8066&-&530 &216& 8812& 13584& 391& 632& 497& 15104\\
+			\hline
+			\multicolumn{1}{|m{4cm}|}{\raggedright\footnotesize Universidad Nacional\salti Federico Villarreal}& 16173&992& 1492& 862& 19519& 23105 &2 447 &1936& 1072& 28560\\
+			\hline
+			\multicolumn{1}{|m{4cm}|}{\raggedright\footnotesize Universidad Nacional\salti
+				Mayor de San Marcos}&21341& 3077& 2677& 1 267& 28362& 28645& 3 477& 2711& 2786 &37619\\
+			\hline
+			\cellcolor{ForestGreen!77}\bfseries\small{\textcolor{white}{TOTAL}}&\bfseries62,146 &\bfseries4,751&\bfseries 6,550&\bfseries 3,785&\cellcolor{ForestGreen!77}&\bfseries 90,449 &\bfseries 10,503&\bfseries 7,661&\bfseries 7,207&\cellcolor{ForestGreen!77}\\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{landscape}
+\chapter{Un tipo de letra}
+%\lstinputlisting[breaklines]{hge.mf}
+\lstinputlisting[breaklines,rulecolor=\color{blue},language=TeX, basicstyle=\ttfamily,caption={Un tipo de letra}, backgroundcolor=\color{PaleGreen!50},frame=single,linerange={30-36},numbers=left, numberstyle={\scriptsize}]{hge.mf}
+
+
+	
+\end{document}

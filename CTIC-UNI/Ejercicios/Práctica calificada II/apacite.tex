@@ -1,0 +1,33 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-sloppy]{babel}
+\usepackage{apacite}
+
+\makeatletter
+\def\es@sptext#1{%
+	{\es@orddot
+		\setbox\z@\hbox{8}\dimen@\ht\z@
+		\globaldefs\m@ne
+		\csname S@\f@size\endcsname
+		\globaldefs\z@
+		\edef\@tempa{\def\noexpand\@tempc{#1}%
+			\lowercase{\def\noexpand\@tempb{#1}}}\@tempa
+		\ifx\@tempb\@tempc
+		\fontsize\sf@size\z@
+		\selectfont
+		\advance\dimen@-1.15ex
+		\else
+		\fontsize\ssf@size\z@
+		\selectfont
+		\advance\dimen@-1.5ex
+		\fi
+		\math@fontsfalse\raise\dimen@\hbox{#1}}}
+\def\sptext{\es@sptext}
+\makeatother
+
+\begin{document}
+\nocite{*}
+\bibliographystyle{apacite}
+\bibliography{biblio}
+\end{document}
