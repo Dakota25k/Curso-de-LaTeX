@@ -1,219 +1,45 @@
-Yo soy ... Mi formación en Ciencia de la Computación. Trabajo últimamente con teoría de la computación, la parte formal. Paulo me dice que tenga audiencia en varias áreas. Espero que los invitados puedan conversar sobre bastantes cosas. Yo vine de una ciudad que se llama Analândia. Es una ciudad que tiene cuatro mil habitantes. Es muy pequeñita, bien pequeñita. Ustedes conocen por ejemplo una ciudad conocida del estado de San Pablo, San Carlos, es una ciudad cercana. Entonces, yo vine de casualidad, he caído por un accidente. He venido por la reunión del TeX User Group que tenemos a partir de mañana. Y Paulo me invitó de pronto basicamente, lo cual es muy chévere, estar con ustedes aquí para poder hablar un poquito. No solamente de lo que se propuso hablar aquí, sino también contar un poquito de mi experiencia con $\TeX$, de mi experiencia con $\LaTeX$, contar para ustedes todos los errores que he cometido hasta entonces y también lo que realmente voy cometer de aquí en adelante, entonces más o menos eso. Antes de ese tópico en particular, Paulo me dijo que habló, les contó a ustedes un poquito de lo que es $\TeX$, pero así revisar algunas cositas. La verdad, $\LaTeX$, sería un programa, en este caso es un programa, un sistema de tipografía como las personas gustan de hablar, pero no es verdad, es una cosa, un poquito más abstracta, las personas de ciencias exactas, es una cosa que la gente llama un sistema de escritura, en el que usted typewritting system, en el que usted, tiene practicamente una relación binaria, un sistema que asigna una cosa para otra, entonces donde la gente vio por ejemplo, define una macro llamada nombre, usted puede tener un nombre y en algun momento usted hace uns transformación.
+TUG 2018 - Workshop - Class 05
+===
 
-Básicamente es eso, es un concepto muy simple. Sólo que es una cosa que dejó de ser utilizado en los tiempos de hoy. Hoy nadie habla mucho más de macros inscritas, hablar de macro hoy en día, parece que usted está hablando de una
+[![Video](http://img.youtube.com/vi/TQvQJFTekMw/maxresdefault.jpg)](https://www.youtube.com/watch?v=TQvQJFTekMw)
+
+### Expositor
+
+Paulo Cereda
+
+> Yo soy ... Mi formación en Ciencia de la Computación. Trabajo últimamente con teoría de la computación, la parte formal. Paulo me dice que tenga audiencia en varias áreas. Espero que los invitados puedan conversar sobre bastantes cosas. Yo vine de una ciudad que se llama Analândia. Es una ciudad que tiene cuatro mil habitantes. Es muy pequeñita, bien pequeñita. Ustedes conocen por ejemplo una ciudad conocida del estado de San Pablo, San Carlos, es una ciudad cercana. Entonces, yo vine de casualidad, he caído por un accidente. He venido por la reunión del TeX User Group que tenemos a partir de mañana. Y Paulo me invitó de pronto basicamente, lo cual es muy chévere, estar con ustedes aquí para poder hablar un poquito.
+> No solamente de lo que se propuso hablar aquí, sino también contar un poquito de mi experiencia con $\TeX$, de mi experiencia con $\LaTeX$, contar para ustedes todos los errores que he cometido hasta entonces y también lo que realmente voy cometer de aquí en adelante, entonces más o menos eso. Antes de ese tópico en particular, Paulo me dijo que habló, les contó a ustedes un poquito de lo que es $\TeX$, pero así revisar algunas cositas. La verdad, $\LaTeX$, sería un programa, en este caso es un programa, un sistema de tipografía como las personas gustan de hablar, pero no es verdad, es una cosa, un poquito más abstracta, las personas de ciencias exactas, es una cosa que la gente llama un sistema de escritura, en el que usted typewritting system, en el que usted, tiene practicamente una relación binaria, un sistema que asigna una cosa para otra, entonces donde la gente vio por ejemplo, define una macro llamada nombre, usted puede tener un nombre y en algun momento usted hace uns transformación.
+
+> Básicamente es eso, es un concepto muy simple. Sólo que es una cosa que dejó de ser utilizado en los tiempos de hoy. Hoy nadie habla mucho más de macros inscritas, hablar de macro hoy en día, parece que usted está hablando de una
 cosa prohibida, de una cosa que cayó en desuso, que se ha superado, pero en realidad no, las macros son muy utilizadas hoy en día. Inclusive, no sé si aquí alguien programa en [Clojure](https://clojure.org/) es un dialecto de [Lisp](http://lisp-lang.org/) escrito en Java. [Rust](https://www.rust-lang.org/) es un lenguaje que se parece a C, es un lenguaje más reciente y son lenguajes que tienen macros con otro nombre. En el caso de Clojure, ellos llaman extensibilidad sintáctica que es mucho más bonito hablar, entonces quieren chocar las personas, pero en el fondo usted está tratando el mismo fenómeno.
 
-Yo estoy hablando todo eso sólo para explicar para ustedes porque hay mi tesis doctoral fue exactamente sobre macros, entonces creo que soy yo la persona que tiene que estar a favor de hablar en pro de las macros, entonces la macro tiene una característica muy chévere, Paulo dijo eso, tiene un concepto que la gente llama abstracción textual, que usted consigue pegar pedazos de texto y extraer la estructura común. ¿Sí? Imagine que esto de aquí se está repitiendo o eso de aquí y yo puedo encapsular de otra forma; por ejemplo, se comentó aquí de los estilos, entonces usted tiene, por ejemplo, una palabra que quiera destacar, para algunas personas puede ser un texto en cursiva, algunas personas puede ser un texto en negrita, otras personas puede ser subrayado. En fin, quiero decir que percibe que hay gente que acaba adecuándose a nuestras propias realidades, entonces la macro, el sistema de macro ofrecen este tipo de facilidades porque la gente consigue representar bastantes cosas. Bueno, Donald Knuth cuando él propuso $\LaTeX$, la verdad lo que pasó, no sé si Paulo les contó un poco de la historia. Donald Knuth, tal vez una de las mayores autoridades de la computación del siglo 20. Él estaba muy irritado de la forma como los libros de él estaba siendo editados. Muy bravo y lo que él decidió, no, así que voy a crear mi propio sistema de tipografía que puedo editar los libros. En su caso, él estaba editando [The Art of Computer Programming](https://www-cs-faculty.stanford.edu/~knuth/taocp.html), si ustedes ya tuvieron oportunidad de ver ese libro es un libro, creo que son tres o cuatro volúmenes. Es un libro maravilloso de ver, entonces él dijo que la computación es un arte, es muy bueno, él mismo decía que un algoritmo. Yo sólo
-acredito que es un algoritmo cuando lo veo funcionando, él oscila, Donald Knuth, él oscila bien entre la teoría y el pragmatismo creo que eso es una cosa muy genial de él. Él es extremadamente teórico, pero él trae esas cosas,
+> Yo estoy hablando todo eso sólo para explicar para ustedes porque hay mi tesis doctoral fue exactamente sobre macros, entonces creo que soy yo la persona que tiene que estar a favor de hablar en pro de las macros, entonces la macro tiene una característica muy chévere, Paulo dijo eso, tiene un concepto que la gente llama abstracción textual, que usted consigue pegar pedazos de texto y extraer la estructura común. ¿Sí? Imagine que esto de aquí se está repitiendo o eso de aquí y yo puedo encapsular de otra forma; por ejemplo, se comentó aquí de los estilos, entonces usted tiene, por ejemplo, una palabra que quiera destacar, para algunas personas puede ser un texto en cursiva, algunas personas puede ser un texto en negrita, otras personas puede ser subrayado. En fin, quiero decir que percibe que hay gente que acaba adecuándose a nuestras propias realidades, entonces la macro, el sistema de macro ofrecen este tipo de facilidades porque la gente consigue representar bastantes cosas. Bueno, Donald Knuth cuando él propuso $\LaTeX$, la verdad lo que pasó, no sé si Paulo les contó un poco de la historia. Donald Knuth, tal vez una de las mayores autoridades de la computación del siglo 20. Él estaba muy irritado de la forma como los libros de él estaba siendo editados. Muy bravo y lo que él decidió, no, así que voy a crear mi propio sistema de tipografía que puedo editar los libros. En su caso, él estaba editando [The Art of Computer Programming](https://www-cs-faculty.stanford.edu/~knuth/taocp.html), si ustedes ya tuvieron oportunidad de ver ese libro es un libro, creo que son tres o cuatro volúmenes. Es un libro maravilloso de ver, entonces él dijo que la computación es un arte, es muy bueno, él mismo decía que un algoritmo. Yo sólo acredito que es un algoritmo cuando lo veo funcionando, él oscila, Donald Knuth, él oscila bien entre la teoría y el pragmatismo creo que eso es una cosa muy genial de él. Él es extremadamente teórico, pero él trae esas cosas,
 su aplicación, entonces eso es muy bacán.
 
-Bueno, él creó el sistema de tipografía $\TeX$ y en un determinado momento dijo "bueno yo no quiero pasar eso a nadie, lo hice para mi uso personal",
-tanto que en $\TeX$ puro como la gente habla, el planteó a usted muchas cosas, usted no tiene "cross reference", usted no tiene "labels", usted no tienen ese tipo de recurso. Si usted ve por ejemplo el código fuente de uno de sus libros, él lo hace a mano. el "label" de la página lo digita, porque para él en aquella época era suficiente, quería simplemente aspectos visuales. Él hizo una fuente *Computer Modern*, es de él.
+> Bueno, él creó el sistema de tipografía $\TeX$ y en un determinado momento dijo "bueno yo no quiero pasar eso a nadie, lo hice para mi uso personal", tanto que en $\TeX$ puro como la gente habla, el planteó a usted muchas cosas, usted no tiene "cross reference", usted no tiene "labels", usted no tienen ese tipo de recurso. Si usted ve por ejemplo el código fuente de uno de sus libros, él lo hace a mano. el "label" de la página lo digita, porque para él en aquella época era suficiente, quería simplemente aspectos visuales. Él hizo una fuente *Computer Modern*, es de él.
 
-En fin, él tuvo todo un trabajo, me gusta hablar artesanal y artístico para comparar. Muy bien, luego vino Lamport y dijo: "Es muy complicado crear algunas abstracciones que sean más comprensibles, más redactables". La gente llegó a $\LaTeX$" que es básicamente un sistema de tipografía, entonces ¿qué
-ocurrió? Cuando la gente escribe por ejemplo un texto en nuestro editor.    Cuando se convierte, existe un proceso de conversión, una transformación, digamos así. Para los teóricos, usted transforma la parte textual en objetos, en este caso en el formato que está saliendo, el resultado en archivos PDF, usted utiliza los comandos literales, que las personas llaman, los comandos
+> En fin, él tuvo todo un trabajo, me gusta hablar artesanal y artístico para comparar. Muy bien, luego vino Lamport y dijo: "Es muy complicado crear algunas abstracciones que sean más comprensibles, más redactables". La gente llegó a $\LaTeX$" que es básicamente un sistema de tipografía, entonces ¿qué ocurrió? Cuando la gente escribe por ejemplo un texto en nuestro editor. Cuando se convierte, existe un proceso de conversión, una transformación, digamos así. Para los teóricos, usted transforma la parte textual en objetos, en este caso en el formato que está saliendo, el resultado en archivos PDF, usted utiliza los comandos literales, que las personas llaman, los comandos
 primitivos del formato pdf, entonces todo lo que haces en $\TeX$ acaba
-volviéndose un comando PDF que usted puede, que es exhibido en la forma de un archivo. En el comienzo, eran cosas bien simples. Usted tenía la parte textual, la parte matemática, y existe mucha cosa detrás de esto, por ejemplo,
-el balanceamiento de, la gente habla del balanceamiento de líneas, entonces por ejemplo a veces usted ve que ha escrito un texto que está así, usted incluye dos o tres palabras y cambia para tratar de acondicionar una cantidad suficiente de palabras por línea para modificar su aspecto, proporcionar un aspecto visual mejor, entonces tiene $\LaTeX$ por ejemplo, el concepto de cola, yo creo que es fácil, entonces se habla así: ¿cuál es la distancia que tengo que mantener, por ejemplo, cuál es la distancia que tengo que quedarme de usted al hablar, usted tiene que quedarse a un metro y medio. Esa es una forma rígida de fijar. Otra forma que usted, yo quiero una cola, o sea que puedo fijar el mínimo aquí, el máximo aquí y el término medio tiene que ser así, entonces son formas inteligentes que Donald Knuth como Lamport, Frank Mittelbach, más personas que trabajan con $\TeX$ encuentran para proporcionar una experiencia tipográfica mucho más interesante, entonces al principio usted no tenía una gran cantidad de parte matemática y la parte de diseño era muy preliminar, entonces usted necesitaba hacer unos y necesitaba hacer un dibujo, digamos así usted va a hacer una caja, un rectángulo, usted tenía que que hacer punto por punto, usted hablaba así, mira, la coordenada tal y la
-coordinada tal, vamos a trazar una línea, entonces usted hacía definitivamente, en lugar de utilizar la regla y un lápiz, usaba algunos comandos del tipo `put`, allí una coordenada (x,y), `put` otra coordenada (x,y) y pedía el comando para trazar. Entonces era una cosa bien justa porque
-en realidad no era el propósito, no.
+volviéndose un comando PDF que usted puede, que es exhibido en la forma de un archivo.
 
-En el pasado, $\TeX$ solo era cosa de matemáticos y de algún otro aventurero.
-Hoy en día es mucho más amplio, ofrece muchas más cosas. Bien, históricamente la gente ha tenido algunos paquetes gráficos que comenzaron a ser
-incluidos y desde esa parte creo que el primero que hubo fue el [`pict2e`](https://ctan.org/pkg/pict2e?lang=en) ofrecía algunas conveniencias, digamos así, no sé si ustedes escucharon a Paulo en el cafecito. $\TeX$ tiene una propiedad, es una máquina de Turing completo. Personas que no son de computación, la de complejidad
+> En el comienzo, eran cosas bien simples. Usted tenía la parte textual, la parte matemática, y existe mucha cosa detrás de esto, por ejemplo, el balanceamiento de, la gente habla del balanceamiento de líneas, entonces por ejemplo a veces usted ve que ha escrito un texto que está así, usted incluye dos o tres palabras y cambia para tratar de acondicionar una cantidad suficiente de palabras por línea para modificar su aspecto, proporcionar un aspecto visual mejor, entonces tiene $\LaTeX$ por ejemplo, el concepto de cola, yo creo que es fácil, entonces se habla así: ¿cuál es la distancia que tengo que mantener, por ejemplo, cuál es la distancia que tengo que quedarme de usted al hablar, usted tiene que quedarse a un metro y medio. Esa es una forma rígida de fijar. Otra forma que usted, yo quiero una cola, o sea que puedo fijar el mínimo aquí, el máximo aquí y el término medio tiene que ser así, entonces son formas inteligentes que Donald Knuth como Lamport, Frank Mittelbach, más personas que trabajan con $\TeX$ encuentran para proporcionar una experiencia tipográfica mucho más interesante, entonces al principio usted no tenía una gran cantidad de parte matemática y la parte de diseño era muy preliminar, entonces usted necesitaba hacer unos y necesitaba hacer un dibujo, digamos así usted va a hacer una caja, un rectángulo, usted tenía que que hacer punto por punto, usted hablaba así, mira, la coordenada tal y la coordenada tal, vamos a trazar una línea, entonces usted hacía definitivamente, en lugar de utilizar la regla y un lápiz, usaba algunos comandos del tipo `put`, allí una coordenada (x,y), `put` otra coordenada (x,y) y pedía el comando para trazar. Entonces era una cosa bien justa porque en realidad no era el propósito, no.
 
-el acto en que cumplí presa ella es una es
-una propiedad que dice más o
-menos lo siguiente usted consigue
-usted consigue cualquier función que sea
-computación computacionalmente no sea
-ni que sea realizable
-computacionalmente puede ser hecho por
-se puede hacer por este sistema
-obviamente no si eso no significa que
-es eficiente eso no significa que es
-pero es una propiedad muy
-grande en lenguaje de programación tienen
-esta propiedad entonces el técnico no es
-sólo uno él no es solamente un simple
-editora es un lenguaje que es un lenguaje
-sistema de fotografía es un lenguaje
-que la relación
-entonces cuando la gente se dio cuenta
-las personas hablan tirando vamos a poner
-comandos que permiten a las personas
-que hagan cosas más osadas no y ahí
-la gente tuvo el es el molde que dio uno que
-mejorado para que usted haga algunos dibujos
-y muy recientemente tuvo el ps trix y
-flix ha sido una serie de macros es uno
-conjunto de macros que permitirá que
-usted hizo dibujar sólo que usted
-no podía generar usted no generaba el o no
-pdf directamente usted tenía que pasar
-por un formato intermedio quiero un.
-post script né
-los scripts también un lenguaje es de la
-gente conoce como una vista
-es un documento pero en realidad puesto
-script es también un lenguaje de programación
-programación por mí
-por increíble que parezca para ustedes
-post script es un lenguaje de programación
-programación y es una larga programación
-que se basa en la pila que la excusa
-que realmente me gusta el lenguaje
-o realmente tiene gusto de lo que hablo
-entonces hay un buen tiempo y se puso crédito
-personal a amor porque tu tú hacía
-cosas absurdas
-sólo que tiene el problema de usted no
-generar pdf
-usted tenía que generar un segundo paso
-entonces usted se imagina sólo el señor allí
-que se ha convertido en una tesis de una declinación de 18
-horas
-tu vas
-claro y obviamente decidí
-hacer esto en el último momento porque su
-pensamiento guía que era lindo derecha
-y yo no voy a entrar en la discusión de las
-las páginas allí me quedé allí sólo gritando
-mis dientes allí atrás ya vi que yo no
-puedo hablar algunas cosas que el viento es
-bueno la imagina sólo si va usted tiene que
-generar un ps que es el formato del puesto
-secretario rodar un psd el pdf para ti
-convertir pdf usted abrir usted ver en fin
-era complicado eso y hoy en día
-viajar y caminar si a otros formatos cayeron
-en desuso creo que hoy ustedes creen
-que están de acuerdo conmigo pdf se convirtió
-estándar de tener un patrón de documento
-básicamente eso era un formato
-el dueño del adobe no si yo diría
-que sigue siendo más pdf se convirtió
-que es lo mismo que la adobe continúa
-que pone cosas se da el derecho de
-si mejora los pdf de ella no entonces tiene
-cosas que sólo funcionan en el lector y
-en el acróbato pero de heathrow se volvió si yo
-no me equivoco se convirtió en un patrón iso entonces
-eso es una buena cosa es una forma de usted
-mantener una forma de usted quiere que vaya y
-que tiene características muy
-buenos buenos tuvo un ciudadano un
-matemático llamado tío tanto que él
-junto con dos locos y quién fue
-tercero no recuerdo que Dios lo tiene
-los que hablaron lo siguiente no vamos a hacer
-algo que sea posible trabajar
-con una mirada con un pdf directamente y
-ellos crearon un paquete fue bien
-no fue así sin la gran pretensión
-ha sido de pretensioso sin pretensiones
-propuesta de buscar algo que sea
-más simple llamada tics y que
-[Música]
+> En el pasado, $\TeX$ solo era cosa de matemáticos y de algún otro aventurero. Hoy en día es mucho más amplio, ofrece muchas más cosas. Bien, históricamente la gente ha tenido algunos paquetes gráficos que comenzaron a ser incluidos y desde esa parte creo que el primero que hubo fue el [`pict2e`](https://ctan.org/pkg/pict2e?lang=en) ofrecía algunas conveniencias, digamos así, no sé si ustedes escucharon a Paulo en el cafecito. $\TeX$ tiene una propiedad, es una máquina de Turing completo. Personas que no son de computación o de complejidad, Turing completo es una propiedad que dice más o menos lo siguiente: "Usted consigue cualquier función que sea computable computacionalmente, no que sea realizable computacionalmente puede ser hecho por ese sistema. Obviamente no, eso no significa que es eficiente, eso no significa que es preciso, pero es una propiedad muy grande. Los lenguajes de programación tienen esta propiedad, entonces $\TeX$ no es simplemente un editor, es un lenguaje, es un sistema de tipografía, es un lenguaje de programación, entonces cuando las personas se dieron cuenta de eso, hablaban "vamos a poner comandos que permitan a las personas que hagan cosas más osadas, ¿correcto?
+
+> Y ahí la gente tuvo el molde que quedó mejorado para que usted haga algunos diseños y muy recientemente tuvo [PSTricks](http://www.tug.org/PSTricks/main.cgi/), fue una serie de macros, es un conjunto de macros que le permitía a usted hacer diseños, solo que usted no conseguía generar un PDF directamente, usted tenía que pasar por un formato intermedio que era un [PostScript](https://www-cdf.fnal.gov/offline/PostScript/BLUEBOOK.PDF), ¿sí? PostScript también es un lenguaje, sí, la gente conoce como una visualizaciónde un documento, pero en verdad, PostScript es también un lenguaje de programación por más increíble que parezca. PostScript es un lenguaje de programación y es un lenguaje de programación que se basa en la pila. Disculpe, a mí realmente me gusta los lenguajes de programación, me gusta realmente de lo que hablo, entonces ... Bien, tenemos a PostScript, personalmente lo amo porque nosotros podíamos hacer cosas absurdas, solo que tiene un problema: Usted no puede generar PDF, usted tenía que generarlo en un segundo paso, entonces usted se imagina que un señor está haciendo su tesis con un tiempo limitado de 18 horas. Usted va, exactamente claro y obviamente decidí hacer esto en el último momento porque su orientado pensó que quedaba lindo, ¿si? Y yo no voy a entrar en la discusión de las páginas allí, me quedé allí rechinando los dientes allí atrás, ya vi que no puedo hablar más cosas que pienso.
+
+Bueno, imagine solamente si usted tiene que generar un `.ps` que es el formato de PostScript, correr un `ps2pdf` para que usted lo convierta a PDF y usted abra, usted verifica. Era complicado eso, y hoy en día `dvi`, `ps` y otros formatos cayeron en desuso. Creo que hoy ustedes estarán de acuerdo conmigo que PDF se convirtió en el documento estándar, básicamente eso. Era un [formato propietario](https://www.iso.org/standard/63534.html) de Adobe. No diría que continua siendo PDF el estándar, ya que Adobe continua añadiendo cosas, ella da derecho en mejorar los PDF's de ella, entonces tiene cosas que solo funcionan en [Reader](https://get.adobe.com/es/reader/), en [Acrobat](https://en.wikipedia.org/wiki/Adobe_Acrobat), mas PDF se volvió si yo no me equivoco se convirtió en un estándar, entonces eso es cosa buena, es una forma en la que usted mantiene, una forma de usted lleva y que tiene características muy interesantes.
+
+Bueno, había un ciudadano, un matemático llamado [Till Tantau](https://fr.wikipedia.org/wiki/Till_Tantau) que él junto con dos locos y Christian Feuersaenger, y ¿quién fue el tercero? No recuerdo, que Dios lo tenga. Ellos hablaron lo siguiente, ¿no?: "Vamos a hacer una cosa que sea posible trabajar con un documento PDF directamente". Y ellos crearon un paquete, fue bien así, sin la gran pretensión, ha sido despretensiosa, una propuesta de buscar alguna cosa que sea más simple llamada Tikz.
+
+La k de aquí es cursiva y la t en mayúscula? No lo recuerdo, en fin. Alguien me preguntará qué es eso?
+
+Es una buena pregunta, es un acrónimo recursivo, solamente que es un acrónimo recursivo en alemán, entonces mis disculpas para ustedes, ustedes pueden buscar en internet su acrónimo. Acrónimos recursivos que ustedes pueden imaginar es por ejemplo, que me viene a cabeza es del proyecto GNU, por ejemplo. GNU is not Unix.
+
+lo que es lo que me lleva a la cabeza es el del proyecto del proyecto gnu por ejemplo es que es de nuevo slot mil next ese es una cruel o sea usted define el acrónimo en términos de él mismo no tenía 15 es exactamente la misma cosa sólo que peor porque en alemán está y disponer a quedarse en la noche no está muy bien ahí esa los tres aventureros hicieron ese dicho cuyo paquete oi aparentemente parece no tiene exactamente el problema problema técnico la inconveniencia si se da lo siguiente estamos hablando de hardware de hace 25 años entonces la es sólo para usted conoce la leche y la compañía es un libro del frank mentiu barro ustedes conocen la ley completa compañía es un libro de libro es el señor libro sobre el sobre el ataque yo tengo amistad personal con el autor del libro y él me , dijo que cuando él ponía compilar el dicho cuyo libro él apretaba el botón de compilación rodaba el comando la línea de comando y tomar un café y ver a otras personas en fin los buenos tiempos de la computación de otrora que usted y yo ni marco escribía el contenido de obi y usted iba allí a interactuar con la gente no ayudar a una viejita atravesar la calle porque eso realmente es importante no entonces hoy tan usted habla de sí de velocidad de computación el proceso es es en cierto modo hasta ridículo no porque de hecho las cosas mejoraron mejoraron demasiado en órdenes de gran magnitud pero tenía ese problema es un problema latente no tanto que hoy si usted mira el código fuente del tec y del hasta que usted consiga por que los chicos lo hicieron porque los chicos están guardando el registro porque los chicos están haciendo esto si usted mira la historia de la computación usted ahorrar algunos caballetes que ahorrar algunas instrucciones era significativo entonces así que hay que echar un vistazo a las cosas de cierta manera con una mirada histórica entonces la respuesta eso para hoy no haría diferencia ninguna no tanto que existe un paquete para el protector que se llama que creo que se llama peste el pdf si no me falla la memoria que hace andar de rudnei es debajo del paño pero no se que es lo que mas me gusta de la musica y de la musica de mi vida. yo en particular tengo un conjunto de diapositivas que el fondo de las diapositivas así que imagine que usted tiene una secuencia de diez ligh que es lo que mi diapositiva hace que digamos que tengo 10 diapositivas es como la diapositivas de diapositivas de diapositivas de diapositivas si yo tenía diez cuadros a mary poppins desciende de la vuelta y sale en 10 luces para dar la impresión de movimiento cada año cada cuadro es ser una cosa de esa animación lo hice así simplemente por la prueba para jugar algo tarda bastante tarda por lo menos medio segundo casi un segundo para compilar cada página
 
 
 
-o telefone pode ser desligada
-aqui é ter o kaká é em itálico e o osmar
-maiúsculo não me recordo
-enfim há alguém vai me perguntar o que é
-isso
-está é uma boa pergunta é um acrônimo
-recursivo só que é um acrônimo recursivo
-ela é bom então me desculpe eu vou de
-vez pra vocês é um erro realmente não
-vou falar mas vocês podem procurar na
-internet isso é um acrônimo acreano
-recursivo acho que você imagina o que é
-por exemplo o que me leva na cabeça é o
-do projeto do projeto gnu por exemplo é
-que é de novo slot mil next
-esse é uma cruel ou seja você define o
-acrônimo em termos dele mesmo né então
-tinha 15 é exatamente a mesma coisa só
-que pior porque em alemão tá e dispor a
-ficar em noite não tá muito bem aí essa
-esses três aventureiros fizeram esse
-dito cujo pacote oi
-aparentemente olha não tem exatamente
-não tem exatamente problema problema
-técnico a inconveniência se dá o
-seguinte estamos falando isso de de
-hardware de 25 anos atrás
-então assim só para você conhece o leite
-e companhia é um livro do frank mentiu
-barro
-vocês conhecem a lei completa companhia
-é um livro é um senhor livro o senhor
-livro sobre o sobre o ataque
-eu eu tenho amizade pessoal com o autor
-do livro e ele me disse que quando ele
-ele punha compilar o dito cujo livro ele
-apertava o botão de compilação rodava o
-comando a linha de comando ea tomar um
-café ea ver outras pessoas enfim aqueles
-bons tempos da computação de outrora que
-você e eu nem frame você digitava o teor
-de obi e você ia lá interagir com as
-pessoas né ajudar uma velhinha atravessa
-a rua porque isso realmente é importante
-né então assim hoje
-hoje você fala de si de velocidade de
-computação o processo é é de certa forma
-até ridículo né porque de fato as coisas
-melhoraram melhoraram demais em ordens
-de ordem de grandeza magnitude mas tinha
-esse problema é um problema latente né
-tanto que hoje se você olhar o
-código-fonte do tec e do até que você
-consiga porque os caras fizeram isso
-porque os caras estão salvando
-registrador porque os caras estão
-fazendo isso
-se você olhar a história da computação
-você economizar alguns cavaletes você
-economizar algumas instruções era
-significativa então assim a gente tem
-que dar uma olhadinha para as coisas de
-certa forma com um olhar histórico então
-a resposta isso pra hoje não faria
-diferença nenhuma não tanto que existe
-um pacote para para o protec que se
-chama que acho que se chama peste o pdf
-se não me falha a memória que ele faz
-andar de rudnei é debaixo do pano ele
-faz essa conversão mas naquela época
-tinha esse problema e
-e você enfim até hoje se você pegar
-alguns documentos
-por exemplo eu não sei quanto que eu vou
-falar um pouquinho dele quanto o autor
-aqui do desses laides demorou mas
-certamente a compilação dele levou levou
-bastante tempo eu eu particulamente eu
-tenho um conjunto de slides que o fundo
-dos slides assim imagine que você tem
-uma seqüência de dez lights
-tá eu posso inclusive o link se vocês
-quiserem usar em casa testar para ver
-eu tenho a cidade de londres desenhado
-no fundo ea mary poppins descendo de de
-guarda chuva então o que o que o meu
-slide faz digamos que eu tenho 10 slides
-é como se eu tivesse dez quadros a mary
-poppins desce da voltinha e sai em 10
-lights para dar a impressão de movimento
-cada ano cada quadro é seriam uma coisa
-dessa animação eu fiz assim simplesmente
-por teste pra brincar alguma coisa
-demora bastante demora pelo menos meio
-segundo a quase um segundo para compilar
-cada página
 então assim veja que mesmo mesmas coisas
 de hoje levam dependendo do que você
 coloca do que você faz né você você você
