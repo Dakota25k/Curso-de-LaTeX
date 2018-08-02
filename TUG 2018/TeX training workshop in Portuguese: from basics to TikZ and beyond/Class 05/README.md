@@ -7,6 +7,16 @@ TUG 2018 - Workshop - Class 05
 
 Paulo Cereda
 
+### Tabla de contenidos
+
+1. Lo básico: nodos y aristas
+2. Diagramas coloridos y diagramas
+3. Árboles
+4. Matemáticas: geometría clásica
+5. Matemáticas: Trazado de funciones y superficies
+6. Química
+7. Solo algunos ejemplos que demuestran capacidades y variedad
+
 > Yo soy ... Mi formación en Ciencia de la Computación. Trabajo últimamente con teoría de la computación, la parte formal. Paulo me dice que tenga audiencia en varias áreas. Espero que los invitados puedan conversar sobre bastantes cosas. Yo vine de una ciudad que se llama Analândia. Es una ciudad que tiene cuatro mil habitantes. Es muy pequeñita, bien pequeñita. Ustedes conocen por ejemplo una ciudad conocida del estado de San Pablo, San Carlos, es una ciudad cercana. Entonces, yo vine de casualidad, he caído por un accidente. He venido por la reunión del TeX User Group que tenemos a partir de mañana. Y Paulo me invitó de pronto basicamente, lo cual es muy chévere, estar con ustedes aquí para poder hablar un poquito.
 > No solamente de lo que se propuso hablar aquí, sino también contar un poquito de mi experiencia con $\TeX$, de mi experiencia con $\LaTeX$, contar para ustedes todos los errores que he cometido hasta entonces y también lo que realmente voy cometer de aquí en adelante, entonces más o menos eso. Antes de ese tópico en particular, Paulo me dijo que habló, les contó a ustedes un poquito de lo que es $\TeX$, pero así revisar algunas cositas. La verdad, $\LaTeX$, sería un programa, en este caso es un programa, un sistema de tipografía como las personas gustan de hablar, pero no es verdad, es una cosa, un poquito más abstracta, las personas de ciencias exactas, es una cosa que la gente llama un sistema de escritura, en el que usted typewritting system, en el que usted, tiene practicamente una relación binaria, un sistema que asigna una cosa para otra, entonces donde la gente vio por ejemplo, define una macro llamada nombre, usted puede tener un nombre y en algun momento usted hace uns transformación.
 
@@ -1005,91 +1015,33 @@ divertido pra mostrar algumas coisas um
 pouco diferentes que eu até que pode
 pode fazer chover se eu tenho onde que
 eu coloquei
-aqui o destaque é um preview do que eu
-vou falar
-é um pacote chamado tics e dantes am só
-por contar um pouquinho de um pouquinho
-de de história para vocês entenderem a
-relevância disso o meu o meu avatar na
-minha imagem em 19 no desenvolvimento
-não é desenvolvimento de software
-derrame enfim na internet é um patinho
-de borracha com um bonezinho um
-bonezinho azul segurando um taco de
-críquete né
-eu sou eu as pessoas me conhecem então
-na internet como um pato de borracha
-como um pato de borracha afinal de
-contas é assim que a internet funciona
-né tá e a gente conversando nas
-possibilidades inclusive só fazendo um
-parêntesis se alguém aí usa em que
-escape existem plugins pra você exportar
-esse vídeo svg pra código tic se é é
-código roche xxi é é aquele duro é o
-código na mão mas existe um conversor
-então se é é uma possibilidade então
-falar pra vocês
-nesse pacote aqui que eu particularmente
-acho esse pacote uma gracinha que eu
-acho que talvez vai fazer vocês vamos
-fazer um um patinho em casa
-aqui ela ela pede desculpas que ela não
-não pôde vir
-então vamos para a entrou do que tá ela
-diz o seguinte bom pato de borracha
-podem ser feitas de látex né a uma
-pergunta mas eles podem ser feitos de
-leite segue ea resposta é obviamente
-claro que não quem vai pensar num
-absurdo de se fazer um pato de borracha
-com a tech né e é possível fazer isso
-com esse pacote chamado tics e docs como
-surgiu esse uma questão nunes text anj
-essa é uma amiga minha também de novo
-existe uma isso uma máfia que tinha de
-mais ou menos a boca
-olha que bacana
-carrega o pacote tinha sido antes ele já
-carrego ti 15 né
-andré no dia seguinte spectrum x-factor
-ambiente 15 daqui
-isso me dá um pato pura e simplesmente a
-aaa mas eu não gosto de usar o código
-direto eu queria usar como biblioteca eu
-posso chamar o xix biblioteca direto e
-usará a a biblioteca de patos e falar eu
-quero desenhar na posição 00 pnea o
-elemento papo e aí ele faz lá pra mim tá
-bom
-dá pra fazer bastante coisa então eu
-posso existir o que a gente chama de que
-volpi que seria o xavi valor você tem
-muita opção de fazer comando sem tiques
-e de forma que você a definir alguns
-atributos no entanto no caso você pode
-definir por exemplo o bari cor do corpo
-no caso blue cor da cabeça no caso a
-verde a cor do bico no caso vermelho ea
-cor dos olhos sempre no na no chavinha é
-igual o valor
-separado por vírgula a temos algumas
-algumas características então por
-exemplo você pode falar olha eu quero
-ele de cartola a mas eu não quero eu não
-quero a cartola preta eu quero o cartel
-a cartola a vermelha você se você tem um
-valor de fogo a chave
-se você especificar ele aplica caso
-contrário ele usa o valor o valor padrão
-definido muito bem aqui é um é um
-exemplo nesse caso eu pedi eu pedi eu
-pedi para minha amiga fazer a princesa
-peach da super mário como como um pato
-então essa daqui não sei se dá pra
-aparecer a é a princesa peach inclusive
-no manual inclusive no manual do do xix
-docs
+
+
+-----
+Aquí tengo un preview de lo que quiero hablar. Es un paquete llamado [`Tikzduck`](http://ctan.uniminuto.edu/graphics/pgf/contrib/tikzducks/tikzducks-doc.pdf) y solo voy a contar un poquito, un poquito de historia para que ustedes entendiendan la relevancia de eso. Mi avatar, en mi imagen en el desarrollo de software, en fin, en el internet es un patito de dibujo que toma un palo de cricket, soy de las personas que es conocida en el internet como un pato de dibujo, al final de cuentas el internet funciona, ¿sí?
+
+Y con la gente conversando las posibilidades, inclusivo si haciendo un paréntesis, si alguien usa [Inkscape](https://inkscape.org/en/), existen plugins para poder exportar como svg, para código tikz, es un código 
+entonces si es es una posibilidad entonces hablar para ustedes en ese paquete aquí que particularmente me parece ese paquete una gracia que creo que tal vez va a hacer ustedes vamos a hacer un patito en casa aquí ella ella pide disculpas que ella no
+no pudo venir entonces vamos a la entró de lo que está ella dice el siguiente buen pato de goma se pueden hacer de látex no a una pregunta pero se pueden hacer de
+la leche sigue y la respuesta es obviamente claro que no quien va a pensar en un
+absurdo de hacer un pato de goma con la tech no y es posible hacer eso
+con ese paquete llamado tics y docs como surgió ese una cuestión nunes text anj
+que es una amiga mía también de nuevo existe una eso una mafia que tenía de
+más o menos la boca parece que el bacana carga el paquete había sido antes él ya
+no se que hacer, no se que hacer.
+el ambiente 15 de aquí me da un pato puro y simplemente la aa pero yo no me gusta usar el código directo que quería utilizar como biblioteca puedo llamar a la biblioteca de xix biblioteca y utilizarla a la biblioteca de patos y hablar quiero dibujar en la posición 00 pnea o. pero no se que es lo que mas me gusta de la musica de mi vida, que es lo que mas me gusta de mi.
+atributos sin embargo en el caso se puede definir por ejemplo el bari color del cuerpo
+en el caso azul color de la cabeza en el caso a verde el color del pico en el caso rojo y la
+el color de los ojos siempre en el no en el chavinha es igual el valor separado por coma a tenemos algunas algunas características entonces por ejemplo usted puede hablar mira yo quiero
+de, la, camiseta, de, la, camiseta, de, la, camiseta,
+la cartulina la roja usted si usted tiene un valor de fuego la llave
+si se especifica se aplica de lo contrario utiliza el valor del valor predeterminado
+que se define muy bien aquí es uno es un ejemplo en este caso yo pedí que pedí yo
+me pedí a mi amiga hacer la princesa peach de la super mera como un pato
+pero no se que es lo mismo,
+en el manual incluso en el manual del xix docs
+
+
 ela fez o mario luigi di ea princesa
 peach muito bacana não está aqui está
 bom temos vários estilos de cabelo então

@@ -2,7 +2,7 @@ PSTricks
 ===
 ## Grafik mit PostScript für $\TeX$ und $\LaTeX$
 
-<a href="https://www.youtube.com/watch?v=SBUOhyXcR1Q">
+<a href="">
   <img src="../images/PSTricks7.png" width="300" />
 </a>
 
