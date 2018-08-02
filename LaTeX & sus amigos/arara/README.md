@@ -40,7 +40,7 @@ carlosal1015@oromion$ dvips file.dvi
 carlosal1015@oromion$ ps2pdf file.ps
 ```
 
-Cómo sería con arara?
+¿Cómo sería con arara?
 
 ```
 % arara:
@@ -49,3 +49,36 @@ Cómo sería con arara?
 Hello
 \end{document}
 ```
+
+## Conceptos básicos
+
+* Las reglas:
+
+Son descripciones formales de cómo `arara` realiza cierta tarea.
+
+* Directivas
+
+Son comentarios especiales insertados en el archivo fuente en el cual usted indica cómo `arara` debería comportarse.
+
+Puede insertar tanta directivas como desee y en cualquier posición del archivo.
+
+* Identificador
+
+
+### Directiva nula
+```tex
+% arara: pdflatex
+```
+
+### Directiva parametrizada
+
+```tex
+% arara: pdflatex:  {shell: yes }
+```
+
+Note que las reglas de `arara` se basa en parámetros nombrados, entonces están mapeados por sus identificadores de argumento correspondientes y no por sus posiciones.
+
+
+## Notación de flecha
+
+Algunas veces, 
