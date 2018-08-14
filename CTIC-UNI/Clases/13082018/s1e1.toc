@@ -1,0 +1,4 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Mi primera clase de \LaTeX }{5}
+\contentsline {subsection}{\numberline {1.1}Entrada}{5}
+\contentsline {subsubsection}{\numberline {1.1.1}Salida}{5}
