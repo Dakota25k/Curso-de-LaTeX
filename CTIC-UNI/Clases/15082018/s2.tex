@@ -1,0 +1,453 @@
+% arara: pdflatex
+% arara: pdflatex
+\documentclass{report}
+\usepackage{here}
+\usepackage[pdftex]{graphicx}
+\usepackage{latexsym}
+\renewcommand*{\fd}{\longrightarrow}
+\begin{document}
+
+\tableofcontents
+
+texto texto texto vendo $13$ kg. $\sqrt{13^{2}+12^{2}}$
+
+\[
+\fd
+\]
+
+texto texto texto
+\[
+\sqrt{5+8+9+5}
+\]
+\begin{equation}\label{eq:1}
+\sqrt{5+8+9+5}
+\end{equation}
+
+Usando la ecuación~\ref{eq:1}.
+
+\[
+a^{2}+b^{2}=c^{2}
+\]
+
+\[
+a^{12}+b^{15}+c^{16}=x^{N}
+\]
+
+\[
+a_{1}+b_{22}=c_{n}
+\]
+
+\[
+a_{1}+a_{2}^{10}=f
+\]
+
+\[
+\frac{a}{b}+\sqrt{91+4}+\sqrt[n]{x^{2}}
+\]
+
+\[
+f(x)=\frac{1}{\sqrt{1+x^{2}}}
+\]
+
+fffffffffffffgggggg $ffgg$
+
+sea la función $f(x)=ax+b$.
+
+texto texto texto $\sum_{i=1}^{n} a_i$ texto
+
+\[
+\sum\nolimits_{i=1}^{n} a_i=\frac{n(n+1)}{2}
+\]
+
+texto texto texto $\int_{a}^{b}f(x)\,\mathrm{dx}$ texto
+
+\[
+\int\limits_{a}^{b}f(x)\,\mathrm{d}x
+\]
+
+texto texto texto\dots texto... texto
+
+\[
+a+b+c+\cdots+z+v
+\]
+
+\[
+n=1,2,3,\ldots,n
+\]
+
+\[
+\vdots\quad \ddots
+\]
+
+\[
+\cos^{2}\alpha+\sin^{2}\alpha=1
+\]
+
+
+\[
+cos^{2}\alpha+sin^{2}\alpha=1\quad mal--escrito
+\]
+
+\[
+\alpha + \beta + \gamma
+\]
+
+\[
+a\times b\quad f\circ g \Box%\gets
+\]
+
+\[
+a\leq b\Longleftrightarrow a_i\le b_i,\forall i\in I
+\]
+
+\[
+A=\bigcup_{i\in I}A_i
+\]
+
+\newpage
+
+\[
+\lim\limits_{n\to\infty}\frac{1}{n}=0
+\]
+
+\[
+\exp(a+b)=\exp(a)\exp(b)
+\]
+
+\[
+\tilde{f}+\tilde{g}=\widetilde{f+g}
+\]
+
+\[
+\hat{a}+\hat{b}=\widehat{ab}
+\]
+
+\[
+\left(
+\frac{a}{\sum b}
+\right)
+\]
+
+\[
+\left(\frac{a}{b}\right.
+\]
+
+\[
+f=g \leftrightarrow f(x)=g(x) \mbox{cuando }x\in X
+\]
+
+
+\[
+abc\quad \mathit{abc}
+\]
+
+\[
+abc\quad \mathit{abc}\quad \mathrm{abc}\quad\mathtt{abc}\quad\mathbf{abc}\quad\mathsf{abc}\quad\mathcal{ABC}
+\]
+
+\[
+\left(
+\begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i \\
+\end{array}
+\right)_{3\times3}
+\left(
+\begin{array}{c}
+x_1 \\
+x_2 \\
+x_3
+\end{array}
+\right)_{3\times1}=\bar{0}
+\]
+
+\newpage
+
+\[
+\bar{xyz}\quad \overline{xyz}\quad\underline{xyz}
+\]
+
+
+\[
+\underbrace{5+5+5+5}_{=20}
+\]
+
+\[
+\overbrace{8+8+8+8}^{=32}
+\]
+
+\[
+a+b+c\stackrel{\mathrm{def.}}{=}99
+\]
+
+\begin{eqnarray}
+a + b + c &=& f+g\\
+		&=& c + d\nonumber\\%1) error: mucho espacio, arraycolsep, 2mm x 2pt
+		&=& p +r% los simbolos menor son mas pequeños.
+\end{eqnarray}%no usar este entorno, usar entorno align.
+
+
+\[
+a\; b\: c\, d\! e
+\]
+
+\[
+x_i\in X,\forall\, i\in I
+\]
+
+
+texto texto $\int_{a}^{b}f(x)\,\mathrm{d}x$
+
+$\displaystyle\int_{a}^{b}f(x)\,\mathrm{d}x$
+
+\[
+\textstyle\int_{a}^{b}f(x)\,\mathrm{d}x
+\]
+
+\[
+x^{x^{x}}\quad\scriptstyle{x}\quad\scriptscriptstyle{x}
+\]
+
+
+\[
+(\frac{a}{b})\quad\left(
+\frac{a}{b}
+\right)
+\]
+
+\[
+\big(\frac{a}{b}\big)
+\]
+
+\[
+\Big(\frac{a}{b}\Big)
+\]
+
+\[
+\bigg(\frac{a}{b}\bigg)
+\]
+
+\[
+\Bigg(\frac{a}{b}\Bigg)
+\]
+
+
+\setcounter{chapter}{4}
+
+\chapter{Cosas de matemática}
+
+
+\[
+a\longrightarrow b
+\]
+
+Seguramente lo habrás aprendido en la escuela primaria: la Tierra describe una órbita elíptica alrededor del Sol.
+
+Este recorrido, que se conoce como movimiento de traslación, le toma al planeta unos 365 días 
+(más 5 horas, 45 minutos y 46 segundos).
+
+El otro movimiento que te enseñaron es el de rotación: la Tierra gira en torno a su propio eje.
+
+Este giro sobre sí misma le toma aproximadamente un día (23 horas, 56 minutos 4,1 segundos, para ser exactos). 
+
+Sin embargo, estos no son los únicos movimientos que hace la Tierra.
+
+Te contamos —o recordamos— cuáles son los otros tres, también importantes, que ejecuta el planeta.\footnote{esto es un pie de página}
+
+
+\begin{enumerate}
+	\item Mesa
+	\item silla
+	\begin{enumerate}
+		\item mesa
+		\item silla
+		\begin{enumerate}
+			\item silla
+		\end{enumerate}
+	\end{enumerate}
+	\item pizara
+\end{enumerate}
+
+\begin{itemize}
+	\item mesa
+	\item silla
+	\item pizarra
+\end{itemize}
+
+
+\begin{description}
+	\item[mesa3] mesa texto texto mesa texto texto mesa texto texto mesa texto texto
+	\item[mesa2] silla mesa texto texto mesa texto texto mesa texto texto mesa texto texto mesa texto texto
+	\item[pizarra3] pizarra mesa texto texto mesa texto texto mesa texto texto mesa texto texto mesa texto texto\footnote{otro pie de página }
+\end{description}
+
+Seguramente lo habrás aprendido en la escuela primaria: la Tierra describe una órbita elíptica alrededor del Sol.
+
+Este recorrido, que se conoce como movimiento de traslación, le toma al planeta unos 365 días 
+(más 5 horas, 45 minutos y 46 segundos).
+
+El otro movimiento que te enseñaron es el de rotación: la Tierra gira en torno a su propio eje.
+
+Este giro sobre sí misma le toma aproximadamente un día (23 horas, 56 minutos 4,1 segundos, para ser exactos). 
+
+Sin embargo, estos no son los únicos movimientos que hace la Tierra.
+
+Te contamos —o recordamos— cuáles son los otros tres, también importantes, que ejecuta el planeta.
+
+\
+
+\listoftables
+
+\
+
+\begin{tabular}{|l|c|r|p{4cm}|}
+	\hline
+	mesa & silla & pizarra & casa\\
+	\hline
+	mesa2 & silla23232 & pizarra2232 & casa44444 \\
+	\hline
+\end{tabular}
+
+\begin{tabular}{|l|c|r|p{4cm}|}
+	\hline
+	mesa & silla & pizarra & casa\\
+	\hline
+	mesa2 & silla23232 & pizarra2232 & casa44444 \\
+	\hline
+\end{tabular}\\[2cm]
+
+\begin{tabular}{|l|c|r|p{4cm}|}
+	\cline{1-2}\cline{4-4}
+	\multicolumn{2}{|c|}{PALABRA} & pizarra & casa\\
+	\cline{1-2}
+	mesa2 & silla23232 & pizarra2232 & casa44444 \\
+	\cline{3-4}
+\end{tabular}
+
+\begin{table}[H]
+	\begin{tabular}{|l|c|r|p{4cm}|}
+		\cline{1-2}\cline{4-4}
+		\multicolumn{2}{|c|}{PALABRA} & pizarra & casa\\
+		\cline{1-2}
+		mesa2 & silla23232 & pizarra2232 & casa44444 \\
+		\cline{3-4}
+	\end{tabular}
+		\caption[Esto es una tabla]{Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla}\label{tab1}
+\end{table}
+
+\begin{table}[H]
+	\begin{tabular}{|l|c|r|p{4cm}|}
+		\cline{1-2}\cline{4-4}
+		\multicolumn{2}{|c|}{PALABRA} & pizarra & casa\\
+		\cline{1-2}
+		mesa2 & silla23232 & pizarra2232 & casa44444 \\
+		\cline{3-4}
+	\end{tabular}
+	\caption[Esto es una tabla]{Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla Esto es una tabla}\label{tab2}
+\end{table}
+
+
+Por ... \ref{tab1} y \ref{tab2} vemos del libro \cite{ven14}.
+
+Física aprendí de \cite[capítulo 4]{pe17}
+
+\begin{thebibliography}{9}% Menos de 99 referencias
+\bibitem{ven14} Venero B. Armando. {\em Análisis Matemático 2}. Gemar, 2014.
+\bibitem{pe17} Pérez, Juan. \emph{Física 4}. Edit., 2017.
+\end{thebibliography}
+
+\chapter{Cosas de \LaTeX}
+
+\rule{5cm}{3mm}
+
+\fbox{texto texto texto}
+
+\setlength{\fboxrule}{5pt}
+
+\fbox{texto texto texto}
+
+\setlength{\fboxsep}{7mm}
+
+\fbox{texto texto texto}
+
+\setlength{\fboxrule}{0.4pt}
+\setlength{\fboxsep}{3pt}
+
+\fbox{texto texto texto}\\[2cm]
+
+
+\parbox[c]{5cm}{text text text text textotexttext textotext text vemosv  v textotext text textotext textotexttexttext textotext text v vemostexttext textotexttext text v text textotexttexttext}
+
+
+\fbox{\parbox{6cm}{t text text text textotexttext textotext text vemosv  v textotext text 
+		
+		textotext textotexttexttext textotext text v vemostexttext textotexttext text v sadsadqasdtext textotexttexttex}}
+
+\addtocounter{page}{100}
+
+\begin{minipage}{5cm}
+textotext textotexttexttext textotext text v vemostexttext textotexttext text v sadsadqasdtext textotexttextte
+textotext textotexttexttext textotext text v vemostexttext textotexttext text v sadsadqasdtext textotexttextte
+textotext textotexttexttext textotext text v vemostexttext textotexttext text v sadsadqasdtext textotexttextte
+textotext textotexttexttext textotext text v vemostexttext textotexttext text v sadsadqasdtext textotexttextte\\
+textotext textotexttexttext textotext text v vemostexttext textotexttext text v sadsadqasdtext textotexttextte\\
+textotext textotexttexttext textotext text v vemostexttext textotexttext text v sadsadqasdtext textotexttextte.%\value
+\end{minipage}
+
+texto texto \raisebox{1mm}{sube un milimetro respecto a la linea base} texto4
+
+\Roman{page}
+
+texto texto \raisebox{-1cm}{bajó el texto} se mantiene en la línea
+
+\vfill
+
+irá a la ultima linea permitida de la pagina
+
+\hfill al extremo derecho
+
+Nombre: \hrulefill
+
+Apellido: \dotfill
+
+\rule{\paperwidth}{\paperheight}
+
+\newpage
+
+\begin{titlepage}
+\centering
+{
+\Large UNIVERSIDAD NACIONAL DE INGENIERÍA\\[5mm]
+}
+
+{
+\large FACULTAD DE CIENCIAS\\[5mm]
+}	
+
+{
+\large 	ESCUELA PROFESIONAL DE MATEMÁTICA\\[5mm]
+}
+
+\includegraphics[width=0.25\paperwidth]{logo}\\[8mm]
+
+{
+\LARGE\bfseries MI PRIMER DOCUMENTO\\[5mm]
+}
+	
+	Presentado por:\\[5mm]
+	
+{
+\large John Smith\\[5mm]
+}
+
+Asesor:\\[5mm]
+
+Juan Pérez\\[5mm]
+	
+	UNI--Lima\\[5mm]
+	
+	2016
+\end{titlepage}
+
+\end{document}
