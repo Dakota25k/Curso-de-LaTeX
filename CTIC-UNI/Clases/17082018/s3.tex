@@ -1,0 +1,391 @@
+% arara: pdflatex
+% arara: bibtex
+% arara: pdflatex
+% arara: pdflatex
+\documentclass[a4paper]{report}
+
+\usepackage[dvipsnames]{color}
+
+\newcommand{\parcial}[2]{\frac{\partial #1}{\partial #2}}
+
+
+%\usepackage[leqno,intlimits]{amsmath}
+\usepackage{amsmath}
+%Va después de amsmath
+\numberwithin{equation}{section}
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator*{\algo}{sen}%con limites inferiores
+\usepackage{showframe}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+
+\newtheorem{defi}{Definición}[chapter]
+\newtheorem{eje}[defi]{Ejemplo}
+\swapnumbers
+\theoremstyle{plain}
+\newtheorem{teo}{Teorema}[section] % va el nombre del contador
+\theoremstyle{remark}
+\newtheorem{prop}[teo]{Proposición}% va a compartir el contador de teorema
+\newtheorem*{sol}{Solución} % la versión asterisco no tiene contador
+
+\renewcommand{\proofname}{\bfseries\upshape Demostración} %Interesante
+\renewcommand{\qedsymbol}{$\bullet$}
+
+\begin{document}
+\chapter{Mi primer cap}
+
+\section{Entornos}
+
+\begin{defi}
+	definición de algo
+\end{defi}
+
+\addtocounter{teo}{3}
+
+\begin{teo}
+	Esto es un teorema
+\end{teo}
+
+\begin{proof}
+Es una demostración.
+\end{proof}
+
+\begin{prop}
+Esto es una proposición
+
+\begin{sol}
+text
+\end{sol}
+\end{prop}
+
+
+
+\chapter{MIS ENTORNOS TIPO TEOREMA}
+
+
+
+\newpage
+
+\begin{equation*}
+a+b+c
+\end{equation*}
+
+\begin{multline}
+a+b+c a+b+c a+b+c a+b+c a+b+c a+b+c \\
+a+b+c a+b+c a+b+clasea+b+clasea+b+clasea+b\\
+a+b+c a+b+c a+b+c a+b+c a+b+c 
+\end{multline}
+
+\begin{multline*}
+a+b+c a+b+c a+b+c a+b+c a+b+c a+b+c \\
+a+b+c a+b+c a+b+clasea+b+clasea+b+clasea+b\\
+a+b+c a+b+c a+b+c a+b+c a+b+c 
+\end{multline*}
+
+\begin{equation}
+\begin{split}
+a+b+c+a+b+a+b+c+a=\alpha\\
++b+c+a+b+c+a+b=\theta% se usa en entornos numerados
+\end{split}
+\end{equation}
+
+\begin{gather}
+a+g+c+a+b+c+a+b+c+a+b+c+a+b\\
+a+b=c\\
+\sum a_i = f\\
+l+q
+\end{gather}
+
+\begin{gather*}
+a+g+c+a+b+c+a+b+c+a+b+c+a+b\\
+a+b=c\\
+\sum a_i = f\\
+l+q
+\end{gather*}
+
+\begin{align}\label{eq:3}
+{\left(a+b\right)}^{2}&=\left(a+b\right)\left(a+b\right)\\
+											&=a^{2}+ab+ba+b^{2}\notag\\
+											&=a^{2}+ab+ab+b^{2}\notag\\
+											&=a^{2}+2ab+b^{2}\label{eq:4}
+\end{align}
+
+A partir de la ecuación~\ref{eq:3} y \eqref{eq:4}
+
+\begin{equation}
+a^{2}+b^{2}=c^{2}\tag{T. Pitágoras}
+\end{equation}
+
+\begin{equation}
+a^{2}+b^{2}=c^{2}\tag*{T. Pitágoras}
+\end{equation}
+
+\begin{align*}
+{\left(a+b\right)}^{2}&=\left(a+b\right)\left(a+b\right)\\
+&=a^{2}+ab+ba+b^{2}\\
+&=a^{2}+ab+ab+b^{2}\\
+&=a^{2}+2ab+b^{2}
+\end{align*}
+
+
+\newpage
+
+\begin{equation}
+f(x)=\left\{\begin{gathered}
+x+5+x^{4}, x\in A \\
+\sqrt{x}+4, x\in A^{c}
+\end{gathered}\right.
+\end{equation}
+
+\begin{equation}
+f(x)=\left\{\begin{aligned}
+x+5+x^{4}, &\quad x\in A \\
+\sqrt{x}+4, &\quad x\in A^{c}
+\end{aligned}\right.
+\end{equation}
+
+\[ f=g\mbox{ cuando }\dots h_{\mbox{mesa}} \]%mesa sale muy grande!!!!, pero amsmath tiene el comando \text{}
+
+\[ f=g\text{ cuando }\dots h_{\text{mesa}} \]%\text{} generaliza al \mbox{}
+
+\section{Despedida}
+
+\begin{align}
+{\left(a+b\right)}^{2}&=\left(a+b\right)\left(a+b\right)\\
+&=a^{2}+ab+ba+b^{2}\notag\\
+&=a^{2}+ab+ab+b^{2}\\
+\intertext{Por lo tanto}
+&=a^{2}+2ab+b^{2}
+\end{align}
+
+Por lo tanto
+
+\begin{equation}
+f(x)=\begin{cases}
+x^{2}, & x\in A \\
+x^{3}, & x\in B
+\end{cases}
+\end{equation}
+
+texto texto texto texto texto texto texto texto \(\left(\begin{smallmatrix}
+a & b \\
+c & d
+\end{smallmatrix}\right)\)%no mueve mucho el espacio interlineal
+
+\[ \begin{matrix}
+a & b & c \\
+d & f & g \\
+n & w & p 
+\end{matrix} \]
+
+\[ \begin{bmatrix}
+a & b & c \\
+d & f & g \\
+n & w & p 
+\end{bmatrix} \]
+
+\[ \begin{pmatrix}
+a & b & c \\
+d & f & g \\
+n & w & p 
+\end{pmatrix} \]
+
+\[ \begin{Bmatrix}
+a & b & c \\
+d & f & g \\
+n & w & p 
+\end{Bmatrix} \]
+
+\[ \begin{vmatrix}
+a & b & c \\
+d & f & g \\
+n & w & p 
+\end{vmatrix} \]
+
+\[ \begin{Vmatrix}
+a & b & c \\
+d & f & g \\
+n & w & p 
+\end{Vmatrix} \]
+
+\[ \begin{Vmatrix}
+a & b & c \\
+d & f & g \\
+\hdotsfor{3}
+\end{Vmatrix} \]
+
+\[ \sqrt[\leftroot{-10}n/2]{\frac{1}{\sum\limits_{i=1}^{n}}} \]%no es lo mismo usar displaystyle que limits
+
+\[ \sqrt[\uproot{-10}n/2]{\frac{1}{\sum\limits_{i=1}^{n}}} \]
+
+\[
+\boxed{a+b+c=d}
+\]
+
+\[
+\overleftarrow{a+b+c}\quad
+\underleftarrow{p+r+s}
+\]
+
+\[
+a+b+c\xrightarrow[\text{sumando}]{\quad \text{en} R}d%se acomoda el tamaño de la letra, se acomoda al ancho del contenido del documento.
+\]
+
+\[
+a+b+c=\xleftarrow{\quad \text{en }R\quad}d
+\]
+
+\[
+\overset{\circ}{A}\quad \underset{\sim}{B}%Poner símbolos encima de otro
+\]
+
+texto texto texto texto texto \(\dfrac{a}{b}\) texto texto 
+
+\[
+\tfrac{a}{b}+\tfrac{c}{d}
+\]
+
+texto texto \(\binom{c}{d}\) texto $\dbinom{c}{d}$
+
+\[
+\tbinom{c}{d}
+\]
+
+\[
+\biggl(\sum_{i=1}^{n} a_i\bigg)%las versiones left o right de big son una generalización
+\]
+
+
+% \DeclareMathOperator{\sen}{sen}
+
+\[
+\sen\alpha
+\]
+
+\[
+\algo_{i\in A} A_i
+\]
+
+\[
+\sum_{\substack{n=1\\n\neq 3333}}^{\infty} \sen n\alpha \cos n\alpha
+\]
+
+\[
+\sum_{\begin{subarray}{l}
+	n=1\\
+	n\neq 3333
+	\end{subarray}} a_n
+\]%ahora está alineado hacia la izquierda
+
+\[
+\sideset{_{a}^{b}}{_{c}^{d}}\sum%simbolos de Cristofell
+\]%checkear este comando
+
+\[
+\sideset{_{a}^{b}}{_{c}^{d}}\int%simbolos de Cristofell
+\]%checkear este comando
+
+\[
+\int\int f(x,y)d(x,y)
+\]
+
+\[
+\iint f(x,y)d(x,y)
+\]
+
+\[
+\iiint f(x,y)d(x,y)
+\]
+
+\[
+\idotsint_{R^{n}} f(x,y)d(x,y)
+\]
+
+
+\newpage
+
+\(\mathbb{NZQIRC}\)
+
+\[
+r\in\mathbb{R}
+\]
+
+\[
+A\in \mathfrak{B}
+\]
+
+\newpage
+
+% Paquete \usepackage{amsthm}% hay otros paquetes que se mejoraron
+
+
+
+\newpage
+
+\begin{align}
+a+b&=c	& p&=q	\\
+c&=\alpha & f+g&=h
+\end{align}
+
+\begin{align*}
+a+b&=c	& p&=q	\\
+c&=\alpha & f+g&=h
+\end{align*}%Hay un entorno que te permite poner al límite permitido, es flalign o flushalign
+
+\begin{flalign}
+a+b&=c	& p&=q	\\
+c&=\alpha & f+g&=h
+\end{flalign}
+
+\begin{flalign*}
+a+b&=c	& p&=q	\\
+c&=\alpha & f+g&=h
+\end{flalign*}
+
+\[ abc\quad \boldsymbol{abc}\quad\pmb{\alpha} \]
+
+\begin{equation}
+\sum_{i=1}^{n} a_i=\dots
+\end{equation}
+
+\[
+a b
+\]
+
+\begin{equation}
+\int_{a}^{b} g(y)dy
+\end{equation}
+
+\begin{defi}
+Esto es una definición en nuestra tercera clase
+	
+\[
+\int f(x) dx
+\]
+\end{defi}
+
+texto texto texto
+
+\begin{defi}
+otra definición
+\end{defi}
+\[ \frac{\partial f}{\partial x}(x,y)+\frac{\partial f}{\partial y}(x,y) \]
+
+\begin{eje}
+otro ejemplo
+\end{eje}
+
+\[
+\parcial{f}{x} + \parcial{f}{y}
+\]
+
+\cite{Baldeon2014}, \cite{Perez2010}
+%\nocite{*}
+\bibliographystyle{plain}
+\bibliography{biblio3}
+
+\end{document}
